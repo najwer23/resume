@@ -2,7 +2,7 @@
 	"name": "resume",
 	"version": "1.0.0",
 	"private": true,
-	"homepage": "https://najwer23.github.io/resume",
+	"homepage": "https://najwer23.github.io/resume/",
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^6.2.0",
 		"@fortawesome/free-brands-svg-icons": "^6.2.0",

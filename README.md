@@ -1,6 +1,6 @@
 
-# Portfolio Mariusz Najwer
-[https://najwer23.github.io/](https://najwer23.github.io/)
+# Mariusz Najwer - Résumé
+[https://najwer23.github.io/resume/](https://najwer23.github.io/resume/)
 
 ## Self Update
 ```
@@ -31,8 +31,3 @@ $ yarn deploy
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-
-### Links
-
-- http://alistapart.com/article/boom/

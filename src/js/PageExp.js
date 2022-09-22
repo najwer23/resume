@@ -71,11 +71,11 @@ export default function PageExp() {
 								<div className="section-desc" style={{ marginTop: "10px" }}>
 									Aktywni w Sporcie:{" "}
 									<a
-										href="https://shorturl.at/bioSV"
+										href="https://portal.tueuropa.pl/frontend/products/showProduct.html?prodId=2031&su=100000&lu=1&us=biatlon_grupa_3;baseball_grupa_3&o_ochrony=90&cookies_message=1"
 										rel="noreferrer"
 										target="_blank"
 									>
-										https://shorturl.at/bioSV
+										[link]
 									</a>
 								</div>
 								<div
@@ -102,9 +102,7 @@ export default function PageExp() {
 							/>
 						</div>
 						<div className="section-2-col-desc">
-							<div className="section-2-col-desc-title">
-								Orange - INTERN
-							</div>
+							<div className="section-2-col-desc-title">Orange - INTERN</div>
 							<div className="section-2-col-desc-desc">
 								<div className="section-desc">
 									{Trans.t[language].exp.year3}

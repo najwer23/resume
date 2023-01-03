@@ -126,9 +126,7 @@ export const t = {
 				<div>
 					<div>BLACKJACK</div>
 					<div className="project-tech">(HTML5, CSS3, JavaScript)</div>
-					<ul>
-
-					</ul>
+					<ul></ul>
 					<a
 						href="https://najwer23.github.io/blackjack/"
 						rel="noreferrer"
@@ -238,6 +236,28 @@ export const t = {
 						style={{ fontSize: "12px" }}
 					>
 						https://najwer23.github.io/masonry-grid/
+					</a>
+				</div>
+			),
+			project11: (
+				<div>
+					<div>GUI Snippets</div>
+					<div className="project-tech">(JavaScript, HTML5, CSS3)</div>
+					<ul>
+						<li>Carousel</li>
+						<li>Slider</li>
+						<li>Scrollbar</li>
+						<li>Masonry Grid</li>
+						<li>Video Player</li>
+						<li>Email HTML</li>
+					</ul>
+					<a
+						href="https://github.com/najwer23/gui-challenge"
+						rel="noreferrer"
+						target="_blank"
+						style={{ fontSize: "12px" }}
+					>
+						https://github.com/najwer23/gui-challenge
 					</a>
 				</div>
 			),
@@ -492,6 +512,28 @@ export const t = {
 						style={{ fontSize: "12px" }}
 					>
 						https://najwer23.github.io/masonry-grid/
+					</a>
+				</div>
+			),
+			project11: (
+				<div>
+					<div>GUI Snippets</div>
+					<div className="project-tech">(JavaScript, HTML5, CSS3)</div>
+					<ul>
+						<li>Carousel</li>
+						<li>Slider</li>
+						<li>Scrollbar</li>
+						<li>Masonry Grid</li>
+						<li>Video Player</li>
+						<li>Email HTML</li>
+					</ul>
+					<a
+						href="https://github.com/najwer23/gui-challenge"
+						rel="noreferrer"
+						target="_blank"
+						style={{ fontSize: "12px" }}
+					>
+						https://github.com/najwer23/gui-challenge
 					</a>
 				</div>
 			),

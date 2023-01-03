@@ -8,9 +8,7 @@ export default function PageProjects2() {
 	return (
 		<>
 			<div className="projects">
-				<div className="project">{Trans.t[language].projects.project8}</div>
-				<hr />
-				<div className="project">{Trans.t[language].projects.project10}</div>
+				<div className="project">{Trans.t[language].projects.project11}</div>
 			</div>
 		</>
 	);

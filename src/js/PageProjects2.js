@@ -16,7 +16,7 @@ export default function PageProjects2() {
 				<hr />
 				<div className="project">{Trans.t[language].projects.project7}</div>
 				<hr />
-				<div className="project">{Trans.t[language].projects.project9}</div>
+				<div className="project">{Trans.t[language].projects.project8}</div>
 			</div>
 		</>
 	);

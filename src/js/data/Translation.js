@@ -526,6 +526,7 @@ export const t = {
 						<li>Masonry Grid</li>
 						<li>Video Player</li>
 						<li>Email HTML</li>
+						<li>Slideshow</li>
 					</ul>
 					<a
 						href="https://github.com/najwer23/gui-challenge"

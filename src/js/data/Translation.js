@@ -244,6 +244,7 @@ export const t = {
 					<div>GUI Snippets</div>
 					<div className="project-tech">(JavaScript, HTML5, CSS3)</div>
 					<ul>
+						<li>Calendar</li>
 						<li>Carousel</li>
 						<li>Slider</li>
 						<li>Scrollbar</li>
@@ -521,6 +522,7 @@ export const t = {
 					<div>GUI Snippets</div>
 					<div className="project-tech">(JavaScript, HTML5, CSS3)</div>
 					<ul>
+						<li>Calendar</li>
 						<li>Carousel</li>
 						<li>Slider</li>
 						<li>Scrollbar</li>

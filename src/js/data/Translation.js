@@ -40,12 +40,12 @@ export const t = {
 						<li>Weather stations</li>
 					</ul>
 					<a
-						href="https://jabber-23.ue.r.appspot.com/"
+						href="https://jabber-42.lm.r.appspot.com"
 						rel="noreferrer"
 						target="_blank"
 						style={{ fontSize: "12px" }}
 					>
-						https://jabber-23.ue.r.appspot.com/
+						https://jabber-42.lm.r.appspot.com
 					</a>
 				</div>
 			),
@@ -309,12 +309,12 @@ export const t = {
 						</li>
 					</ul>
 					<a
-						href="https://jabber-23.ue.r.appspot.com/"
+						href="https://jabber-42.lm.r.appspot.com"
 						rel="noreferrer"
 						target="_blank"
 						style={{ fontSize: "12px" }}
 					>
-						https://jabber-23.ue.r.appspot.com/
+						https://jabber-42.lm.r.appspot.com
 					</a>
 				</div>
 			),

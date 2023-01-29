@@ -40,12 +40,12 @@ export const t = {
 						<li>Weather stations</li>
 					</ul>
 					<a
-						href="https://jabber-42.lm.r.appspot.com"
+						href="https://jabber.cyclic.app"
 						rel="noreferrer"
 						target="_blank"
 						style={{ fontSize: "12px" }}
 					>
-						https://jabber-42.lm.r.appspot.com
+						https://jabber.cyclic.app
 					</a>
 				</div>
 			),
@@ -309,12 +309,12 @@ export const t = {
 						</li>
 					</ul>
 					<a
-						href="https://jabber-42.lm.r.appspot.com"
+						href="https://jabber.cyclic.app"
 						rel="noreferrer"
 						target="_blank"
 						style={{ fontSize: "12px" }}
 					>
-						https://jabber-42.lm.r.appspot.com
+						https://jabber.cyclic.app
 					</a>
 				</div>
 			),

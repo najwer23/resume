@@ -17,7 +17,7 @@ export const t = {
 			companyTitle: "EUROPA UBEZPIECZENIA - FULL STACK DEVELOPER",
 			year1: "2019.09.01 – 2021.10.31; 2 years, 2 months",
 			companyTitle2: "FLHF S.A - FRONTEND WEB DEVELOPER",
-			year2: "2021.11.01 – current",
+			year2: "2021.11.01 – 2023.04.30; 1 year, 6 months",
 			year3: "2017.07; 1 month",
 		},
 		skills: {
@@ -29,7 +29,7 @@ export const t = {
 				<div>
 					<div>APP SUPPORTING CALISTHENICS TRAINING (SPA)</div>
 					<div className="project-tech">
-						(React.js, Node.js (express.js), DynamoDB, Google Cloud Platform)
+						(React.js, Node.js (express.js), DynamoDB)
 					</div>
 					<ul>
 						<li>100 Push Ups training plan,</li>
@@ -37,7 +37,6 @@ export const t = {
 						<li>300 Sit Ups training plan</li>
 						<li>40 Pull Ups training plan</li>
 						<li>Weight and Reps Calendar</li>
-						<li>Weather stations</li>
 					</ul>
 					<a
 						href="https://jabber.cyclic.app"
@@ -283,7 +282,7 @@ export const t = {
 			companyTitle: "EUROPA UBEZPIECZENIA - FULL STACK DEVELOPER",
 			year1: "2019.09.01 – 2021.10.31; 2 lata, 2 miesiące",
 			companyTitle2: "FLHF S.A - FRONTEND WEB DEVELOPER",
-			year2: "2021.11.01 – obecnie",
+			year2: "2021.11.01 – 2023.04.30; 1 rok, 6 miesięcy",
 			year3: "2017.07; 1 miesiąc",
 		},
 		skills: {
@@ -295,7 +294,7 @@ export const t = {
 				<div>
 					<div>APLIKACJA WSPIERAJĄCA TRENING KALISTENIKI (SPA)</div>
 					<div className="project-tech">
-						(React.js, Node.js (express.js), DynamoDB, Google Cloud Platform)
+						(React.js, Node.js (express.js), DynamoDB)
 					</div>
 					<ul>
 						<li>Plan treningowy dla 100 pompek</li>
@@ -303,10 +302,6 @@ export const t = {
 						<li>Plan treningowy dla 300 brzuszków</li>
 						<li>Plan treningowy dla 40 podciągnięć</li>
 						<li>Kalendarz wagi i powtórzeń (wykresy)</li>
-						<li>
-							Stacja pogodowa dla 16 miast wojewódzkich, (komunikacja z
-							zewnętrznym API)
-						</li>
 					</ul>
 					<a
 						href="https://jabber.cyclic.app"

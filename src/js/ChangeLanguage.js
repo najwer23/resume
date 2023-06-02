@@ -25,12 +25,8 @@ const objSocialLinks = {
 		/>
 	),
 
-	"https://www.filmweb.pl/user/Skold": (
-		<FontAwesomeIcon
-			icon={faCode}
-			size="2x"
-			style={{ color: "orange" }}
-		/>
+	"https://leetcode.com/najwer23/": (
+		<FontAwesomeIcon icon={faCode} size="2x" style={{ color: "orange" }} />
 	),
 };
 

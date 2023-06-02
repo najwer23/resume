@@ -262,6 +262,52 @@ export const t = {
 					</a>
 				</div>
 			),
+			project12: (
+				<div>
+					<div>GEOMETRIC FIGURES WITH BOUNDING BOX</div>
+					<div className="project-tech">
+						(React.js, Redux.js, JavaScript, TypeScript, HTML5, CSS3)
+					</div>
+					<ul>
+						<li>
+							An application that draws rotated geometric figures (rectangles
+							and ellipses) on a canvas based on data from the API. For each
+							figure it was necessary to draw a "bounding box"
+						</li>
+					</ul>
+					<a
+						href="https://najwer23.github.io/react-redux-ts/"
+						rel="noreferrer"
+						target="_blank"
+						style={{ fontSize: "12px" }}
+					>
+						https://najwer23.github.io/react-redux-ts/
+					</a>
+				</div>
+			),
+			project13: (
+				<div>
+					<div>TOP MUSIC HITS</div>
+					<div className="project-tech">
+						(React.js, Recoil.js, JavaScript, TypeScript, TailwindCSS)
+					</div>
+					<ul>
+						<li>
+							The project was about integrating an external API using Recoil.js.
+							The application displays current hits and allow to filters by
+							title or author. Layout was designed with Tailwind CSS.
+						</li>
+					</ul>
+					<a
+						href="https://najwer23.github.io/top-100-music/"
+						rel="noreferrer"
+						target="_blank"
+						style={{ fontSize: "12px" }}
+					>
+						https://najwer23.github.io/top-100-music/
+					</a>
+				</div>
+			),
 		},
 	},
 	PL: {
@@ -533,6 +579,53 @@ export const t = {
 						style={{ fontSize: "12px" }}
 					>
 						https://github.com/najwer23/gui-challenge
+					</a>
+				</div>
+			),
+			project12: (
+				<div>
+					<div>FIGURY GEOMETRYCZNE Z OGRANICZAJĄCYM PROSTOKĄTEM</div>
+					<div className="project-tech">
+						(React.js, Redux.js, JavaScript, TypeScript, HTML5, CSS3)
+					</div>
+					<ul>
+						<li>
+							Aplikacja rysująca obrócone figury geometryczne (prostokąty i
+							elipsy) na kanwie bazując na danych z API, Dla każdej figury
+							konieczne było narysowanie „ramki ograniczającej”
+						</li>
+					</ul>
+					<a
+						href="https://najwer23.github.io/react-redux-ts/"
+						rel="noreferrer"
+						target="_blank"
+						style={{ fontSize: "12px" }}
+					>
+						https://najwer23.github.io/react-redux-ts/
+					</a>
+				</div>
+			),
+			project13: (
+				<div>
+					<div>HITY MUZYCZNE</div>
+					<div className="project-tech">
+						(React.js, Recoil.js, JavaScript, TypeScript, TailwindCSS)
+					</div>
+					<ul>
+						<li>
+							Projekt polegał na integracji zewnętrznego API z wykorzystaniem
+							Recoil.js. Aplikacja wyświetla aktualne hity muzyczne i umożliwia
+							ich filtrowanie po tytule lub autorze. Layout został
+							zaprojektowany za pomocą Tailwind CSS.
+						</li>
+					</ul>
+					<a
+						href="https://najwer23.github.io/top-100-music/"
+						rel="noreferrer"
+						target="_blank"
+						style={{ fontSize: "12px" }}
+					>
+						https://najwer23.github.io/top-100-music/
 					</a>
 				</div>
 			),

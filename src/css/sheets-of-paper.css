@@ -161,7 +161,6 @@ table {
 	}
 
 	.non-printable {
-		visibility: hidden;
-		display: none;
+		display: none !important;
 	}
 }

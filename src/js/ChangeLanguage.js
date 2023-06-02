@@ -6,7 +6,8 @@ import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faAt, faFilm } from "@fortawesome/free-solid-svg-icons";
+import { faAt } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 
 const objSocialLinks = {
@@ -17,11 +18,19 @@ const objSocialLinks = {
 	"mailto:najwer23@live.com": <FontAwesomeIcon icon={faAt} size="2x" />,
 
 	"https://www.linkedin.com/in/najwer23/": (
-		<FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ color: "#0e76a8" }}/>
+		<FontAwesomeIcon
+			icon={faLinkedinIn}
+			size="2x"
+			style={{ color: "#0e76a8" }}
+		/>
 	),
 
 	"https://www.filmweb.pl/user/Skold": (
-		<FontAwesomeIcon icon={faFilm} size="2x" style={{ color: "orange" }}/>
+		<FontAwesomeIcon
+			icon={faCode}
+			size="2x"
+			style={{ color: "orange" }}
+		/>
 	),
 };
 
@@ -67,7 +76,7 @@ export default function ChangeLanguage(props) {
 						</button>
 					</div>
 					<div className="update">
-						04.02.2023, 11:03
+						02.06.2023, 11:03
 					</div>
 				</div>
 

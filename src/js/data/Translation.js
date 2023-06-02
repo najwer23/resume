@@ -335,7 +335,7 @@ export const t = {
 			title: "W tych technologiach czuję się dobrze",
 		},
 		projects: {
-			title: "My projects",
+			title: "Moje projekty",
 			project1: (
 				<div>
 					<div>APLIKACJA WSPIERAJĄCA TRENING KALISTENIKI (SPA)</div>

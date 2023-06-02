@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.eafc6259.css",
-    "main.js": "/resume/static/js/main.f77653b6.js",
+    "main.css": "/resume/static/css/main.4e58ac87.css",
+    "main.js": "/resume/static/js/main.cab47954.js",
     "static/media/mulish-v7-latin-ext_latin-800italic.svg": "/resume/static/media/mulish-v7-latin-ext_latin-800italic.9b60b69de640ba1eaa3c.svg",
     "static/media/mulish-v7-latin-ext_latin-900italic.svg": "/resume/static/media/mulish-v7-latin-ext_latin-900italic.c418ba091d048f10046c.svg",
     "static/media/mulish-v7-latin-ext_latin-700italic.svg": "/resume/static/media/mulish-v7-latin-ext_latin-700italic.44702e24848fbf912c5f.svg",
@@ -83,11 +83,11 @@
     "static/media/mulish-v7-latin-ext_latin-300.woff2": "/resume/static/media/mulish-v7-latin-ext_latin-300.9778f457603c403ecb63.woff2",
     "static/media/mulish-v7-latin-ext_latin-200.woff2": "/resume/static/media/mulish-v7-latin-ext_latin-200.22ba8fc39a8d94ab6f69.woff2",
     "index.html": "/resume/index.html",
-    "main.eafc6259.css.map": "/resume/static/css/main.eafc6259.css.map",
-    "main.f77653b6.js.map": "/resume/static/js/main.f77653b6.js.map"
+    "main.4e58ac87.css.map": "/resume/static/css/main.4e58ac87.css.map",
+    "main.cab47954.js.map": "/resume/static/js/main.cab47954.js.map"
   },
   "entrypoints": [
-    "static/css/main.eafc6259.css",
-    "static/js/main.f77653b6.js"
+    "static/css/main.4e58ac87.css",
+    "static/js/main.cab47954.js"
   ]
 }

@@ -8,13 +8,13 @@ export default function PageProjects2() {
 	return (
 		<>
 			<div className="projects">
+				<div className="project">{Trans.t[language].projects.project2}</div>
+				<hr />
 				<div className="project">{Trans.t[language].projects.project3}</div>
 				<hr />
 				<div className="project">{Trans.t[language].projects.project4}</div>
 				<hr />
 				<div className="project">{Trans.t[language].projects.project5}</div>
-				<hr />
-				<div className="project">{Trans.t[language].projects.project6}</div>
 			</div>
 		</>
 	);

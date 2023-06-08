@@ -243,14 +243,10 @@ export const t = {
 					<div>GUI Snippets</div>
 					<div className="project-tech">(JavaScript, HTML5, CSS3)</div>
 					<ul>
-						<li>Calendar</li>
-						<li>Carousel</li>
-						<li>Slider</li>
-						<li>Scrollbar</li>
-						<li>Masonry Grid</li>
-						<li>Video Player</li>
-						<li>Email HTML</li>
-						<li>Slideshow</li>
+						<li>
+							Calendar, Carousel, Slider, Scrollbar, Masonry Grid, Video Player,
+							Email HTML, Slideshow
+						</li>
 					</ul>
 					<a
 						href="https://github.com/najwer23/gui-challenge"
@@ -305,6 +301,29 @@ export const t = {
 						style={{ fontSize: "12px" }}
 					>
 						https://najwer23.github.io/top-100-music/
+					</a>
+				</div>
+			),
+			project14: (
+				<div>
+					<div>WEATHER APP</div>
+					<div className="project-tech">
+						(React.js, Redux.js, JavaScript, TypeScript, CSS, DynamoDB, Node.js)
+					</div>
+					<ul>
+						<li>
+							The project was about integrating an external API using Redux.js
+							and AWS. Displays weather data for specific geographic
+							coordinates.
+						</li>
+					</ul>
+					<a
+						href="https://najwer23.github.io/#/weather"
+						rel="noreferrer"
+						target="_blank"
+						style={{ fontSize: "12px" }}
+					>
+						https://najwer23.github.io/#/weather
 					</a>
 				</div>
 			),
@@ -563,14 +582,10 @@ export const t = {
 					<div>GUI Snippets</div>
 					<div className="project-tech">(JavaScript, HTML5, CSS3)</div>
 					<ul>
-						<li>Calendar</li>
-						<li>Carousel</li>
-						<li>Slider</li>
-						<li>Scrollbar</li>
-						<li>Masonry Grid</li>
-						<li>Video Player</li>
-						<li>Email HTML</li>
-						<li>Slideshow</li>
+						<li>
+							Calendar, Carousel, Slider, Scrollbar, Masonry Grid, Video Player,
+							Email HTML, Slideshow
+						</li>
 					</ul>
 					<a
 						href="https://github.com/najwer23/gui-challenge"
@@ -626,6 +641,29 @@ export const t = {
 						style={{ fontSize: "12px" }}
 					>
 						https://najwer23.github.io/top-100-music/
+					</a>
+				</div>
+			),
+			project14: (
+				<div>
+					<div>APLIKACJA POGODOWA</div>
+					<div className="project-tech">
+						(React.js, Redux.js, JavaScript, TypeScript, CSS, DynamoDB, Node.js)
+					</div>
+					<ul>
+						<li>
+							Projekt polegał na integracji zewnętrznego API z wykorzystaniem
+							Redux.js oraz AWS. Wyświetla dane pogodowe dla dowolnych
+							współrzędnych geograficznych
+						</li>
+					</ul>
+					<a
+						href="https://najwer23.github.io/#/weather"
+						rel="noreferrer"
+						target="_blank"
+						style={{ fontSize: "12px" }}
+					>
+						https://najwer23.github.io/#/weather
 					</a>
 				</div>
 			),

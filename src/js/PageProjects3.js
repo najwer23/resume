@@ -13,6 +13,8 @@ export default function PageProjects2() {
 				<div className="project">{Trans.t[language].projects.project8}</div>
 				<hr />
 				<div className="project">{Trans.t[language].projects.project11}</div>
+				<hr />
+				<div className="project">{Trans.t[language].projects.project6}</div>
 			</div>
 		</>
 	);

@@ -72,7 +72,7 @@ export default function ChangeLanguage(props) {
 						</button>
 					</div>
 					<div className="update">
-						02.06.2023, 11:03
+						08.06.2023, 23:39
 					</div>
 				</div>
 

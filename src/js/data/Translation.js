@@ -7,18 +7,26 @@ export const t = {
 		education: {
 			title: "EDUCATION",
 			descTitle: "WROCŁAW UNIVERSITY OF SCIENCE AND TECHNOLOGY",
-			desc1: "Master Of Science, COMPUTER SCIENCE",
+			desc1: "Master Of Science, COMPUTER SCIENCE, 4.5",
 			desc2: "2018.02 ‑ 2019.06, Wrocław",
-			desc3: "Bachelor of Science, CONTROL ENGINEERING AND ROBOTICS",
+			desc3: "Bachelor of Science, CONTROL ENGINEERING AND ROBOTICS, 4.5",
 			desc4: "2014.10 ‑ 2018.01, Wrocław",
 		},
 		exp: {
 			title: "EXPERIENCE",
 			companyTitle: "EUROPA UBEZPIECZENIA - FULL STACK DEVELOPER",
 			year1: "2019.09.01 – 2021.10.31; 2 years, 2 months",
+			desc1:
+				"Projects for a client from the insurance industry (Income: ~5 000 000 PLN)",
 			companyTitle2: "FLHF S.A - FRONTEND WEB DEVELOPER",
+			desc3:
+				"Project for a client from the e-commerce industry (Income: ~4 000 000 PLN)",
 			year2: "2021.11.01 – 2023.04.30; 1 year, 6 months",
 			year3: "2017.07; 1 month",
+			companyTitle4: "1dea - FRONTEND SOFTWARE ENGINEER",
+			year4: "2023.08.07 – current",
+			desc4: "Project for a client from the entertainment industry",
+			desc44: " (~100 000 000 users)",
 		},
 		skills: {
 			title: "Skills",
@@ -32,10 +40,9 @@ export const t = {
 						(React.js, Node.js (express.js), DynamoDB)
 					</div>
 					<ul>
-						<li>100 Push Ups training plan,</li>
-						<li>300 Squats training plan</li>
-						<li>300 Sit Ups training plan</li>
-						<li>40 Pull Ups training plan</li>
+						<li>
+							100 Push Ups, 300 Squats, 300 Sit Ups, 40 Pull Ups training plans,
+						</li>
 						<li>Weight and Reps Calendar</li>
 					</ul>
 					<a
@@ -327,12 +334,29 @@ export const t = {
 					</a>
 				</div>
 			),
+			project15: (
+				<div>
+					<div>LEETCODE</div>
+					<div className="project-tech">(JavaScript, TypeScript, Node.js)</div>
+					<ul>
+						<li>~365 problems solved</li>
+					</ul>
+					<a
+						href="https://leetcode.com/najwer23/"
+						rel="noreferrer"
+						target="_blank"
+						style={{ fontSize: "12px" }}
+					>
+						https://leetcode.com/najwer23/
+					</a>
+				</div>
+			),
 		},
 	},
 	PL: {
 		about: {
 			title: "O mnie",
-			desc: "Jestem Frontend Web Developerem z Wrocławia. Skupiam się na budowaniu oprogramowania z językiem JavaScript, w szczególności lubię pracować z React.js. Czasami pracuję jako Backend Developer z Node.js lub PHP. Jeśli potrzebujesz więcej informacji, nie wahaj się ze mną skontaktować!",
+			desc: "Jestem Frontend Web Developerem z Wrocławia. Skupiam się na budowaniu oprogramowania z językiem JavaScript, w szczególności lubię pracować z React.js. Czasami pracuję jako Backend Developer z Node.js lub PHP.",
 		},
 		education: {
 			title: "EDUKACJA",
@@ -346,9 +370,17 @@ export const t = {
 			title: "DOŚWIADCZENIE",
 			companyTitle: "EUROPA UBEZPIECZENIA - FULL STACK DEVELOPER",
 			year1: "2019.09.01 – 2021.10.31; 2 lata, 2 miesiące",
+			desc1:
+				"Projekty dla klienta z branży ubezpieczeniowej (Przychód: ~5 000 000 PLN)",
 			companyTitle2: "FLHF S.A - FRONTEND WEB DEVELOPER",
 			year2: "2021.11.01 – 2023.04.30; 1 rok, 6 miesięcy",
+			desc3:
+				"Projekt dla klienta z branży e-commerce (Przychód: ~4 000 000 PLN)",
 			year3: "2017.07; 1 miesiąc",
+			companyTitle4: "1dea - FRONTEND SOFTWARE ENGINEER",
+			year4: "2023.08.07 – obecnie",
+			desc4: "Projekt dla klienta z branży rozrywkowej",
+			desc44: " (~100 000 000 użytkowników)",
 		},
 		skills: {
 			title: "W tych technologiach czuję się dobrze",
@@ -362,10 +394,10 @@ export const t = {
 						(React.js, Node.js (express.js), DynamoDB)
 					</div>
 					<ul>
-						<li>Plan treningowy dla 100 pompek</li>
-						<li>Plan treningowy dla 300 przysiadów</li>
-						<li>Plan treningowy dla 300 brzuszków</li>
-						<li>Plan treningowy dla 40 podciągnięć</li>
+						<li>
+							Plan treningowy dla 100 pompek, 300 przysiadów, 300 brzuszków, 40
+							podciągnięć
+						</li>
 						<li>Kalendarz wagi i powtórzeń (wykresy)</li>
 					</ul>
 					<a
@@ -664,6 +696,23 @@ export const t = {
 						style={{ fontSize: "12px" }}
 					>
 						https://najwer23.github.io/#/weather
+					</a>
+				</div>
+			),
+			project15: (
+				<div>
+					<div>LEETCODE</div>
+					<div className="project-tech">(JavaScript, TypeScript, Node.js)</div>
+					<ul>
+						<li>~365 rozwiązanych problemów programistycznych</li>
+					</ul>
+					<a
+						href="https://leetcode.com/najwer23/"
+						rel="noreferrer"
+						target="_blank"
+						style={{ fontSize: "12px" }}
+					>
+						https://leetcode.com/najwer23/
 					</a>
 				</div>
 			),

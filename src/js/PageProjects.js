@@ -11,6 +11,8 @@ export default function PageProjects() {
 				<div className="section-title">{Trans.t[language].projects.title}</div>
 				<div className="section-title-line"></div>
 
+				<div className="project">{Trans.t[language].projects.project15}</div>
+				<hr />
 				<div className="project">{Trans.t[language].projects.project14}</div>
 				<hr />
 				<div className="project">{Trans.t[language].projects.project13}</div>

@@ -41,7 +41,7 @@ const Project8 = () => {
 					<li>{T("Calendar, Carousel, Slider, Scrollbar, Masonry Grid, Video Player, Email HTML, Slideshow")} </li>
 				</ul>
 			}
-			projectLink={"https://najwer23.github.io/bch-code-js/"}
+			projectLink={"https://najwer23.github.io/gui-challenge/"}
 		/>
 	)
 }

@@ -59,7 +59,7 @@ const Exp3 = () => {
 						<Section2ColDescDescInnerStory>
 							<ul>
 								<li>{T("Client from the ecommerce industry (Income: ~4 000 000 PLN)")} </li>
-								<li>{T("Store search engine, Blog website, Shopping cart, etc.")}</li>
+								<li>{T("Store search engine, Blog website, Shopping cart, Checkout etc.")}</li>
 							</ul>
 						</Section2ColDescDescInnerStory>
 						<Section2ColDescDescInnerTech>

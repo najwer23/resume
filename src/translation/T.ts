@@ -14,7 +14,7 @@ const t: any = {
 		"Expert systems. Working with databases": "Systemy eksperckie. Praca z bazami danych",
 		"2021.11.01 – 2023.04.30; 1 year, 6 months": "2021.11.01 – 2023.04.30; 1 rok, 6 miesięcy",
 		"Client from the ecommerce industry (Income: ~4 000 000 PLN)": "Klienta z branży ecommerce (Przychód: ~4 000 000 PLN)",
-		"Store search engine, Blog website, Shopping cart etc.": "Wyszukiwarka w sklepie, strona bloga, koszyk zakupowy itd.",
+		"Store search engine, Blog website, Shopping cart, Checkout etc.": "Wyszukiwarka w sklepie, strona bloga, koszyk zakupowy itd.",
 		"2023.08.07 – current": "2023.08.07 – obecnie",
 		"Client from the entertainment industry (~100 000 000 users)": "Klient z branży rozrywkowej (~100 000 000 użytkowników)",
 		SKILLS: "W TYCH TECHNOLOGIACH CZUJĘ SIĘ DOBRZE",

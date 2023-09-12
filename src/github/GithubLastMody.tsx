@@ -9,6 +9,6 @@ export const GithubLastMody = (): JSX.Element => {
 	}
 
 	return (
-		<>{lastMody || ""}</>
+		<>{lastMody || "\u00A0"}</>
 	)
 }

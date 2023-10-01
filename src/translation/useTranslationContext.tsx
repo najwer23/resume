@@ -18,6 +18,7 @@ const LangContext = createContext<LangContextValue>(defaultState);
 
 export const LangProvider = ({ children }: Props) => {
 	const [lang, setLang] = useState<string>("en");
+	document.title = "Mariusz Najwer - Résumé " + lang.toUpperCase()
 
 	return (
 		<LangContext.Provider value={{lang, setLang }}>

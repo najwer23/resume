@@ -163,7 +163,7 @@ const Project1 = () => {
 				projcetDesc={
 					<ul>
 						<li>{T("LeetCode is an online platform that provides a collection of coding problems and challenges to help programmers enhance their coding skills.")} </li>
-						<li>{T("Number of currently solved problems:")} { numberOfProblems || "Loading.."}</li>
+						<li>{T("Number of currently solved problems:")} { numberOfProblems || "500+"}</li>
 					</ul>
 				}
 				projectLink={"https://leetcode.com/najwer23/"}

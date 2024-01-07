@@ -41,7 +41,7 @@ export const Skills = () => {
 			<SectionTitle>{T("SKILLS")}</SectionTitle>
 			<SectionTitleLine />
 			<SkillsWrapper>
-				{arrSkills.map((v, i, arr) => (
+				{arrSkills.map((_, i, arr) => (
 					<SkillsWrapperChild key={i}>
 						<div>{arr[i]}</div>
 						<div>{i < arr.length - 1 ? (

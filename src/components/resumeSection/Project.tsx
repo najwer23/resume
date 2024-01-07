@@ -1,5 +1,5 @@
-import { useFetch } from "../hooks/useFetch";
-import { T } from "../translation/T";
+import { useFetch } from "../../hooks/useFetch";
+import { T } from "../../translation/T";
 import { HRLine, Section, SectionProjectDesc, SectionProjectTech, SectionProjectTitle, SectionTitle, SectionTitleLine } from "./resumeSection.styled";
 
 
@@ -11,7 +11,6 @@ const ProejctTitle = () => {
 		</Section>
 	);
 }
-
 
 
 const Project9 = () => {
@@ -149,7 +148,16 @@ const Project2 = () => {
 }
 
 const Project1 = () => {
-	const { data, status } = useFetch<any>("https://leetcode-api-faisalshohag.vercel.app/najwer23");
+	const { data, status } = useFetch<any>("https://leetcode-api-faisalshohag.vercel.app/najwer23", {
+		method: "GET",
+		headers: {
+			"Content-Type": "application/json",
+			"Accept": "application/json",
+		}
+	},
+		true
+	)
+
 	let numberOfProblems: string = "";
 
 	if (status === "done") {
@@ -158,20 +166,20 @@ const Project1 = () => {
 
 	return (
 		<ProjectWidget
-				projectTitle={<>{T("LEETCODE")}</>}
-				projectTech={<>(JavaScript, TypeScript, Node.js)</>}
-				projcetDesc={
-					<ul>
-						<li>{T("LeetCode is an online platform that provides a collection of coding problems and challenges to help programmers enhance their coding skills.")} </li>
-						<li>{T("Number of currently solved problems:")} { numberOfProblems || "500+"}</li>
-					</ul>
-				}
-				projectLink={"https://leetcode.com/najwer23/"}
+			projectTitle={<>{T("LEETCODE")}</>}
+			projectTech={<>(JavaScript, TypeScript, Node.js)</>}
+			projcetDesc={
+				<ul>
+					<li>{T("LeetCode is an online platform that provides a collection of coding problems and challenges to help programmers enhance their coding skills.")} </li>
+					<li>{T("Number of currently solved problems:")} {numberOfProblems || "500+"}</li>
+				</ul>
+			}
+			projectLink={"https://leetcode.com/najwer23/"}
 		/>
 	)
 }
 
-const ProjectWidget = ({projectTitle, projectTech, projcetDesc, projectLink}: {
+const ProjectWidget = ({ projectTitle, projectTech, projcetDesc, projectLink }: {
 	projectTitle: React.ReactNode;
 	projectTech: React.ReactNode;
 	projcetDesc: React.ReactNode;
@@ -179,23 +187,23 @@ const ProjectWidget = ({projectTitle, projectTech, projcetDesc, projectLink}: {
 }) => {
 	return (
 		<>
-				<SectionProjectTitle>
-					{projectTitle}
-				</SectionProjectTitle>
-				<SectionProjectTech>
-					{projectTech}
-				</SectionProjectTech>
-				<SectionProjectDesc>
-					{projcetDesc}
-				</SectionProjectDesc>
-				<a
-					href={projectLink}
-					rel="noreferrer"
-					target="_blank"
-					style={{ fontSize: "12px" }}
-				>
-					{projectLink}
-				</a>
+			<SectionProjectTitle>
+				{projectTitle}
+			</SectionProjectTitle>
+			<SectionProjectTech>
+				{projectTech}
+			</SectionProjectTech>
+			<SectionProjectDesc>
+				{projcetDesc}
+			</SectionProjectDesc>
+			<a
+				href={projectLink}
+				rel="noreferrer"
+				target="_blank"
+				style={{ fontSize: "12px" }}
+			>
+				{projectLink}
+			</a>
 		</>
 	)
 }
@@ -224,7 +232,7 @@ export const Project = ({ title, number }: ExpProps) => {
 	return (
 		<>
 			{title && <ProejctTitle />}
-			{projectObj[number ?? 1] }
+			{projectObj[number ?? 1]}
 			<HRLine />
 		</>
 	);

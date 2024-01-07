@@ -130,9 +130,9 @@ interface ExpProps {
 }
 
 
-export const Exp = ({title, number}: ExpProps) => {
+export const Exp = ({ title, number }: ExpProps) => {
 	let obj: {
-		[key: string|number]: string | React.ReactNode
+		[key: string | number]: string | React.ReactNode
 	} = {
 		1: <Exp1 />,
 		2: <Exp2 />,
@@ -142,7 +142,7 @@ export const Exp = ({title, number}: ExpProps) => {
 
 	return (
 		<Section>
-			{title && <ExpTitle/>}
+			{title && <ExpTitle />}
 			{obj[number ?? 1]}
 		</Section>
 	);

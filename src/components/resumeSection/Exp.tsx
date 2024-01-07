@@ -1,6 +1,5 @@
-import { T } from "../translation/T";
+import { T } from "../../translation/T";
 import { Section, Section2Col, Section2ColDesc, Section2ColDescDesc, Section2ColDescDescInner, Section2ColDescDescInnerStory, Section2ColDescDescInnerTech, Section2ColDescTitle, Section2ColLogo, SectionInner, SectionTitle, SectionTitleLine } from "./resumeSection.styled";
-
 
 const ExpTitle = () => {
 	return (
@@ -16,7 +15,7 @@ const Exp4 = () => {
 		<SectionInner>
 			<Section2Col>
 				<Section2ColLogo>
-					<img src={`${process.env.PUBLIC_URL}/img/1dea.jpg`} alt="1dea logo" />
+					<img src='/img/1dea.jpg' alt="1dea logo" />
 				</Section2ColLogo>
 				<Section2ColDesc>
 					<Section2ColDescTitle>
@@ -46,7 +45,7 @@ const Exp3 = () => {
 		<SectionInner>
 			<Section2Col>
 				<Section2ColLogo>
-					<img src={`${process.env.PUBLIC_URL}/img/flhf.png`} alt="flhf logo" />
+					<img src='/img/flhf.png' alt="flhf logo" />
 				</Section2ColLogo>
 				<Section2ColDesc>
 					<Section2ColDescTitle>
@@ -77,7 +76,7 @@ const Exp2 = () => {
 		<SectionInner>
 			<Section2Col>
 				<Section2ColLogo>
-					<img src={`${process.env.PUBLIC_URL}/img/e.jpg`} alt="europa logo" />
+					<img src='img/e.jpg' alt="europa logo" />
 				</Section2ColLogo>
 				<Section2ColDesc>
 					<Section2ColDescTitle>
@@ -108,7 +107,7 @@ const Exp1 = () => {
 		<SectionInner>
 			<Section2Col>
 				<Section2ColLogo>
-					<img src={`${process.env.PUBLIC_URL}/img/o.png`} alt="orange logo" />
+					<img src='/img/o.png' alt="orange logo" />
 				</Section2ColLogo>
 				<Section2ColDesc>
 					<Section2ColDescTitle>

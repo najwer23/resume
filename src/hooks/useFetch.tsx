@@ -1,84 +1,90 @@
 import { useEffect, useReducer, useRef } from 'react'
+import { getLocalStorageCookie } from '../functions/getLocalStorageCookie'
+import { setLocalStorageCookie } from '../functions/setLocalStorageCookie'
 
 interface State<T> {
-	data?: T
-	error?: Error
-	status: string
+    data?: T
+    error?: Error
+    status: string
+    executeFetch?: (body?: any) => void
 }
 
-type Cache<T> = { [url: string]: T }
-
 type Action<T> =
-	| { type: 'loading' }
-	| { type: 'fetched'; payload: T }
-	| { type: 'error'; payload: Error }
+    | { type: 'loading' }
+    | { type: 'done'; payload: T }
+    | { type: 'error'; payload: Error }
 
 export function useFetch<T = unknown>(
-	url?: string,
-	options?: RequestInit,
+    url?: string,
+    options?: any,
+    executeOnMount = true
 ): State<T> {
-	const cache = useRef<Cache<T>>({})
-	const cancelRequest = useRef<boolean>(false)
+    const cancelRequest = useRef<boolean>(false)
 
-	const initialState: State<T> = {
-		error: undefined,
-		data: undefined,
-		status: "idle",
-	}
+    const fetchData = async (body?: any) => {
+        dispatch({ type: 'loading' })
 
-	const fetchReducer = (state: State<T>, action: Action<T>): State<T> => {
-		switch (action.type) {
-			case 'loading':
-				return { ...initialState, status: "fetching" }
-			case 'fetched':
-				return { ...initialState, data: action.payload, status: "done" }
-			case 'error':
-				return { ...initialState, error: action.payload, status: "error" }
-			default:
-				return state
-		}
-	}
+        if (!url) return;
 
-	const [state, dispatch] = useReducer(fetchReducer, initialState)
+        cancelRequest.current = false;
 
-	useEffect(() => {
-		if (!url) return
+        const localStorageCookieURL = getLocalStorageCookie(url)
 
-		cancelRequest.current = false
+        if (options.method === "GET") {
+            if (localStorageCookieURL) {
+                dispatch({ type: 'done', payload: localStorageCookieURL })
+                return;
+            }
+        }
 
-		const fetchData = async () => {
-			dispatch({ type: 'loading' })
+        try {
+            if (options.method !== "GET") {
+                options = { ...options, body: JSON.stringify(body) };
+            }
 
-			if (cache.current[url]) {
-				dispatch({ type: 'fetched', payload: cache.current[url] })
-				return
-			}
+            const response = await fetch(url, options)
 
-			try {
-				const response = await fetch(url, options)
-				if (!response.ok) {
-					throw new Error(response.statusText)
-				}
+            if (!response.ok) {
+                throw new Error(response.statusText);
+            }
 
-				const data = (await response.json()) as T
-				cache.current[url] = data
-				if (cancelRequest.current) return
+            const data = (await response.json()) as T;
+            options.method === "GET" && setLocalStorageCookie(url, data, 0.5)
 
-				dispatch({ type: 'fetched', payload: data })
-			} catch (error) {
-				if (cancelRequest.current) return
+            if (cancelRequest.current) return;
+            dispatch({ type: 'done', payload: data })
 
-				dispatch({ type: 'error', payload: error as Error })
-			}
-		}
+        } catch (error) {
+            if (cancelRequest.current) return
+            dispatch({ type: 'error', payload: error as Error })
+        }
+    }
 
-		void fetchData()
+    const initialState: State<T> = {
+        error: undefined,
+        data: undefined,
+        status: "idle",
+        executeFetch: fetchData,
+    }
 
-		return () => {
-			cancelRequest.current = true
-		}
+    const fetchReducer = (state: State<T>, action: Action<T>): State<T> => {
+        switch (action.type) {
+            case 'loading':
+                return { ...initialState, status: "loading" }
+            case 'done':
+                return { ...initialState, data: action.payload, status: "done" }
+            case 'error':
+                return { ...initialState, error: action.payload, status: "error" }
+            default:
+                return state
+        }
+    }
 
-	}, [url, options])
+    const [state, dispatch] = useReducer(fetchReducer, initialState)
 
-	return state;
+    useEffect(() => {
+        if (executeOnMount) fetchData();
+    }, [url]);
+
+    return state;
 }

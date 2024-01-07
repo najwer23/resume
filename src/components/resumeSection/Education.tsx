@@ -1,4 +1,4 @@
-import { T } from "../translation/T";
+import { T } from "../../translation/T";
 import { Section, Section2Col, Section2ColDesc, Section2ColDescDesc, Section2ColDescDescInner, Section2ColDescTitle, Section2ColLogo, SectionInner, SectionTitle, SectionTitleLine } from "./resumeSection.styled";
 
 export const Education = () => {
@@ -11,7 +11,7 @@ export const Education = () => {
 
 				<Section2Col>
 					<Section2ColLogo>
-						<img src={`${process.env.PUBLIC_URL}/img/pwr.png`} alt="pwr logo" />
+						<img src='/img/pwr.png' alt="pwr logo" />
 					</Section2ColLogo>
 					<Section2ColDesc>
 						<Section2ColDescTitle>
@@ -30,7 +30,7 @@ export const Education = () => {
 
 				<Section2Col>
 					<Section2ColLogo>
-						<img src={`${process.env.PUBLIC_URL}/img/pwr.png`} alt="pwr logo" />
+						<img src='/img/pwr.png' alt="pwr logo" />
 					</Section2ColLogo>
 					<Section2ColDesc>
 						<Section2ColDescTitle>

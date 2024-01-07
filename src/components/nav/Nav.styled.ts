@@ -5,6 +5,7 @@ export const NavContainer = styled.div`
 	gap: 20px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 
 	@media print {
 		display: none !important;

@@ -1,4 +1,4 @@
-import { BoxMody, NavContainer, NavUtil, NavUtils } from "./Nav.styled"
+import { BoxMody, NavContainer, NavUtils } from "./Nav.styled"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { useTranslationContext } from "../../translation/useTranslationContext";

@@ -18,8 +18,8 @@ export const Nav = (): JSX.Element => {
 				<GithubLastMody repoName="resume" />
 			</BoxMody>
 			<NavUtils>
-				<Button text={"PL"} type={"button"} ariaLabel={"lang Pl"} onClick={() => setLang("pl")} disabled={lang === "pl"} />
 				<Button text={"EN"} type={"button"} ariaLabel={"lang En"} onClick={() => setLang("en")} disabled={lang === "en"} />
+				<Button text={"PL"} type={"button"} ariaLabel={"lang Pl"} onClick={() => setLang("pl")} disabled={lang === "pl"} />
 				<Button text={<FontAwesomeIcon
 					icon={faFilePdf}
 					size="xl"

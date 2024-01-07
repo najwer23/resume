@@ -21,7 +21,7 @@ export const LangProvider = ({ children }: Props) => {
 	document.title = "Mariusz Najwer - Résumé " + lang.toUpperCase()
 
 	return (
-		<LangContext.Provider value={{lang, setLang }}>
+		<LangContext.Provider value={{ lang, setLang }}>
 			{children}
 		</LangContext.Provider>
 	);

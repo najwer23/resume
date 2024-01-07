@@ -25,14 +25,14 @@ const arrSkills = [
 	"Storybook",
 	"Design system",
 	"AWS (DynamoDB, S3, RDS, E3)",
-	"a11y",
 	"XML, JSON, GraphQL",
 	"Express.js",
 	"Agile, Scrum & JIRA",
 	"Web Components",
 	"Leaflet",
 	"Core Web Vitals",
-	"Search Engine Optimization(SEO)"
+	"Search Engine Optimization(SEO)",
+	"a11y"
 ];
 
 export const Skills = () => {

@@ -102,7 +102,7 @@ const Project4 = () => {
 	return (
 		<ProjectWidget
 			projectTitle={<>{T("WEATHER APP")}</>}
-			projectTech={<>(React.js, Redux.js, JavaScript, TypeScript, CSS, DynamoDB, Node.js)</>}
+			projectTech={<>(React.js, Redux.js, JavaScript, TypeScript, CSS modules, DynamoDB, Node.js, Vite)</>}
 			projcetDesc={
 				<ul>
 					<li>{T("The project was about integrating an external API using Redux.js and AWS")} </li>
@@ -135,7 +135,7 @@ const Project2 = () => {
 	return (
 		<ProjectWidget
 			projectTitle={<>{T("RESUME BUILDER")}</>}
-			projectTech={<>(JavaScript, TypeScript, React.js, CSS, Styled-components)</>}
+			projectTech={<>(JavaScript, TypeScript, React.js, CSS, Emotion, Vite)</>}
 			projcetDesc={
 				<ul>
 					<li>{T("A resume builder is an online tool that allows me to create a professional resume quickly and easily.")} </li>

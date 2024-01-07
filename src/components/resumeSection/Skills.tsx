@@ -1,15 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { T } from "../../translation/T";
-import { SectionTitle, SectionTitleLine, SkillsWrapper } from "./resumeSection.styled";
+import { SectionTitle, SectionTitleLine, SkillsWrapper, SkillsWrapperChild } from "./resumeSection.styled";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 const arrSkills = [
 	"JavaScript",
 	"TypeScript",
+	"React.js",
 	"Angular",
 	"jQuery",
 	"Next.js",
-	"React.js",
 	"Redux.js",
 	"Recoil.js",
 	"MobX.js",
@@ -18,14 +18,15 @@ const arrSkills = [
 	"Jtest.js",
 	"Puppeteer",
 	"HTML5",
-	"CSS3",
-	"LESS, SASS",
-	"Styled components",
+	"CSS (Less, Sass, CSS-IN-JS, modules)",
 	"Tailwind CSS",
 	"PHP",
-	"AWS (DynamoDB, S3, RDS, E3)",
-	"XML, JSON, GraphQL",
 	"Node.js",
+	"Storybook",
+	"Design system",
+	"AWS (DynamoDB, S3, RDS, E3)",
+	"a11y",
+	"XML, JSON, GraphQL",
 	"Express.js",
 	"Agile, Scrum & JIRA",
 	"Web Components",
@@ -41,9 +42,9 @@ export const Skills = () => {
 			<SectionTitleLine />
 			<SkillsWrapper>
 				{arrSkills.map((v, i, arr) => (
-					<div key={v}>
-						{arr[i]}
-						{i < arr.length - 1 ? (
+					<SkillsWrapperChild >
+						<div>{arr[i]}</div>
+						<div>{i < arr.length - 1 ? (
 							<FontAwesomeIcon
 								icon={faCircle}
 								size="2xs"
@@ -51,8 +52,8 @@ export const Skills = () => {
 							/>
 						) : (
 							""
-						)}
-					</div>
+						)}</div>
+					</SkillsWrapperChild>
 				))}
 			</SkillsWrapper>
 		</>

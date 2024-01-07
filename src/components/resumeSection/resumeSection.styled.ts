@@ -76,7 +76,9 @@ export const Section2ColDescTitle = styled.div`
 	font-weight: 600;
 `;
 
-export const Section2ColDescDesc = styled.div``;
+export const Section2ColDescDesc = styled.div`
+	min-width: 542px;
+`;
 
 export const Section2ColDescDescInner = styled.div`
 	font-size: 15px;
@@ -102,7 +104,13 @@ export const SkillsWrapper = styled.div`
 	align-items: baseline;
 	gap: 10px;
 	flex-wrap: wrap;
+
 `;
+
+export const SkillsWrapperChild = styled.div`
+	flex-shrink: 0;
+	display: flex;
+`
 
 export const SectionProjectTitle = styled.div`
 	font-style: italic;

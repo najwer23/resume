@@ -11,7 +11,7 @@ export const Education = () => {
 
 				<Section2Col>
 					<Section2ColLogo>
-						<img src='/img/pwr.png' alt="pwr logo" />
+						<img src='img/pwr.png' alt="pwr logo" />
 					</Section2ColLogo>
 					<Section2ColDesc>
 						<Section2ColDescTitle>
@@ -30,7 +30,7 @@ export const Education = () => {
 
 				<Section2Col>
 					<Section2ColLogo>
-						<img src='/img/pwr.png' alt="pwr logo" />
+						<img src='img/pwr.png' alt="pwr logo" />
 					</Section2ColLogo>
 					<Section2ColDesc>
 						<Section2ColDescTitle>

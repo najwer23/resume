@@ -15,7 +15,7 @@ const Exp4 = () => {
 		<SectionInner>
 			<Section2Col>
 				<Section2ColLogo>
-					<img src='/img/1dea.jpg' alt="1dea logo" />
+					<img src='img/1dea.jpg' alt="1dea logo" />
 				</Section2ColLogo>
 				<Section2ColDesc>
 					<Section2ColDescTitle>
@@ -45,7 +45,7 @@ const Exp3 = () => {
 		<SectionInner>
 			<Section2Col>
 				<Section2ColLogo>
-					<img src='/img/flhf.png' alt="flhf logo" />
+					<img src='img/flhf.png' alt="flhf logo" />
 				</Section2ColLogo>
 				<Section2ColDesc>
 					<Section2ColDescTitle>
@@ -107,7 +107,7 @@ const Exp1 = () => {
 		<SectionInner>
 			<Section2Col>
 				<Section2ColLogo>
-					<img src='/img/o.png' alt="orange logo" />
+					<img src='img/o.png' alt="orange logo" />
 				</Section2ColLogo>
 				<Section2ColDesc>
 					<Section2ColDescTitle>

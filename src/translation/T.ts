@@ -23,7 +23,7 @@ const t: any = {
 		"Collaboration with the devops team": "Współpraca z zespołem devopsów",
 		"Creating database models for web applications": "Tworzenie modeli baz danych dla aplikacji internetowych",
 		"2021.11.01 – 2023.04.30; 1 year, 6 months": "2021.11.01 – 2023.04.30; 1 rok, 6 miesięcy",
-		"Client from the ecommerce industry (Income: ~4 000 000 PLN)": "Klienta z branży ecommerce (Przychód: ~4 000 000 PLN)",
+		"Client from the ecommerce industry (Income: ~4 000 000 PLN)": "Klient z branży ecommerce (Przychód: ~4 000 000 PLN)",
 		"Creating and changing functionality on the website (Store search engine, Blog page, Shopping cart, Checkout, Sliders, Carousel, Filters etc.)": "Tworzenie i zmiana funkcjonalności na stronie internetowej (wyszukiwarka w sklepie, strona bloga, koszyk zakupowy, slidery, karuzele, filtry itd.)",
 		"2023.08.07 – current": "2023.08.07 – obecnie",
 		"Client from the entertainment industry (~100 000 000 users)": "Klient z branży rozrywkowej (~100 000 000 użytkowników)",

@@ -28,10 +28,16 @@ const Exp4 = () => {
 						<Section2ColDescDescInnerStory>
 							<ul>
 								<li>{T("Client from the entertainment industry (~100 000 000 users)")} </li>
+								<li>{T("Micro-frontend architecture")} </li>
+								<li>{T("Creating SSR components")} </li>
+								<li>{T("Impact on design system")} </li>
+								<li>{T("Improving website performance")} </li>
+								<li>{T("Cooperation with the testing team")} </li>
+								<li>{T("a11y")} </li>
 							</ul>
 						</Section2ColDescDescInnerStory>
 						<Section2ColDescDescInnerTech>
-							(JavaScript, TypeScript, Web Components, React.js, Next.js, Redux.js, CSS3, CSS Modules, HTML, Node.js, REST APIs, JSON, GraphQL, Search Engine Optimization (SEO), Scrum, JIRA, Core Web Vitals, Figma, Astro)
+							(JavaScript, TypeScript, Web Components, React.js, Next.js, Redux.js, CSS3, CSS Modules, HTML, Node.js, REST APIs, JSON, GraphQL, Search Engine Optimization (SEO), Scrum, JIRA, Core Web Vitals, Figma, Astro, Stroybook, Vite)
 						</Section2ColDescDescInnerTech>
 					</Section2ColDescDesc>
 				</Section2ColDesc>
@@ -58,7 +64,11 @@ const Exp3 = () => {
 						<Section2ColDescDescInnerStory>
 							<ul>
 								<li>{T("Client from the ecommerce industry (Income: ~4 000 000 PLN)")} </li>
-								<li>{T("Store search engine, Blog website, Shopping cart, Checkout etc.")}</li>
+								<li>{T("Creating and changing functionality on the website (Store search engine, Blog page, Shopping cart, Checkout, Sliders, Carousel, Filters etc.)")}</li>
+								<li>{T("Improving website performance")}</li>
+								<li>{T("Collaboration with the devops team")}</li>
+								<li>{T("Email templates")}</li>
+								<li>{T("a11y")}</li>
 							</ul>
 						</Section2ColDescDescInnerStory>
 						<Section2ColDescDescInnerTech>
@@ -89,11 +99,16 @@ const Exp2 = () => {
 						<Section2ColDescDescInnerStory>
 							<ul>
 								<li>{T("Client from the insurance industry (Income: ~5 000 000 PLN)")}</li>
-								<li>{T("Expert systems. Working with databases")}</li>
+								<li>{T("Creating expert systems enabling the purchase of insurance")}</li>
+								<li>{T("Creating complex forms to handle insurance applications")}</li>
+								<li>{T("Cooperation with business analysts")}</li>
+								<li>{T("Email templates")}</li>
+								<li>{T("Creating complex SQL queries for data aggregation")}</li>
+								<li>{T("Creating database models for web applications")}</li>
 							</ul>
 						</Section2ColDescDescInnerStory>
 						<Section2ColDescDescInnerTech>
-							(Angular, Angular.js, JavaScript, jQuery, HTML5, CSS3, Groovy, PHP, XML, JSON, Scrum, Jira)
+							(Angular, Angular.js, Typescript, JavaScript, jQuery, HTML5, CSS3, Groovy, PHP, XML, JSON, Scrum, Jira)
 						</Section2ColDescDescInnerTech>
 					</Section2ColDescDesc>
 				</Section2ColDesc>

@@ -12,6 +12,77 @@ const ProejctTitle = () => {
 	);
 }
 
+const Project13 = () => {
+
+	return (
+		<ProjectWidget
+			projectTitle={<>{T("TVN Warner Bros. Discovery, TVN24 - digital news")} ✨✨</>}
+			projectTech={<>(Next.js, React.js, Typescript, JavaScript, CSS-IN-JS, CSS Modules, Redux, Figma, Storybook, d3.js)</>}
+			projcetDesc={
+				<ul>
+					<li>{T("Polish Parliamentary Elections 2023")} </li>
+					<li>{T("Weather widgets")} </li>
+					<li>{T("Stock quotes")} </li>
+					<li>{T("Electronic Program Guide")} </li>
+					<li>{T("Top model 2023")} </li>
+				</ul>
+			}
+			projectLink={"https://tvn24.pl/"}
+		/>
+	)
+}
+
+const Project12 = () => {
+
+	return (
+		<ProjectWidget
+			projectTitle={<>{T("ONLINE INSURANCE APPLICATIONS")} </>}
+			projectTech={<>(HTML, JavaScript, TypeScript, jQuery, Angular, SQL)</>}
+			projcetDesc={
+				<ul>
+					<li>{T("LIFE AND HEALTH INSURANCE")} </li>
+					<li>{T("APARTMENT AND HOUSE INSURANCE")} </li>
+					<li>{T("ACTIVE IN SPORT")} </li>
+					<li>{T("ITRAVEL")} </li>
+				</ul>
+			}
+			projectLink={"https://tueuropa.pl/"}
+		/>
+	)
+}
+
+const Project11 = () => {
+
+	return (
+		<ProjectWidget
+			projectTitle={<>{T("RESTILO")} </>}
+			projectTech={<>(HTML, JavaScript, TypeScript, jQuery, React.js)</>}
+			projcetDesc={
+				<ul>
+					<li>{T("Online store allowing you to purchase home things")} </li>
+				</ul>
+			}
+			projectLink={"https://restilo.pl/"}
+		/>
+	)
+}
+
+const Project10 = () => {
+
+	return (
+		<ProjectWidget
+			projectTitle={<>{T("SUDOKU")} </>}
+			projectTech={<>(HTML5, CSS3-IN-JS, JavaScript, TypeScript, backtracking algorithm)</>}
+			projcetDesc={
+				<ul>
+					<li>{T("Sudoku is a popular logic-based number-placement game. The goal is to fill a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 subgrids that compose the grid contain all of the digits from 1 to 9. It is a highly engaging puzzle that can help improve concentration and overall brain power")} </li>
+				</ul>
+			}
+			projectLink={"https://najwer23.github.io/sudoku/"}
+		/>
+	)
+}
+
 
 const Project9 = () => {
 
@@ -49,7 +120,7 @@ const Project7 = () => {
 
 	return (
 		<ProjectWidget
-			projectTitle={<>{T("REED SOLOMON ALGORITHM BCH: ENCODER, DECODER")}</>}
+			projectTitle={<>{T("REED SOLOMON ALGORITHM BCH: ENCODER, DECODER")} </>}
 			projectTech={<>(JavaScript, HTML5, CSS3, Webpack, LaTeX - Mathjax)</>}
 			projcetDesc={
 				<ul>
@@ -67,7 +138,7 @@ const Project6 = () => {
 
 	return (
 		<ProjectWidget
-			projectTitle={<>{T("APP SUPPORTING CALISTHENICS TRAINING")}</>}
+			projectTitle={<>{T("APP SUPPORTING CALISTHENICS TRAINING")} </>}
 			projectTech={<>(React.js, Node.js (Express.js), DynamoDB, CSS)</>}
 			projcetDesc={
 				<ul>
@@ -139,7 +210,7 @@ const Project2 = () => {
 			projcetDesc={
 				<ul>
 					<li>{T("A resume builder is an online tool that allows me to create a professional resume quickly and easily.")} </li>
-					<li>{T("It allows me to print my CV as PDF in any language")} </li>
+					{/* <li>{T("It allows me to print my CV as PDF in any language")} </li> */}
 				</ul>
 			}
 			projectLink={"https://najwer23.github.io/resume/"}
@@ -166,12 +237,12 @@ const Project1 = () => {
 
 	return (
 		<ProjectWidget
-			projectTitle={<>{T("LEETCODE")}</>}
+			projectTitle={<>{T("LEETCODE")} ✨</>}
 			projectTech={<>(JavaScript, TypeScript, Node.js)</>}
 			projcetDesc={
 				<ul>
-					<li>{T("LeetCode is an online platform that provides a collection of coding problems and challenges to help programmers enhance their coding skills.")} </li>
-					<li>{T("Number of currently solved problems:")} {numberOfProblems || "500+"}</li>
+					{/* <li>{T("LeetCode is an online platform that provides a collection of coding problems and challenges to help programmers enhance their coding skills.")} </li> */}
+					<li>{T("Number of currently solved problems:")} {numberOfProblems || "600+"}</li>
 				</ul>
 			}
 			projectLink={"https://leetcode.com/najwer23/"}
@@ -227,6 +298,10 @@ export const Project = ({ title, number }: ExpProps) => {
 		7: <Project7 />,
 		8: <Project8 />,
 		9: <Project9 />,
+		10: <Project10 />,
+		11: <Project11 />,
+		12: <Project12 />,
+		13: <Project13 />,
 	}
 
 	return (

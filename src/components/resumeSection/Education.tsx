@@ -19,7 +19,7 @@ export const Education = () => {
 						</Section2ColDescTitle>
 						<Section2ColDescDesc>
 							<Section2ColDescDescInner>
-								{T("Master Of Science, COMPUTER SCIENCE, 4.5")}
+								{T("Master of Science, COMPUTER SCIENCE, 4.5")}
 							</Section2ColDescDescInner>
 							<Section2ColDescDescInner>
 								{T("2018.02 ‑ 2019.06, Wrocław")}

@@ -53,9 +53,6 @@ const t: any = {
 		"Polish Parliamentary Elections 2023": "Wybory do Sejmu i Senatu Rzeczypospolitej Polskiej 2023",
 		"Weather widgets": "Widgety pogodwe",
 		"Stock quotes": "Notowania giełdowe",
-		"ONLINE INSURANCE APPLICATIONS": "APLIKACJE UBEZPIECZENIOWE"
-
-
 	},
 };
 

@@ -38,6 +38,7 @@ export const Home = () => {
 				<Project number={10} />
 				<Project number={11} />
 				<Project number={12} />
+				<Project number={14} />
 				<Project number={13} />
 			</PageA4>
 		</>

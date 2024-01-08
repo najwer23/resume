@@ -12,6 +12,22 @@ const ProejctTitle = () => {
 	);
 }
 
+const Project14 = () => {
+
+	return (
+		<ProjectWidget
+			projectTitle={<>{T("DESIGN SYSTEM (npm package)")}</>}
+			projectTech={<>(React.js, Typescript, JavaScript, CSS Modules, Storybook, Vite, Webpack, Rollup.js, npm package)</>}
+			projcetDesc={
+				<ul>
+					<li>{T("This package offers a range of design system assets, including components, styles, and guidelines, to facilitate the development of consistent and user-friendly interfaces across various applications and platforms")}</li>
+				</ul>
+			}
+			projectLink={"https://najwer23.github.io/najwer23storybook"}
+		/>
+	)
+}
+
 const Project13 = () => {
 
 	return (
@@ -302,6 +318,7 @@ export const Project = ({ title, number }: ExpProps) => {
 		11: <Project11 />,
 		12: <Project12 />,
 		13: <Project13 />,
+		14: <Project14 />,
 	}
 
 	return (

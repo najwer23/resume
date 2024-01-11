@@ -88,7 +88,7 @@ const Project10 = () => {
 	return (
 		<ProjectWidget
 			projectTitle={<>{T("SUDOKU")} </>}
-			projectTech={<>(HTML5, CSS3-IN-JS, JavaScript, TypeScript, backtracking algorithm)</>}
+			projectTech={<>(HTML5, CSS3-IN-JS, React.js, JavaScript, TypeScript, backtracking algorithm)</>}
 			projcetDesc={
 				<ul>
 					<li>{T("Sudoku is a popular logic-based number-placement game. The goal is to fill a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 subgrids that compose the grid contain all of the digits from 1 to 9. It is a highly engaging puzzle that can help improve concentration and overall brain power")} </li>

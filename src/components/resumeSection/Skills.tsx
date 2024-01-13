@@ -31,9 +31,11 @@ const arrSkills = [
 	"Web Components",
 	"Leaflet",
 	"Core Web Vitals",
+	"SQL",
 	"Search Engine Optimization(SEO)",
 	"a11y",
-	"SSR"
+	"SSR",
+
 ];
 
 export const Skills = () => {

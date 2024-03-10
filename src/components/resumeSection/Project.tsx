@@ -1,6 +1,6 @@
 import { useFetch } from "../../hooks/useFetch";
 import { T } from "../../translation/T";
-import { HRLine, Section, SectionProjectDesc, SectionProjectTech, SectionProjectTitle, SectionTitle, SectionTitleLine } from "./resumeSection.styled";
+import { HRLine, Section, SectionProjectDesc, SectionProjectTech, SectionProjectTitle, SectionTitle, SectionTitleLine } from "./ResumeSection.styled";
 
 
 const ProejctTitle = () => {

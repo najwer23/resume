@@ -41,7 +41,7 @@ export const SectionInner = styled.section``;
 
 export const SectionTitle = styled.div`
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: 800;
 	text-transform: uppercase;
 
 	&:first-letter {
@@ -115,6 +115,7 @@ export const SkillsWrapperChild = styled.div`
 export const SectionProjectTitle = styled.div`
 	font-style: italic;
 	font-size: 18px;
+	font-weight: 600;
 `;
 
 export const SectionProjectTech = styled.div`

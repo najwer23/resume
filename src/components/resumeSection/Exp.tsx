@@ -1,5 +1,5 @@
 import { T } from "../../translation/T";
-import { Section, Section2Col, Section2ColDesc, Section2ColDescDesc, Section2ColDescDescInner, Section2ColDescDescInnerStory, Section2ColDescDescInnerTech, Section2ColDescTitle, Section2ColLogo, SectionInner, SectionTitle, SectionTitleLine } from "./resumeSection.styled";
+import { Section, Section2Col, Section2ColDesc, Section2ColDescDesc, Section2ColDescDescInner, Section2ColDescDescInnerStory, Section2ColDescDescInnerTech, Section2ColDescTitle, Section2ColLogo, SectionInner, SectionTitle, SectionTitleLine } from "./ResumeSection.styled";
 
 const ExpTitle = () => {
 	return (

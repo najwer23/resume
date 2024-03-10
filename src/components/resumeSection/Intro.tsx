@@ -1,4 +1,4 @@
-import { IntroLink, IntroLinks, IntroTitle, IntroTitleDesc, IntroTitleName, SectionIntro } from "./resumeSection.styled";
+import { IntroLink, IntroLinks, IntroTitle, IntroTitleDesc, IntroTitleName, SectionIntro } from "./ResumeSection.styled";
 
 const Links: {
 	[key: string]: string | React.ReactNode

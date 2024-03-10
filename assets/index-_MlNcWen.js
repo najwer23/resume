@@ -179,7 +179,7 @@ import{r as m,j as e}from"./react-aXXm7soD.js";import{c as W}from"./react-dom-UA
 	margin-top: 30px;
 `,S=n.section``,E=n.div`
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: 800;
 	text-transform: uppercase;
 
 	&:first-letter {
@@ -230,6 +230,7 @@ import{r as m,j as e}from"./react-aXXm7soD.js";import{c as W}from"./react-dom-UA
 `,de=n.div`
 	font-style: italic;
 	font-size: 18px;
+	font-weight: 600;
 `,he=n.div`
 	font-size: 12px;
 `,pe=n.div`

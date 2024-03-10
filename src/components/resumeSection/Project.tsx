@@ -36,6 +36,7 @@ const Project13 = () => {
 			projectTech={<>(Next.js, React.js, Typescript, JavaScript, CSS-IN-JS, CSS Modules, Redux, Figma, Storybook, d3.js)</>}
 			projcetDesc={
 				<ul>
+					<li>{T("Polish Local Government Elections 2024")} </li>
 					<li>{T("Polish Parliamentary Elections 2023")} </li>
 					<li>{T("Weather widgets")} </li>
 					<li>{T("Stock quotes")} </li>
@@ -258,7 +259,7 @@ const Project1 = () => {
 			projcetDesc={
 				<ul>
 					{/* <li>{T("LeetCode is an online platform that provides a collection of coding problems and challenges to help programmers enhance their coding skills.")} </li> */}
-					<li>{T("Number of currently solved problems:")} {numberOfProblems || "600+"}</li>
+					<li>{T("Number of currently solved problems:")} {numberOfProblems || "700+"}</li>
 				</ul>
 			}
 			projectLink={"https://leetcode.com/najwer23/"}

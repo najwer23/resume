@@ -17,7 +17,7 @@ const Project14 = () => {
 	return (
 		<ProjectWidget
 			projectTitle={<>{T("DESIGN SYSTEM (npm package)")}</>}
-			projectTech={<>(React.js, Typescript, JavaScript, CSS Modules, Storybook, Vite, Webpack, Rollup.js, npm package)</>}
+			projectTech={<>(React.js, TypeScript, JavaScript, CSS Modules, Storybook, Vite, Webpack, Rollup.js, npm package)</>}
 			projcetDesc={
 				<ul>
 					<li>{T("This package offers a range of design system assets, including components, styles, and guidelines, to facilitate the development of consistent and user-friendly interfaces across various applications and platforms")}</li>
@@ -33,7 +33,7 @@ const Project13 = () => {
 	return (
 		<ProjectWidget
 			projectTitle={<>{T("TVN Warner Bros. Discovery, TVN24 - digital news")} ✨✨</>}
-			projectTech={<>(Next.js, React.js, Typescript, JavaScript, CSS-IN-JS, CSS Modules, Redux, Figma, Storybook, d3.js)</>}
+			projectTech={<>(Next.js, React.js, TypeScript, JavaScript, CSS-IN-JS, CSS Modules, Redux, Figma, Storybook, d3.js)</>}
 			projcetDesc={
 				<ul>
 					<li>{T("Polish Local Government Elections 2024")} </li>

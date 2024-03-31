@@ -108,7 +108,7 @@ const Exp2 = () => {
 							</ul>
 						</Section2ColDescDescInnerStory>
 						<Section2ColDescDescInnerTech>
-							(Angular, Angular.js, Typescript, JavaScript, jQuery, HTML5, CSS3, Groovy, PHP, SQL, JSON, Scrum, JIRA)
+							(Angular, Angular.js, TypeScript, JavaScript, jQuery, HTML5, CSS3, Groovy, PHP, SQL, JSON, Scrum, JIRA)
 						</Section2ColDescDescInnerTech>
 					</Section2ColDescDesc>
 				</Section2ColDesc>

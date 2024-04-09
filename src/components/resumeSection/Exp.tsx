@@ -15,11 +15,11 @@ const Exp4 = () => {
 		<SectionInner>
 			<Section2Col>
 				<Section2ColLogo>
-					<img src='img/1dea.jpg' alt="1dea logo" />
+					<img src='img/wbd.png' alt="Warner Bros logo" />
 				</Section2ColLogo>
 				<Section2ColDesc>
 					<Section2ColDescTitle>
-						{T("1dea - FRONTEND SOFTWARE ENGINEER")}
+						{T("WARNER BROS - FRONTEND SOFTWARE ENGINEER")}
 					</Section2ColDescTitle>
 					<Section2ColDescDesc>
 						<Section2ColDescDescInner>

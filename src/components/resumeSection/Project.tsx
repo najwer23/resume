@@ -41,7 +41,7 @@ const Project13 = () => {
 					<li>{T("Weather widgets")} </li>
 					<li>{T("Stock quotes")} </li>
 					<li>{T("Electronic Program Guide")} </li>
-					<li>{T("Top model 2023")} </li>
+					<li>{T("Top Model 2023")} </li>
 				</ul>
 			}
 			projectLink={"https://tvn24.pl/"}

@@ -164,7 +164,7 @@ const Project6 = () => {
 					<li>{T("Email templates")} </li>
 				</ul>
 			}
-			projectLink={"https://jabber.cyclic.app"}
+			projectLink={"https://jabber23.vercel.app"}
 		/>
 	)
 }

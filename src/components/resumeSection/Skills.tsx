@@ -35,7 +35,7 @@ const arrSkills = [
 	"Search Engine Optimization(SEO)",
 	"a11y",
 	"SSR",
-
+	"Fastify"
 ];
 
 export const Skills = () => {

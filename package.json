@@ -1,6 +1,6 @@
 {
 	"name": "resume",
-	"version": "3.1.2",
+	"version": "3.1.3",
 	"type": "module",
 	"homepage": "https://najwer23.github.io/resume/",
 	"scripts": {
@@ -30,7 +30,7 @@
 		"eslint-plugin-react-refresh": "^0.4.6",
 		"gh-pages": "^6.1.1",
 		"husky": "^9.0.11",
-		"najwer23storybook": "^4.1.85",
+		"najwer23storybook": "^4.1.95",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
 		"react-router-dom": "^6.23.0",

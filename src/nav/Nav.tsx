@@ -1,7 +1,7 @@
 import { BoxMody, NavContainer, NavUtils } from "./Nav.styled"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
-import { useTranslationContext } from "../../translation/useTranslationContext";
+import { useTranslationContext } from "../translation/useTranslationContext";
 import { GithubLastMody } from "../github/GithubLastMody";
 import { Button } from "najwer23storybook/lib/Button";
 

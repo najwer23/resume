@@ -1,10 +1,10 @@
-import { Nav } from "../../components/nav/Nav"
-import { PageA4 } from "../../components/pageA4/PageA4"
-import { Education } from "../../components/resumeSection/Education"
-import { Exp } from "../../components/resumeSection/Exp"
-import { Intro } from "../../components/resumeSection/Intro"
-import { Project } from "../../components/resumeSection/Project"
-import { Skills } from "../../components/resumeSection/Skills"
+import { Nav } from "../nav/Nav"
+import { PageA4 } from "../pageA4/PageA4"
+import { Education } from "../resumeSection/Education"
+import { Exp } from "../resumeSection/Exp"
+import { Intro } from "../resumeSection/Intro"
+import { Project } from "../resumeSection/Project"
+import { Skills } from "../resumeSection/Skills"
 
 export const Home = () => {
 	return (

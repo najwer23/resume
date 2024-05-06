@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { T } from "../../translation/T";
+import { T } from "../translation/T";
 import { SectionTitle, SectionTitleLine, SkillsWrapper, SkillsWrapperChild } from "./ResumeSection.styled";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 

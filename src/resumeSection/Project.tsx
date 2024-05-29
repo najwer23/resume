@@ -36,12 +36,11 @@ const Project13 = () => {
 			projectTech={<>(Next.js, React.js, TypeScript, JavaScript, CSS-IN-JS, CSS Modules, Redux, Figma, Storybook, d3.js)</>}
 			projcetDesc={
 				<ul>
+					<li>{T("European Elections 2024")}</li>
 					<li>{T("Polish Local Government Elections 2024")} </li>
 					<li>{T("Polish Parliamentary Elections 2023")} </li>
-					<li>{T("Weather widgets")} </li>
-					<li>{T("Stock quotes")} </li>
-					<li>{T("Electronic Program Guide")} </li>
-					<li>{T("Top Model 2023")} </li>
+					<li>{T("Weather widgets")}, {T("Stock quotes")} </li>
+					<li>{T("Electronic Program Guide")}, {T("Top Model 2023")} </li>
 				</ul>
 			}
 			projectLink={"https://tvn24.pl/"}

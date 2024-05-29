@@ -54,7 +54,8 @@ const t: any = {
 		"Weather widgets": "Widgety pogodwe",
 		"Stock quotes": "Notowania giełdowe",
 		"This package offers a range of design system assets, including components, styles, and guidelines, to facilitate the development of consistent and user-friendly interfaces across various applications and platforms": "Pakiet ten oferuje szereg zasobów systemu projektowania, w tym komponenty, style i wytyczne, ułatwiające tworzenie spójnych i przyjaznych dla użytkownika interfejsów w różnych aplikacjach i platformach",
-		"Polish Local Government Elections 2024": "Wybory Samorządowe 2024"
+		"Polish Local Government Elections 2024": "Wybory Samorządowe 2024",
+		"European Elections 2024": "Wybory europejskie w 2024"
 	},
 };
 

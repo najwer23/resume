@@ -10,6 +10,41 @@ const ExpTitle = () => {
 	);
 }
 
+const Exp5 = () => {
+	return (
+		<SectionInner>
+			<Section2Col>
+				<Section2ColLogo>
+					<img src='img/applied.jpg' alt="applied systems logo" />
+				</Section2ColLogo>
+				<Section2ColDesc>
+					<Section2ColDescTitle>
+						{T("APPLIED SYSTEMS - FRONTEND SOFTWARE ENGINEER")}
+					</Section2ColDescTitle>
+					<Section2ColDescDesc>
+						<Section2ColDescDescInner>
+							{T("2024.06.05 – current")}
+						</Section2ColDescDescInner>
+						<Section2ColDescDescInnerStory>
+							<ul>
+								<li>{T("Client from the insurance industry (~250 000 users)")}</li>
+								<li>{T("Creating expert systems enabling the purchase of insurance")}</li>
+								<li>{T("Creating complex forms to handle insurance applications")}</li>
+								<li>{T("Improving website performance")}</li>
+								<li>{T("Cooperation with the testing team")} </li>
+								<li>{T("a11y")}</li>
+							</ul>
+						</Section2ColDescDescInnerStory>
+						<Section2ColDescDescInnerTech>
+							(React.js, Angular, TypeScript, JavaScript, HTML5, CSS3)
+						</Section2ColDescDescInnerTech>
+					</Section2ColDescDesc>
+				</Section2ColDesc>
+			</Section2Col>
+		</SectionInner>
+	)
+}
+
 const Exp4 = () => {
 	return (
 		<SectionInner>
@@ -152,7 +187,8 @@ export const Exp = ({ title, number }: ExpProps) => {
 		1: <Exp1 />,
 		2: <Exp2 />,
 		3: <Exp3 />,
-		4: <Exp4 />
+		4: <Exp4 />,
+		5: <Exp5 />
 	}
 
 	return (

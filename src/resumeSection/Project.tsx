@@ -12,6 +12,15 @@ const ProejctTitle = () => {
 	);
 }
 
+const ProejctTitle2 = () => {
+	return (
+		<>
+			<SectionTitle>{T("MY PROJECTS")}</SectionTitle>
+			<SectionTitleLine />
+		</>
+	);
+}
+
 const Project14 = () => {
 
 	return (
@@ -225,7 +234,7 @@ const Project2 = () => {
 			projectTech={<>(JavaScript, TypeScript, React.js, CSS, Emotion, Vite)</>}
 			projcetDesc={
 				<ul>
-					<li>{T("A resume builder is an online tool that allows me to create a professional resume quickly and easily.")} </li>
+					<li>{T("A resume builder is an online tool that allows me to create a professional resume.")} </li>
 					{/* <li>{T("It allows me to print my CV as PDF in any language")} </li> */}
 				</ul>
 			}
@@ -298,10 +307,11 @@ const ProjectWidget = ({ projectTitle, projectTech, projcetDesc, projectLink }: 
 
 interface ExpProps {
 	title?: boolean;
+	title2?: boolean;
 	number?: number;
 }
 
-export const Project = ({ title, number }: ExpProps) => {
+export const Project = ({ title, number, title2 }: ExpProps) => {
 	let projectObj: {
 		[key: string | number]: | React.ReactNode
 	} = {
@@ -324,6 +334,7 @@ export const Project = ({ title, number }: ExpProps) => {
 	return (
 		<>
 			{title && <ProejctTitle />}
+			{title2 && <ProejctTitle2 />}
 			{projectObj[number ?? 1]}
 			<HRLine />
 		</>

@@ -28,15 +28,16 @@ const Exp5 = () => {
 						<Section2ColDescDescInnerStory>
 							<ul>
 								<li>{T("Client from the insurance industry (~250 000 users)")}</li>
-								<li>{T("Creating expert systems enabling the purchase of insurance")}</li>
+								<li>{T("Leading the team through frontend transformation (Angular -> React.js)")}</li>
+								<li>{T("Leveraging AI-powered design and development")}</li>
+								<li>{T("Implementing effective communication strategies and promoting a culture of continuous learning")}</li>
+								<li>{T("Best practices in software testing")}</li>
 								<li>{T("Creating complex forms to handle insurance applications")}</li>
-								<li>{T("Improving website performance")}</li>
-								<li>{T("Cooperation with the testing team")} </li>
 								<li>{T("a11y")}</li>
 							</ul>
 						</Section2ColDescDescInnerStory>
 						<Section2ColDescDescInnerTech>
-							(React.js, Angular, TypeScript, JavaScript, HTML5, CSS3)
+							(React.js, Angular, TypeScript, JavaScript, HTML5, CSS3, Storybooks, Vite)
 						</Section2ColDescDescInnerTech>
 					</Section2ColDescDesc>
 				</Section2ColDesc>

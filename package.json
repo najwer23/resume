@@ -1,6 +1,6 @@
 {
 	"name": "resume",
-	"version": "3.1.8",
+	"version": "3.1.9",
 	"type": "module",
 	"homepage": "https://najwer23.github.io/resume/",
 	"scripts": {
@@ -39,5 +39,5 @@
 		"typescript": "^5.5.3",
 		"vite": "^5.3.3"
 	},
-	"packageManager": "yarn@4.2.1"
+	"packageManager": "yarn@4.3.1"
 }

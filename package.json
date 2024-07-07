@@ -1,6 +1,6 @@
 {
 	"name": "resume",
-	"version": "3.1.7",
+	"version": "3.1.8",
 	"type": "module",
 	"homepage": "https://najwer23.github.io/resume/",
 	"scripts": {
@@ -8,7 +8,8 @@
 		"start": "vite --open --host",
 		"build": "tsc && vite build",
 		"preview": "yarn build && vite preview --open --host",
-		"god": "ncu -u && yarn install && yarn run start"
+		"god": "ncu -u && yarn install && yarn run start",
+		"prepare": "husky"
 	},
 	"devDependencies": {
 		"@emotion/react": "^11.11.4",

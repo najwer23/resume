@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+yarn check:all
+
 set -e
 
 update_version(){

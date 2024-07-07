@@ -1,6 +1,6 @@
-import ReactDOM from 'react-dom/client'
-import { App } from './App.tsx'
-import "@fontsource/mulish";
-import './main.css'
+import { createRoot } from 'react-dom/client';
+import { App } from './App';
+import '@fontsource/mulish';
+import './main.css';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(<App />)
+createRoot(document.getElementById('root')!).render(<App />);

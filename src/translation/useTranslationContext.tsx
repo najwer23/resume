@@ -1,33 +1,29 @@
-import { Dispatch, SetStateAction, createContext, useContext, useState } from "react";
+import { Dispatch, SetStateAction, createContext, useContext, useState } from 'react';
 
 interface LangContextValue {
-	lang: string;
-	setLang: Dispatch<SetStateAction<string>>;
+  lang: string;
+  setLang: Dispatch<SetStateAction<string>>;
 }
 
 const defaultState = {
-	lang: "en",
-	setLang: () => { }
+  lang: 'en',
+  setLang: () => {},
 };
 
 interface Props {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }
 
 const LangContext = createContext<LangContextValue>(defaultState);
 
 export const LangProvider = ({ children }: Props) => {
-	const [lang, setLang] = useState<string>("en");
-	document.title = "Mariusz Najwer - Résumé " + lang.toUpperCase()
+  const [lang, setLang] = useState<string>('en');
+  document.title = 'Mariusz Najwer - Résumé ' + lang.toUpperCase();
 
-	return (
-		<LangContext.Provider value={{ lang, setLang }}>
-			{children}
-		</LangContext.Provider>
-	);
+  return <LangContext.Provider value={{ lang, setLang }}>{children}</LangContext.Provider>;
 };
 
 export const useTranslationContext = () => {
-	const LangContextNew = useContext(LangContext);
-	return LangContextNew;
+  const LangContextNew = useContext(LangContext);
+  return LangContextNew;
 };

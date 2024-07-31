@@ -67,7 +67,7 @@ const Exp4 = () => {
         <Section2ColDesc>
           <Section2ColDescTitle>{T('WARNER BROS - FRONTEND SOFTWARE ENGINEER')}</Section2ColDescTitle>
           <Section2ColDescDesc>
-            <Section2ColDescDescInner>{T('2023.08.07 – current')}</Section2ColDescDescInner>
+            <Section2ColDescDescInner>{T('2023.08.07 – 2024.07.31; 1 year')}</Section2ColDescDescInner>
             <Section2ColDescDescInnerStory>
               <ul>
                 <li>{T('Client from the entertainment industry (~100 000 000 users)')} </li>

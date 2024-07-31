@@ -34,6 +34,7 @@ const t: any = {
       'Tworzenie i zmiana funkcjonalności na stronie internetowej (wyszukiwarka w sklepie, strona bloga, koszyk zakupowy, slidery, karuzele, filtry itd.)',
     '2023.08.07 – current': '2023.08.07 – obecnie',
     '2024.06.05 – current': '2024.06 – obecnie',
+    '2023.08.07 – 2024.07.31; 1 year': '2023.08.07 – 2024.07.31; 1 rok',
     'Client from the entertainment industry (~100 000 000 users)':
       'Klient z branży rozrywkowej (~100 000 000 użytkowników)',
     'Leading the team through frontend transformation (Angular -> React.js)':

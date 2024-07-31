@@ -58,14 +58,19 @@ const Project13 = () => {
       }
       projcetDesc={
         <ul>
+          <li>{T('TVN Warszawa')}</li>
           <li>{T('European Elections 2024')}</li>
           <li>{T('Polish Local Government Elections 2024')} </li>
           <li>{T('Polish Parliamentary Elections 2023')} </li>
           <li>
-            {T('Weather widgets')}, {T('Stock quotes')}{' '}
+            {T('Weather widgets')}
+          </li>
+          <li>{T('Stock quotes')}</li>
+          <li>
+            {T('Electronic Program Guide')}
           </li>
           <li>
-            {T('Electronic Program Guide')}, {T('Top Model 2023')}{' '}
+            {T('Top Model 2023')}
           </li>
         </ul>
       }

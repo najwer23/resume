@@ -33,7 +33,7 @@ const Project14 = () => {
     <ProjectWidget
       projectTitle={<>{T('DESIGN SYSTEM (npm package)')}</>}
       projectTech={
-        <>(React.js, TypeScript, JavaScript, CSS Modules, Storybook, Vite, Webpack, Rollup.js, npm package)</>
+        <>(React.js, TypeScript, JavaScript, CSS Modules, Storybook, Vite, Vercel, Rollup.js, Turborepo)</>
       }
       projcetDesc={
         <ul>
@@ -44,7 +44,7 @@ const Project14 = () => {
           </li>
         </ul>
       }
-      projectLink={'https://najwer23.github.io/najwer23storybook'}
+      projectLink={'najwer23.github.io/najwer23snacks'}
     />
   );
 };

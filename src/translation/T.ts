@@ -92,5 +92,5 @@ const t: any = {
 
 export const T = (key: string) => {
   const { lang } = useTranslationContext();
-  return t[lang] ? t[lang][key] ?? key : key;
+  return t[lang] ? (t[lang][key] ?? key) : key;
 };

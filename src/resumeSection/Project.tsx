@@ -32,9 +32,7 @@ const Project14 = () => {
   return (
     <ProjectWidget
       projectTitle={<>{T('DESIGN SYSTEM (npm package)')}</>}
-      projectTech={
-        <>(React.js, TypeScript, JavaScript, CSS Modules, Storybook, Vite, Vercel, Rollup.js, Turborepo)</>
-      }
+      projectTech={<>(React.js, TypeScript, JavaScript, CSS Modules, Storybook, Vite, Vercel, Rollup.js, Turborepo)</>}
       projcetDesc={
         <ul>
           <li>
@@ -62,16 +60,10 @@ const Project13 = () => {
           <li>{T('European Elections 2024')}</li>
           <li>{T('Polish Local Government Elections 2024')} </li>
           <li>{T('Polish Parliamentary Elections 2023')} </li>
-          <li>
-            {T('Weather widgets')}
-          </li>
+          <li>{T('Weather widgets')}</li>
           <li>{T('Stock quotes')}</li>
-          <li>
-            {T('Electronic Program Guide')}
-          </li>
-          <li>
-            {T('Top Model 2023')}
-          </li>
+          <li>{T('Electronic Program Guide')}</li>
+          <li>{T('Top Model 2023')}</li>
         </ul>
       }
       projectLink={'https://tvn24.pl/'}

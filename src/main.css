@@ -3,16 +3,16 @@
     Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 
   /* Button */
-  --n23snack-button-bg-color: orangered;
-  --n23snack-button-bg-color-hover: rgb(203, 56, 2);
-  --n23snack-button-bg-color-active: rgb(176, 48, 1);
-  --n23snack-button-bg-color-focus: rgb(203, 56, 2);
-  --n23snack-button-bg-color-disabled: #4d4d4d;
-  --n23snack-button-font-color: #ffffff;
-  --n23snack-button-font-size: 18px;
-  --n23snack-button-font-weight: 700;
-  --n23snack-button-font-family: var(--n23snack-font-family);
-  --n23snack-button-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --najwer23snacks-button-bg-color: orangered;
+  --najwer23snacks-button-bg-color-hover: rgb(203, 56, 2);
+  --najwer23snacks-button-bg-color-active: rgb(176, 48, 1);
+  --najwer23snacks-button-bg-color-focus: rgb(203, 56, 2);
+  --najwer23snacks-button-bg-color-disabled: #4d4d4d;
+  --najwer23snacks-button-font-color: #ffffff;
+  --najwer23snacks-button-font-size: 18px;
+  --najwer23snacks-button-font-weight: 700;
+  --najwer23snacks-button-font-family: var(--najwer23snacks-font-family);
+  --najwer23snacks-button-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 * {

@@ -87,6 +87,7 @@ const t: any = {
       'Pakiet ten oferuje szereg zasobów systemu projektowania, w tym komponenty, style i wytyczne, ułatwiające tworzenie spójnych i przyjaznych dla użytkownika interfejsów w różnych aplikacjach i platformach',
     'Polish Local Government Elections 2024': 'Wybory samorządowe 2024',
     'European Elections 2024': 'Wybory europejskie w 2024',
+    'Graph algorithms': "Algorytmy grafowe"
   },
 };
 

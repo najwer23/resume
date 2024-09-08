@@ -43,6 +43,7 @@ const Exp5 = () => {
                   {T('Implementing effective communication strategies and promoting a culture of continuous learning')}
                 </li>
                 <li>{T('Best practices in software testing')}</li>
+                <li>{T('Graph algorithms')}</li>
                 <li>{T('Creating complex forms to handle insurance applications')}</li>
                 <li>{T('a11y')}</li>
               </ul>

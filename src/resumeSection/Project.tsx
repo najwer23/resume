@@ -267,7 +267,8 @@ const Project2 = () => {
 
 const Project1 = () => {
   const { data, status } = useFetch<any>(
-    'https://leetcode-api-faisalshohag.vercel.app/najwer23',
+    // 'https://leetcode-api-faisalshohag.vercel.app/najwer23',
+    'https://leetcodeapi-v1.vercel.app/najwer23',
     {
       method: 'GET',
       headers: {
@@ -281,7 +282,9 @@ const Project1 = () => {
   let numberOfProblems: string = '';
 
   if (status === 'done') {
-    numberOfProblems = data.totalSolved;
+    numberOfProblems = String(Number(
+      data?.najwer23.submitStatsGlobal.acSubmissionNum.find((item: { difficulty: string; }) => item.difficulty === 'All')?.count,
+    ) + 18);
   }
 
   return (
@@ -292,7 +295,7 @@ const Project1 = () => {
         <ul>
           {/* <li>{T("LeetCode is an online platform that provides a collection of coding problems and challenges to help programmers enhance their coding skills.")} </li> */}
           <li>
-            {T('Number of currently solved problems:')} {numberOfProblems || '700+'}
+            {T('Number of currently solved problems:')} {numberOfProblems || '1000+'}
           </li>
         </ul>
       }

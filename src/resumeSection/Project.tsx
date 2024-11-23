@@ -288,7 +288,6 @@ const Project1 = () => {
   // }
 
   if (status === 'done') {
-    console.log(data);
     numberOfProblems = String(Number(data?.totalSolved));
   }
 

@@ -10,9 +10,9 @@ import {
 const Links: {
   [key: string]: string | React.ReactNode;
 } = {
-  'tel:+48519792189': (
+  'tel:+48571024300': (
     <>
-      +48{'\u00A0'}519{'\u00A0'}792{'\u00A0'}189
+      +48{'\u00A0'}571{'\u00A0'}024{'\u00A0'}300
     </>
   ),
   'mailto:najwer23@live.com': 'najwer23@live.com',

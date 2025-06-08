@@ -7,29 +7,29 @@ export default defineConfig({
   base: '/resume/',
   plugins: [
     react(),
-    // VitePWA({
-    //   scope: '/resume/',
-    //   registerType: 'autoUpdate',
-    //   // devOptions: {
-    //   //   enabled: true,
-    //   // },
-    //   workbox: {
-    //     navigateFallback: '/resume/index.html',  // fallback for SPA routing
-    //   },
-    //   manifest: {
-    //     name: 'Mariusz Najwer - Résumé',
-    //     short_name: 'Mariusz Najwer - Résumé',
-    //     start_url: '/resume/',
-    //     scope: '/resume/',
-    //     display: 'standalone',
-    //     background_color: '#ffffff',
-    //     theme_color: '#000000',
-    //     icons: [
-    //       { src: 'icon/192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
-    //       { src: 'icon/512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
-    //     ],
-    //   },
-    // }),
+    VitePWA({
+      scope: '/resume/',
+      registerType: 'autoUpdate',
+      // devOptions: {
+      //   enabled: true,
+      // },
+      workbox: {
+        navigateFallback: '/resume/index.html',  // fallback for SPA routing
+      },
+      manifest: {
+        name: 'Mariusz Najwer - Résumé',
+        short_name: 'Mariusz Najwer - Résumé',
+        start_url: '/resume/',
+        scope: '/resume/',
+        display: 'standalone',
+        background_color: '#ffffff',
+        theme_color: '#000000',
+        icons: [
+          { src: 'icon/192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+          { src: 'icon/512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+        ],
+      },
+    }),
   ],
   build: {
     outDir: './build',

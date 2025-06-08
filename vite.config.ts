@@ -15,8 +15,8 @@ export default defineConfig({
       manifest: {
         name: 'Mariusz Najwer - Résumé',
         short_name: 'Mariusz Najwer - Résumé',
-        start_url: '/resume',
-        scope: '/resume',
+        start_url: '/resume/',
+        scope: '/resume/',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#000000',

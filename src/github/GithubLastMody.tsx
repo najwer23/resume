@@ -4,7 +4,7 @@ interface Props {
   repoName: string;
 }
 
-export const GithubLastMody = ({ repoName }: Props): JSX.Element => {
+export const GithubLastMody = ({ repoName }: Props) => {
   const { data, status } = useFetch<any>(`https://api.github.com/repos/najwer23/${repoName}/branches/gh-pages`, {
     method: 'GET',
   });

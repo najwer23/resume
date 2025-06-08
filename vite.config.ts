@@ -1,10 +1,32 @@
 import { defineConfig } from 'vite';
+import { VitePWA } from 'vite-plugin-pwa';
 import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/resume/',
-  plugins: [react()],
+  plugins: [
+    react(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      // devOptions: {
+      //   enabled: true,
+      // },
+      manifest: {
+        name: 'Mariusz Najwer - Résumé',
+        short_name: 'Mariusz Najwer - Résumé',
+        start_url: '/resume/',
+        scope: '/resume/',
+        display: 'standalone',
+        background_color: '#ffffff',
+        theme_color: '#000000',
+        icons: [
+          { src: 'icon/192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+          { src: 'icon/512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+        ],
+      },
+    }),
+  ],
   build: {
     outDir: './build',
 
@@ -22,7 +44,5 @@ export default defineConfig({
       },
     },
   },
-  server: {
-    port: 3000,
-  },
+  server: { port: 3000 },
 });

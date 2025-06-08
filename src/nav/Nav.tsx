@@ -5,7 +5,7 @@ import { useTranslationContext } from '../translation/useTranslationContext';
 import { GithubLastMody } from '../github/GithubLastMody';
 import { Button } from 'najwer23snacks/lib/Button';
 
-export const Nav = (): JSX.Element => {
+export const Nav = () => {
   const { lang, setLang } = useTranslationContext();
 
   const printPDF = () => {

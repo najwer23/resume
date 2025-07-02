@@ -42,7 +42,7 @@ const Project14 = () => {
           </li>
         </ul>
       }
-      projectLink={'https://najwer23.github.io/najwer23snacks'}
+      projectLink={'https://najwer23.github.io/najwer23morsels'}
     />
   );
 };

@@ -29,7 +29,7 @@ export const Intro = () => {
             <b>Mariusz</b> Najwer
           </IntroTitleName>
           <IntroTitleDesc>
-            <b>Frontend Software Engineer</b>
+            <b>Software Engineer</b>
           </IntroTitleDesc>
         </IntroTitle>
         <IntroLinks>

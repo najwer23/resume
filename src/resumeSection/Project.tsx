@@ -205,7 +205,7 @@ const Project6 = () => {
   return (
     <ProjectWidget
       projectTitle={<>{T('APP SUPPORTING CALISTHENICS TRAINING')} </>}
-      projectTech={<>(React.js, Node.js Fastify, TypeScript DynamoDB, CSS modules, JWT, AWS Lambda, Vercel, Vite)</>}
+      projectTech={<>(React.js, Node.js, Fastify, TypeScript, DynamoDB, CSS modules, JWT, AWS Lambda, Vercel, Vite)</>}
       projcetDesc={
         <ul>
           <li>{T('100 Push Ups, 300 Squats, 300 Sit Ups, 40 Pull Ups training plans')} </li>

@@ -28,6 +28,25 @@ const ProejctTitle2 = () => {
   );
 };
 
+const Project15 = () => {
+  return (
+    <ProjectWidget
+      projectTitle={<>{T('TRACKER')}</>}
+      projectTech={<>(React Native, Expo, TypeScript, JavaScript, Fastify, Amazon Dynamodb, JWT, CSS3, AWS Lambda)</>}
+      projcetDesc={
+        <ul>
+          <li>
+            {T(
+              'This project continuously tracks GPS location in the background using a Kalman filter to smooth data and the Haversine formula to calculate distance, with secure storage in DynamoDB protected by JWT authentication.',
+            )}
+          </li>
+        </ul>
+      }
+      projectLink={'https://www.youtube.com/shorts/XoHvVMNMyyM'}
+    />
+  );
+};
+
 const Project14 = () => {
   return (
     <ProjectWidget
@@ -355,6 +374,7 @@ export const Project = ({ title, number, title2 }: ExpProps) => {
     12: <Project12 />,
     13: <Project13 />,
     14: <Project14 />,
+    15: <Project15 />,
   };
 
   return (

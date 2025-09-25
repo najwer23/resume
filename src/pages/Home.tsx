@@ -40,6 +40,7 @@ export const Home = () => {
         {/* <Project number={9} /> */}
         <Project number={12} />
         <Project number={14} />
+        <Project number={15} />
         <Project number={13} />
       </PageA4>
     </>

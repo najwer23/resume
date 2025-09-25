@@ -8,6 +8,8 @@ const arrSkills = [
   'TypeScript',
   'React.js',
   'Angular',
+  'React Native',
+  'Expo',
   'jQuery',
   'Next.js',
   'Redux.js',
@@ -22,11 +24,13 @@ const arrSkills = [
   'Tailwind CSS',
   'PHP',
   'Node.js',
+  'Fastify',
+  'Express.js',
+  'Nest.js',
   'Storybook',
   'Design system',
   'AWS (DynamoDB, S3, RDS, E3)',
   'XML, JSON, GraphQL',
-  'Express.js',
   'Agile, Scrum & JIRA',
   'Web Components',
   'Leaflet',
@@ -35,7 +39,7 @@ const arrSkills = [
   'Search Engine Optimization(SEO)',
   'a11y',
   'SSR',
-  'Fastify',
+  'PWAs'
 ];
 
 export const Skills = () => {

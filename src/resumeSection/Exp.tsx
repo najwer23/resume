@@ -39,9 +39,6 @@ const Exp5 = () => {
                 <li>{T('Client from the insurance industry (~250 000 users)')}</li>
                 <li>{T('Leading the team through frontend transformation (Angular -> React.js)')}</li>
                 <li>{T('Leveraging AI-powered design and development')}</li>
-                <li>
-                  {T('Implementing effective communication strategies and promoting a culture of continuous learning')}
-                </li>
                 <li>{T('Best practices in software testing')}</li>
                 <li>{T('Graph algorithms')}</li>
                 <li>{T('Creating complex forms to handle insurance applications')}</li>
@@ -81,7 +78,7 @@ const Exp4 = () => {
               </ul>
             </Section2ColDescDescInnerStory>
             <Section2ColDescDescInnerTech>
-              (JavaScript, TypeScript, Web Components, React.js, Next.js, Redux.js, CSS3, CSS Modules, HTML, Node.js,
+              (JavaScript, TypeScript, Web Components, React.js, Next.js, Redux.js, CSS3, CSS Modules, HTML5, Node.js,
               REST APIs, JSON, GraphQL, Search Engine Optimization (SEO), Scrum, JIRA, Core Web Vitals, Figma, Astro,
               Stroybook, Vite)
             </Section2ColDescDescInnerTech>

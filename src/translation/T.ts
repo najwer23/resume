@@ -87,7 +87,9 @@ const t: any = {
       'Pakiet ten oferuje szereg zasobów systemu projektowania, w tym komponenty, style i wytyczne, ułatwiające tworzenie spójnych i przyjaznych dla użytkownika interfejsów w różnych aplikacjach i platformach',
     'Polish Local Government Elections 2024': 'Wybory samorządowe 2024',
     'European Elections 2024': 'Wybory europejskie w 2024',
-    'Graph algorithms': "Algorytmy grafowe"
+    'Graph algorithms': 'Algorytmy grafowe',
+    'This project continuously tracks GPS location in the background using a Kalman filter to smooth data and the Haversine formula to calculate distance, with secure storage in DynamoDB protected by JWT authentication.':
+      'Lokalizator GPS działający w tle, który używa filtra Kalmana do wygładzania danych i formuły Haversine do obliczania odległości, dane przechowywane są w DynamoDB.',
   },
 };
 

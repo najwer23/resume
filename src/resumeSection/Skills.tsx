@@ -17,7 +17,7 @@ const arrSkills = [
   'MobX.js',
   'Knokout.js',
   'Cypress',
-  'Jtest.js',
+  'Jest.js',
   'Puppeteer',
   'HTML5',
   'CSS (Less, Sass, CSS-IN-JS, modules)',

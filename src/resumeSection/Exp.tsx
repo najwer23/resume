@@ -33,7 +33,7 @@ const Exp5 = () => {
         <Section2ColDesc>
           <Section2ColDescTitle>{T('APPLIED SYSTEMS - FRONTEND SOFTWARE ENGINEER')}</Section2ColDescTitle>
           <Section2ColDescDesc>
-            <Section2ColDescDescInner>{T('2024.06.05 – current')}</Section2ColDescDescInner>
+            <Section2ColDescDescInner>{T('2024.06.05 – 2024.10.31; 1 year, 5 months')}</Section2ColDescDescInner>
             <Section2ColDescDescInnerStory>
               <ul>
                 <li>{T('Client from the insurance industry (~250 000 users)')}</li>

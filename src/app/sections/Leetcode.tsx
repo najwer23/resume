@@ -12,7 +12,7 @@ export const Leetcode: React.FC<{}> = ({}) => {
           LEETCODE
         </TextBox>
         <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={400} tag="h3">
-          (React.js, Redux.js, JavaScript, TypeScript, HTML5, CSS3)
+          (Node.js, JavaScript)
         </TextBox>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 5px 0'}>
           {T('Leetcode_Description')}

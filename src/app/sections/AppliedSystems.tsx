@@ -25,7 +25,7 @@ export const AppliedSystems: React.FC<{}> = ({}) => {
             Applied Systems. Głównym problemem było opracowanie algorytmu, który pozwoli warunkowo wyrenderować pytania
             mające zagnieżdżoną strukturę, przypominającą graf (pytania były zależne od innych pytań). Został tutaj
             użyty rekurencyjny algorytm DFS. Same pytania były pobierane z backendu w formacie JSON (60 tys. linii kodu)
-            struktura JSONa przypominała idea Server Driven UI. Zespół składał się z 15 osób i był międzynarodowy
+            struktura JSONa przypominała ideę Server Driven UI. Zespół składał się z 15 osób i był międzynarodowy
             (Polska, Indie, Kanada, Anglia, USA, Australia). Dodatkowo został wdrożony panel administratora, skrypty
             śledzące akcje użytkownika, wykresy ze statystyką oraz wsparcie dla WCAG 2.1 AA.
           </TextBox>

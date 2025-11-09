@@ -16,13 +16,13 @@ export const EuropaUbezpieczenia: React.FC<{}> = ({}) => {
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
          Full Stack Developer
         </TextBox>
-        <TextBox color="grey" mobileSize={13} desktopSize={13} fontWeight={500} tag="h3">
+        <TextBox color="#808080" mobileSize={13} desktopSize={13} fontWeight={500} tag="h3">
           2019.09 – 2021.10; 2 years, 2 months; Wrocław, Poland / Remote
         </TextBox>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 0 0'}>
           {T('EuropaUbezpieczenia_Description')}
         </TextBox>
-        <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={200} tag="h3" margin={'10px 0 0 0'}>
+        <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={400} tag="h3" margin={'10px 0 0 0'}>
           (Angular, TypeScript, JavaScript, jQuery, HTML, CSS, Java (Groovy), SQL, SOAP)
         </TextBox>
       </Grid>

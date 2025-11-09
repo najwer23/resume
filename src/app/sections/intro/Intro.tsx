@@ -8,7 +8,7 @@ const Links: {
   'tel:+48571024300': `+48 571 024 300`,
   'mailto:najwer23@live.com': 'najwer23@live.com',
   'https://najwer23.github.io': 'https://najwer23.github.io',
-  'https://www.linkedin.com/in/najwer23': <b>https://www.linkedin.com/in/najwer23</b>,
+  'https://linkedin.com/in/najwer23': <b>https://linkedin.com/in/najwer23</b>,
 };
 
 export const Intro: React.FC = () => {

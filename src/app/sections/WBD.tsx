@@ -16,7 +16,7 @@ export const WBD: React.FC<{}> = ({}) => {
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
           Frontend Software Engineer
         </TextBox>
-        <TextBox color="grey" mobileSize={13} desktopSize={13} fontWeight={500} tag="h3">
+        <TextBox color="#808080" mobileSize={13} desktopSize={13} fontWeight={500} tag="h3">
           2023.08 – 2024.08; 1 year; Warsaw, Poland / Remote
         </TextBox>
 
@@ -26,7 +26,7 @@ export const WBD: React.FC<{}> = ({}) => {
           
         </TextBox>
 
-        <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={200} tag="h3" margin={'10px 0 0 0'}>
+        <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={400} tag="h3" margin={'10px 0 0 0'}>
           (React.js, Next.js, TypeScript, JavaScript, HTML, CSS modules, Storybook, Node.js, Fastify, Google Analitycs)
         </TextBox>
       </Grid>

@@ -1,7 +1,27 @@
 :root {
 }
 
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
 body {
+  background-color: #eee;
   margin: 0;
   padding: 0;
+}
+
+@media print {
+  html,
+  body {
+    /* Reset the document's background color */
+    background-color: #fff;
+  }
+
+  * {
+    /* Include the content box as well as padding and border for precise definitions */
+    box-sizing: initial;
+    -moz-box-sizing: initial;
+  }
 }

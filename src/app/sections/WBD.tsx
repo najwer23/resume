@@ -16,7 +16,7 @@ export const WBD: React.FC<{}> = ({}) => {
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
           Frontend Software Engineer
         </TextBox>
-        <TextBox color="grey" mobileSize={13} desktopSize={13} fontWeight={200} tag="h3">
+        <TextBox color="grey" mobileSize={13} desktopSize={13} fontWeight={500} tag="h3">
           2023.08 – 2024.08; 1 year; Warsaw, Poland / Remote
         </TextBox>
 

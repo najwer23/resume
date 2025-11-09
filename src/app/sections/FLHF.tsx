@@ -16,7 +16,7 @@ export const FLHF: React.FC<{}> = ({}) => {
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
           Frontend Web Developer
         </TextBox>
-        <TextBox color="grey" mobileSize={13} desktopSize={13} fontWeight={200} tag="h3">
+        <TextBox color="grey" mobileSize={13} desktopSize={13} fontWeight={500} tag="h3">
           2021.11 – 2023.04; 1 year, 6 months; Wrocław, Poland / Remote
         </TextBox>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 0 0'}>

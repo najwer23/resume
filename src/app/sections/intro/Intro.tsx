@@ -20,10 +20,10 @@ export const Intro: React.FC = () => {
             <TextBox color="black" mobileSize={50} desktopSize={50} tag="h1">
               <b>Mariusz</b> Najwer
             </TextBox>
-            <TextBox color="orangered" mobileSize={14} desktopSize={14} fontWeight={800} tag="h3">
+            <TextBox color="orangered" mobileSize={14} desktopSize={14} fontWeight={700} tag="h3">
               Software Engineer
             </TextBox>
-            <TextBox color="grey" mobileSize={12} desktopSize={12} fontWeight={400} tag="h3">
+            <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={500} tag="h3">
               Wrocław, Poland (open to relocation)
             </TextBox>
           </Grid>
@@ -32,7 +32,7 @@ export const Intro: React.FC = () => {
             {Object.keys(Links).map((v, i) => (
               <Grid key={i} widthMax={1400} layout="container" className={styles.introContactLinks}>
                 <TextBox
-                  color="grey"
+                  color="black"
                   colorHover="orangered"
                   mobileSize={13}
                   desktopSize={13}

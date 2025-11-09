@@ -27,7 +27,7 @@
     "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react": "^5.1.0",
     "gh-pages": "^6.3.0",
-    "najwer23morsels": "^0.10.15",
+    "najwer23morsels": "^0.10.17",
     "prettier": "^3.6.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

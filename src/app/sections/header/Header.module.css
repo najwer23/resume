@@ -1,0 +1,11 @@
+@layer Header {
+  .header {
+    
+    .headerLine {
+      height: 3px;
+      width: 350px;
+      background-color: orangered
+    }
+    
+  }
+}

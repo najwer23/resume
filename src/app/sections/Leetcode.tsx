@@ -1,5 +1,6 @@
 import { Grid } from 'najwer23morsels/lib/grid';
 import { TextBox } from 'najwer23morsels/lib/textbox';
+import { T } from '../translation/T';
 
 export const Leetcode: React.FC<{}> = ({}) => {
   return (
@@ -14,9 +15,8 @@ export const Leetcode: React.FC<{}> = ({}) => {
           (React.js, Redux.js, JavaScript, TypeScript, HTML5, CSS3)
         </TextBox>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 5px 0'}>
-          Number of currently solved problems: 1618+
+          {T('Leetcode_Description')}
         </TextBox>
-
         <TextBox href="https://leetcode.com/najwer23/" mobileSize={14} desktopSize={14} color='orangered' colorHover='orangered' rel="noreferrer" target="_blank">
          https://leetcode.com/najwer23/
         </TextBox>

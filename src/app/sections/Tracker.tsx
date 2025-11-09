@@ -1,5 +1,6 @@
 import { Grid } from 'najwer23morsels/lib/grid';
 import { TextBox } from 'najwer23morsels/lib/textbox';
+import { T } from '../translation/T';
 
 export const Tracker: React.FC<{}> = ({}) => {
   return (
@@ -11,11 +12,10 @@ export const Tracker: React.FC<{}> = ({}) => {
           TRACKER
         </TextBox>
         <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={200} tag="h3">
-          (React Native, Expo, TypeScript, JavaScript, Fastify, Amazon Dynamodb, JWT, CSS3, AWS Lambda)
+          (React Native, Expo, TypeScript, JavaScript, Fastify, DynamoDB, JWT, CSS3, AWS Lambda)
         </TextBox>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 5px 0'}>
-          This project continuously tracks GPS location in the background using a Kalman filter to smooth data and the
-          Haversine formula to calculate distance, with secure storage in DynamoDB protected by JWT authentication.
+          {T('Tracker_Description')}
         </TextBox>
 
         <TextBox

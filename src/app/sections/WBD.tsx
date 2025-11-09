@@ -1,5 +1,6 @@
 import { Grid } from 'najwer23morsels/lib/grid';
 import { TextBox } from 'najwer23morsels/lib/textbox';
+import { T } from '../translation/T';
 
 export const WBD: React.FC<{}> = ({}) => {
   return (
@@ -20,12 +21,9 @@ export const WBD: React.FC<{}> = ({}) => {
         </TextBox>
 
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 0 0'}>
-          Moim obowiązkiem było stworzenie nowej wersji strony TVN24.pl od podstaw z wykorzystaniem technologii SSR.
-          Główny szkielet strony opierał się na idei wysp wykorzystywanych w Astro.js. Natomiast wyspami były aplikacje
-          mikrofrontendowe zbudowane w React.js lub Web Components. W ramach współpracy zostały stworzone: widżety
-          związane z notowaniami giełdowymi, prognozą pogody, sondy, quizy, widżety wyborcze, program TV oraz autorski
-          algorytm do renderowania mikrofrontendów wykorzystujący technologię SSR bez zewnętrznych bibliotek. Stronę
-          odwiedza miesięcznie miliony użytkowników.
+          {T('WBD_Description')}
+          
+          
         </TextBox>
 
         <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={200} tag="h3" margin={'10px 0 0 0'}>

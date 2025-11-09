@@ -1,5 +1,6 @@
 import { Grid } from 'najwer23morsels/lib/grid';
 import { TextBox } from 'najwer23morsels/lib/textbox';
+import { T } from '../translation/T';
 
 export const DesignSystem: React.FC<{}> = ({}) => {
   return (
@@ -14,7 +15,7 @@ export const DesignSystem: React.FC<{}> = ({}) => {
           (React.js, TypeScript, JavaScript, CSS Modules, Storybook, Vite, Rollup.js)
         </TextBox>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 5px 0'}>
-          The najwer23morsels npm package offers React UI components styled flexibly with configurable props and custom CSS classes. It leverages native CSS features like variables for customization.
+          {T('DesignSystem_Description')}
         </TextBox>
 
         <TextBox

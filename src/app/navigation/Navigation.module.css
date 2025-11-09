@@ -1,0 +1,21 @@
+@layer Navigation {
+  .navigation {
+    --n23mTextBoxMargin: 20px;
+    --n23mTextBoxColor: red;
+    --n23mTextBoxColorHover: orange;
+    --n23mTextBoxLineHeight: 1.42857;
+    --n23mTextBoxFontWeight: 400;
+    --n23mTextBoxFontWeightHover: 800;
+
+    display: flex;
+    gap: 8px;
+
+
+    width: 21cm;
+    margin: 40px auto 0 auto;
+
+    @media print {
+      display: none !important;
+    }
+  }
+}

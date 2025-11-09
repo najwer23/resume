@@ -1,5 +1,6 @@
 import { Grid } from 'najwer23morsels/lib/grid';
 import { TextBox } from 'najwer23morsels/lib/textbox';
+import { T } from '../translation/T';
 
 export const FLHF: React.FC<{}> = ({}) => {
   return (
@@ -13,16 +14,13 @@ export const FLHF: React.FC<{}> = ({}) => {
           FLHF S.A
         </TextBox>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
-          FRONTEND WEB DEVELOPER
+          Frontend Web Developer
         </TextBox>
         <TextBox color="grey" mobileSize={13} desktopSize={13} fontWeight={200} tag="h3">
           2021.11 – 2023.04; 1 year, 6 months; Wrocław, Poland / Remote
         </TextBox>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 0 0'}>
-          Moim obowiązkiem było poprawienie strony internetowej, która została stworzona przez software house, oraz
-          jednoczesne odświeżenie szaty graficznej. Głównym zadaniem było stworzenie komponentów charakterystycznych dla
-          e-commerce, takich jak slidery, karuzele, listing produktów, wyszukiwarka oraz koszyk zakupowy. Priorytetem
-          były widok mobilny, SEO oraz wyniki w narzędziu Lighthouse (CLS, wydajność, dostępność).
+          {T('FLHF_Description')}
         </TextBox>
         <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={200} tag="h3" margin={'10px 0 0 0'}>
           (React.js, PWA, TypeScript, JavaScript, HTML, CSS, Magento2, GraphQL)

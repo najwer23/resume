@@ -1,12 +1,10 @@
-import styles from './Education.module.css';
 import { TextBox } from 'najwer23morsels/lib/textbox';
 import { Grid } from 'najwer23morsels/lib/grid';
-import { Header } from '../header/Header';
 
 export const Education: React.FC = () => {
   return (
-    <div className={styles.education}>
-      <Header text="Education" />
+    <div>
+      
       {/* Master of Science */}
       <Grid widthMax={1400} layout="flex" justifyContent="flex-start">
         <Grid widthMax={700} layout="container" margin={'4px 20px 0 0'}>

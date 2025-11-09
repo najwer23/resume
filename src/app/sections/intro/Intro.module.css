@@ -1,9 +1,7 @@
 @layer Intro {
   .intro {
-    
     .introContactLinks {
       text-align: right;
     }
-    
   }
 }

@@ -25,7 +25,7 @@ export const AppliedSystems: React.FC<{}> = ({}) => {
         </TextBox>
 
         <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={400} tag="h3" margin={'10px 0 0 0'}>
-          [React.js, TypeScript, JavaScript, HTML, CSS modules, Storybook, Pendo, Sentry, Angular]
+          (React.js, TypeScript, JavaScript, HTML, CSS modules, Storybook, Pendo, Sentry, Angular)
         </TextBox>
       </Grid>
     </Grid>

@@ -1,35 +1,18 @@
 :root {
-  --n23-font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica,
+  --n23mFontFamily:
+    --fontFamily, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica,
     Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-
-  /* Button */
-  --najwer23snacks-button-bg-color: orangered;
-  --najwer23snacks-button-bg-color-hover: rgb(203, 56, 2);
-  --najwer23snacks-button-bg-color-active: rgb(176, 48, 1);
-  --najwer23snacks-button-bg-color-focus: rgb(203, 56, 2);
-  --najwer23snacks-button-bg-color-disabled: #4d4d4d;
-  --najwer23snacks-button-font-color: #ffffff;
-  --najwer23snacks-button-font-size: 18px;
-  --najwer23snacks-button-font-weight: 700;
-  --najwer23snacks-button-font-family: var(--najwer23snacks-font-family);
-  --najwer23snacks-button-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 * {
-  /* Include the content box as well as padding and border for precise definitions */
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
 body {
+  background-color: #eee;
   margin: 0;
   padding: 0;
-  background-color: var(--n23-color-surface);
-  font-family: var(--n23-font-family);
-  font-style: normal;
-  font-weight: 400;
-  background-color: #eee;
-  font-size: 12pt;
 }
 
 @media print {
@@ -44,19 +27,4 @@ body {
     box-sizing: initial;
     -moz-box-sizing: initial;
   }
-}
-
-@media (max-width: 575.98px) {
-}
-
-@media (max-width: 576px) and (max-width: 767.98px) {
-}
-
-@media (max-width: 768px) and (max-width: 991.98px) {
-}
-
-@media (max-width: 992px) and (max-width: 1199.98px) {
-}
-
-@media (min-width: 1200px) and (max-width: 1399.98px) {
 }

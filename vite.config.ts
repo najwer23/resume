@@ -1,12 +1,11 @@
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
-import react from '@vitejs/plugin-react';
+import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/resume/',
   plugins: [
-    react(),
     VitePWA({
       scope: '/resume/',
       registerType: 'autoUpdate',
@@ -14,7 +13,7 @@ export default defineConfig({
       //   enabled: true,
       // },
       workbox: {
-        navigateFallback: '/resume/index.html',  // fallback for SPA routing
+        navigateFallback: '/resume/index.html', // fallback for SPA routing
       },
       manifest: {
         name: 'Mariusz Najwer - Résumé',
@@ -49,4 +48,9 @@ export default defineConfig({
     },
   },
   server: { port: 3000 },
+  resolve: {
+    alias: {
+      '@resume': path.resolve(__dirname, './src'),
+    },
+  },
 });

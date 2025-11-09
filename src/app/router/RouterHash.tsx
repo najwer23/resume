@@ -2,8 +2,6 @@ import { Layout } from '../layout/Layout';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { Home } from '../pages/home/Home';
 
-const BASE_TITLE = ' | Mariusz Najwer';
-
 const router = createHashRouter([
   {
     path: '/',
@@ -15,7 +13,7 @@ const router = createHashRouter([
     children: [
       {
         index: true,
-        element: <Home title={`Home${BASE_TITLE}`} />,
+        element: <Home />,
       },
       {
         path: '*',

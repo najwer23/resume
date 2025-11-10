@@ -1,4 +1,4 @@
-import { useImmediateThrottledQuery } from '@resume/app/hooks/useImmediateThrottledQuery';
+import { useImmediateThrottledQuery } from '@resume/hooks/useImmediateThrottledQuery';
 import React from 'react';
 import { queryLeetcode } from './Leetcode.query';
 

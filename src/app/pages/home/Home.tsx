@@ -1,4 +1,4 @@
-import { Navigation } from '@resume/app/navigation/Navigation';
+import { Navigation } from '@resume/navigation/Navigation';
 import { Page1 } from './Page1';
 import { Page2 } from './Page2';
 

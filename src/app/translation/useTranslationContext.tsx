@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, createContext, useContext, useState } from 'react';
+import { createContext, type Dispatch, type SetStateAction, useContext, useState } from 'react';
 
 interface LangContextValue {
   lang: string;

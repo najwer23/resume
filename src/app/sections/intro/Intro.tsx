@@ -1,6 +1,6 @@
-import styles from './Intro.module.css';
-import { TextBox } from 'najwer23morsels/lib/textbox';
 import { Grid } from 'najwer23morsels/lib/grid';
+import { TextBox } from 'najwer23morsels/lib/textbox';
+import styles from './Intro.module.css';
 
 const Links: {
   [key: string]: string | React.ReactNode;
@@ -28,7 +28,7 @@ export const Intro: React.FC = () => {
             </TextBox>
           </Grid>
 
-          <Grid layout="container" margin={"15px 0 0 0"} >
+          <Grid layout="container" margin={'15px 0 0 0'}>
             {Object.keys(Links).map((v, i) => (
               <Grid key={i} widthMax={1400} layout="container" className={styles.introContactLinks}>
                 <TextBox
@@ -41,7 +41,8 @@ export const Intro: React.FC = () => {
                   key={i}
                   href={v}
                   rel="noreferrer"
-                  target="_blank">
+                  target="_blank"
+                >
                   {Links[v]}
                 </TextBox>
               </Grid>

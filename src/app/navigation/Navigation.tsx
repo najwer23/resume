@@ -1,9 +1,9 @@
-import { TextBox } from 'najwer23morsels/lib/textbox';
-import styles from './Navigation.module.css';
 import { Button } from 'najwer23morsels/lib/button';
-import { useTranslationContext } from '../translation/useTranslationContext';
 import { Grid } from 'najwer23morsels/lib/grid';
+import { TextBox } from 'najwer23morsels/lib/textbox';
 import { GithubLastMody } from '../github/GithubLastMody';
+import { useTranslationContext } from '../translation/useTranslationContext';
+import styles from './Navigation.module.css';
 
 export const Navigation: React.FC<{}> = () => {
   const { lang, setLang } = useTranslationContext();
@@ -11,15 +11,15 @@ export const Navigation: React.FC<{}> = () => {
   return (
     <div className={styles.navigation}>
       <Grid widthMax={1400} layout="flex">
-        <Grid layout="flex" justifyContent="flex-start" margin={0} gap={{col: "8px", row: "0"}}>
-
+        <Grid layout="flex" justifyContent="flex-start" margin={0} gap={{ col: '8px', row: '0' }}>
           <Button
             backgroundColor="orangered"
             height="50px"
             padding={0}
             type="button"
             onClick={() => window.print()}
-            width="50px">
+            width="50px"
+          >
             <TextBox desktopSize={16} margin={0} mobileSize={16} color="white">
               PDF
             </TextBox>
@@ -33,7 +33,8 @@ export const Navigation: React.FC<{}> = () => {
             type="button"
             onClick={() => setLang('en')}
             disabled={lang === 'en'}
-            width="50px">
+            width="50px"
+          >
             <TextBox desktopSize={16} margin={0} mobileSize={16} color="white">
               EN
             </TextBox>
@@ -47,14 +48,15 @@ export const Navigation: React.FC<{}> = () => {
             type="button"
             onClick={() => setLang('pl')}
             disabled={lang === 'pl'}
-            width="50px">
+            width="50px"
+          >
             <TextBox desktopSize={16} margin={0} mobileSize={16} color="white">
               PL
             </TextBox>
           </Button>
         </Grid>
 
-        <Grid widthMax={1400} layout="flex" justifyContent="flex-start" margin={"auto 0 auto 0"}>
+        <Grid widthMax={1400} layout="flex" justifyContent="flex-start" margin={'auto 0 auto 0'}>
           <GithubLastMody />
         </Grid>
       </Grid>

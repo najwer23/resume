@@ -25,7 +25,8 @@ export const FiguresWithBBox: React.FC<{}> = ({}) => {
           color="orangered"
           colorHover="orangered"
           rel="noreferrer"
-          target="_blank">
+          target="_blank"
+        >
           https://najwer23.github.io/react-redux-ts
         </TextBox>
       </Grid>

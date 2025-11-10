@@ -1,14 +1,13 @@
-import { TextBox } from 'najwer23morsels/lib/textbox';
 import { Grid } from 'najwer23morsels/lib/grid';
+import { TextBox } from 'najwer23morsels/lib/textbox';
 
 export const Education: React.FC = () => {
   return (
     <div>
-      
       {/* Master of Science */}
       <Grid widthMax={1400} layout="flex" justifyContent="flex-start">
         <Grid widthMax={700} layout="container" margin={'4px 20px 0 0'}>
-          <img src="img/pwr.png" alt="pwr logo" height={"auto"} width={"69px"}/>
+          <img src="img/pwr.png" alt="pwr logo" height={'auto'} width={'69px'} />
         </Grid>
 
         <Grid widthMax={700} layout="container" margin={0}>
@@ -32,9 +31,9 @@ export const Education: React.FC = () => {
         </Grid>
       </Grid>
       {/* Bachelor of Science */}
-      <Grid widthMax={1400} layout="flex" justifyContent="flex-start" margin={"20px 0 0 0"}>
+      <Grid widthMax={1400} layout="flex" justifyContent="flex-start" margin={'20px 0 0 0'}>
         <Grid widthMax={700} layout="container" margin={'4px 20px 0 0'}>
-          <img src="img/pwr.png" alt="pwr logo" height={"auto"} width={"69px"}/>
+          <img src="img/pwr.png" alt="pwr logo" height={'auto'} width={'69px'} />
         </Grid>
 
         <Grid widthMax={700} layout="container" margin={0}>

@@ -8,5 +8,3 @@ export const executeFetch = async (url: URL, options?: RequestInit) => {
 
   return data;
 };
-
-

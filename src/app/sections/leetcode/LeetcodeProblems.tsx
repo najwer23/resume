@@ -1,6 +1,6 @@
 import { useImmediateThrottledQuery } from '@resume/app/hooks/useImmediateThrottledQuery';
-import { queryLeetcode } from './Leetcode.query';
 import React from 'react';
+import { queryLeetcode } from './Leetcode.query';
 
 export const LeetcodeProblems: React.FC = React.memo(() => {
   const { result, isLoading } = useImmediateThrottledQuery({

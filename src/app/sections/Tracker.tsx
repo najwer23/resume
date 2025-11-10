@@ -25,7 +25,8 @@ export const Tracker: React.FC<{}> = ({}) => {
           color="orangered"
           colorHover="orangered"
           rel="noreferrer"
-          target="_blank">
+          target="_blank"
+        >
           https://youtube.com/shorts/XoHvVMNMyyM
         </TextBox>
       </Grid>

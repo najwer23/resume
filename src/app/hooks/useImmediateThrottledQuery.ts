@@ -1,5 +1,5 @@
-import { useQuery, UseQueryOptions } from '@tanstack/react-query';
-import { useState, useEffect, useRef } from 'react';
+import { type UseQueryOptions, useQuery } from '@tanstack/react-query';
+import { useEffect, useRef, useState } from 'react';
 
 export function useImmediateThrottledQuery<TData>(
   queryOptions: UseQueryOptions<TData, unknown, TData, any>,
@@ -53,5 +53,8 @@ export function useImmediateThrottledQuery<TData>(
     };
   }, [isPending, minLoadingDurationMs]);
 
-  return { result: result.data, isLoading: visibleIsPending || result.isLoading || result.isFetching };
+  return {
+    result: result.data,
+    isLoading: visibleIsPending || result.isLoading || result.isFetching,
+  };
 }

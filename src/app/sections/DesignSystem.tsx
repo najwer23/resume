@@ -25,7 +25,8 @@ export const DesignSystem: React.FC<{}> = ({}) => {
           color="orangered"
           colorHover="orangered"
           rel="noreferrer"
-          target="_blank">
+          target="_blank"
+        >
           https://najwer23.github.io/najwer23morsels
         </TextBox>
       </Grid>

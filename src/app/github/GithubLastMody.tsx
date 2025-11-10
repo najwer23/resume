@@ -1,12 +1,11 @@
-import React from 'react';
-import { queryGithubLastMody } from './GithubLastMody.query';
-import { useImmediateThrottledQuery } from '../hooks/useImmediateThrottledQuery';
-import { TextBox } from 'najwer23morsels/lib/textbox';
-import { Loader } from 'najwer23morsels/lib/loader';
 import { Grid } from 'najwer23morsels/lib/grid';
+import { Loader } from 'najwer23morsels/lib/loader';
+import { TextBox } from 'najwer23morsels/lib/textbox';
+import React from 'react';
+import { useImmediateThrottledQuery } from '../hooks/useImmediateThrottledQuery';
+import { queryGithubLastMody } from './GithubLastMody.query';
 
 export const GithubLastMody: React.FC<{}> = React.memo(() => {
-  
   const { result, isLoading } = useImmediateThrottledQuery({
     queryKey: ['queryGithubLastMody', 'queryGithubLastMody resume'],
     queryFn: () => queryGithubLastMody(),

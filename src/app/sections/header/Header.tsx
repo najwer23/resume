@@ -1,6 +1,6 @@
-import styles from './Header.module.css';
-import { TextBox } from 'najwer23morsels/lib/textbox';
 import { Grid } from 'najwer23morsels/lib/grid';
+import { TextBox } from 'najwer23morsels/lib/textbox';
+import styles from './Header.module.css';
 
 export const Header: React.FC<{ text: string }> = ({ text }) => {
   return (

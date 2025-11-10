@@ -1,7 +1,7 @@
 import { Grid } from 'najwer23morsels/lib/grid';
 import { TextBox } from 'najwer23morsels/lib/textbox';
+import type React from 'react';
 import { T } from '../../translation/T';
-import React from 'react';
 import { LeetcodeProblems } from './LeetcodeProblems';
 
 export const Leetcode: React.FC = () => {
@@ -26,7 +26,8 @@ export const Leetcode: React.FC = () => {
           color="orangered"
           colorHover="orangered"
           rel="noreferrer"
-          target="_blank">
+          target="_blank"
+        >
           https://leetcode.com/najwer23/
         </TextBox>
       </Grid>

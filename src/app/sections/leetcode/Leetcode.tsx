@@ -1,8 +1,10 @@
 import { Grid } from 'najwer23morsels/lib/grid';
 import { TextBox } from 'najwer23morsels/lib/textbox';
-import { T } from '../translation/T';
+import { T } from '../../translation/T';
+import React from 'react';
+import { LeetcodeProblems } from './LeetcodeProblems';
 
-export const Leetcode: React.FC<{}> = ({}) => {
+export const Leetcode: React.FC = () => {
   return (
     <Grid widthMax={1400} layout="flex" justifyContent="flex-start" margin={'15px 0 0 0'}>
       <Grid widthMin={70} layout="container" margin={'4px 20px 0 0'}></Grid>
@@ -15,10 +17,17 @@ export const Leetcode: React.FC<{}> = ({}) => {
           (Node.js, JavaScript)
         </TextBox>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 5px 0'}>
-          {T('Leetcode_Description')}
+          {T('Leetcode_Description')} <LeetcodeProblems />
         </TextBox>
-        <TextBox href="https://leetcode.com/najwer23/" mobileSize={14} desktopSize={14} color='orangered' colorHover='orangered' rel="noreferrer" target="_blank">
-         https://leetcode.com/najwer23/
+        <TextBox
+          href="https://leetcode.com/najwer23/"
+          mobileSize={14}
+          desktopSize={14}
+          color="orangered"
+          colorHover="orangered"
+          rel="noreferrer"
+          target="_blank">
+          https://leetcode.com/najwer23/
         </TextBox>
       </Grid>
     </Grid>

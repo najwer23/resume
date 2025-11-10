@@ -8,7 +8,7 @@ import { Grid } from 'najwer23morsels/lib/grid';
 export const GithubLastMody: React.FC<{}> = React.memo(() => {
   
   const { result, isLoading } = useImmediateThrottledQuery({
-    queryKey: ['queryGithubLastMody', 'resume'],
+    queryKey: ['queryGithubLastMody', 'queryGithubLastMody resume'],
     queryFn: () => queryGithubLastMody(),
     staleTime: 30 * 1000 * 60,
     gcTime: 30 * 1000 * 60,

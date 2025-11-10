@@ -4,10 +4,10 @@ import { EuropaUbezpieczenia } from '@resume/app/sections/EuropaUbezpieczenia';
 import { FiguresWithBBox } from '@resume/app/sections/FiguresWithBBox';
 import { FLHF } from '@resume/app/sections/FLHF';
 import { Header } from '@resume/app/sections/header/Header';
-import { Leetcode } from '@resume/app/sections/Leetcode';
+import { Leetcode } from '@resume/app/sections/leetcode/Leetcode';
 import { Tracker } from '@resume/app/sections/Tracker';
 
-export const Page2: React.FC<{}> = () => {
+export const Page2: React.FC = () => {
   return (
     <PaperA4>
       <FLHF />
@@ -15,8 +15,8 @@ export const Page2: React.FC<{}> = () => {
       <Header text="Projects" />
       <FiguresWithBBox />
       <DesignSystem />
-      <Tracker /> 
-      <Leetcode   />
+      <Tracker />
+      <Leetcode />
     </PaperA4>
   );
 };

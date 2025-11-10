@@ -20,7 +20,7 @@ const t: any = {
     DesignSystem_Description:
       'Pakiet npm najwer23morsels oferuje komponenty UI dla React, które można elastycznie stylizować za pomocą konfigurowalnych właściwości i niestandardowych klas CSS.',
     Tracker_Description: `Projekt ten na bieżąco śledzi lokalizację GPS w tle, wykorzystując filtr Kalmana do wygładzania danych oraz formułę Haversine'a do obliczania odległości, z bezpiecznym przechowywaniem w DynamoDB chronionym przez uwierzytelnianie JWT.`,
-    Leetcode_Description: `Liczba aktualnie rozwiązanych zadań: 1618+.`,
+    Leetcode_Description: `Liczba aktualnie rozwiązanych zadań: `,
   },
   en: {
     AppliedSystems_Description: `My responsibility was to create a frontend application enabling the purchase of insurance through a website. The application was developed using React.js and TypeScript, leveraging the Applied Systems design system. The primary technical challenge was implementing a recursive Depth-First Search (DFS) algorithm to conditionally render a nested, graph-like structure of questions, where each question’s visibility depended on previous answers. The question data was fetched from the backend as a large JSON payload (around 60,000 lines), structured as a Server Driven UI model. The development was part of a 8-person international team spanning Poland, India, Canada, England, the USA, and Australia. In addition to the core questionnaire, I contributed to building an admin panel, implementing user action tracking scripts, creating statistical charts, and ensuring compliance with WCAG 2.1 AA accessibility standards.`,
@@ -34,7 +34,7 @@ const t: any = {
     DesignSystem_Description:
       'The najwer23morsels npm package offers React UI components styled flexibly with configurable props and custom CSS classes. It leverages native CSS features like variables for customization.',
     Tracker_Description: `This project continuously tracks GPS location in the background using a Kalman filter to smooth data and the Haversine formula to calculate distance, with secure storage in DynamoDB protected by JWT authentication.`,
-    Leetcode_Description: `Number of currently solved problems: 1618+.`,
+    Leetcode_Description: `Number of currently solved problems: `,
   },
 };
 

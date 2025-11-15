@@ -28,7 +28,7 @@ export const Leetcode: React.FC = () => {
           rel="noreferrer"
           target="_blank"
         >
-          https://leetcode.com/najwer23/
+          https://leetcode.com/najwer23
         </TextBox>
       </Grid>
     </Grid>

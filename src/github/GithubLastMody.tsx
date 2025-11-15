@@ -16,8 +16,8 @@ export const GithubLastMody: React.FC<{}> = React.memo(() => {
   });
 
   return (
-    <Grid widthMin={160} layout="flex">
-      {isLoading && <Loader loaderColor="black" minHeight={50} />}
+    <Grid widthMin={'160px'} layout="flex">
+      {isLoading && <Loader loaderColor="black" minHeight={'50px'} />}
       {!isLoading && (
         <TextBox mobileSize={20} desktopSize={20} margin={0}>
           {new Date(result.commit.commit.committer.date).toLocaleString('pl-PL', {

@@ -5,7 +5,7 @@ import styles from './Header.module.css';
 export const Header: React.FC<{ text: string }> = ({ text }) => {
   return (
     <div className={styles.header}>
-      <Grid widthMax={1400} layout="container" padding="0" margin="30px 0 15px 0">
+      <Grid widthMax={'1400px'} layout="container" padding="0" margin="30px 0 15px 0">
         <TextBox mobileSize={22} desktopSize={22} fontWeight={700} tag={'h2'}>
           {text}
         </TextBox>

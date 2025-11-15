@@ -10,7 +10,7 @@ export const Navigation: React.FC<{}> = () => {
 
   return (
     <div className={styles.navigation}>
-      <Grid widthMax={1400} layout="flex">
+      <Grid widthMax={'1400px'} layout="flex">
         <Grid layout="flex" justifyContent="flex-start" margin={0} gap={{ col: '8px', row: '0' }}>
           <Button
             backgroundColor="orangered"
@@ -56,7 +56,7 @@ export const Navigation: React.FC<{}> = () => {
           </Button>
         </Grid>
 
-        <Grid widthMax={1400} layout="flex" justifyContent="flex-start" margin={'auto 0 auto 0'}>
+        <Grid widthMax={'1400px'} layout="flex" justifyContent="flex-start" margin={'auto 0 auto 0'}>
           <GithubLastMody />
         </Grid>
       </Grid>

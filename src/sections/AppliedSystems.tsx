@@ -4,12 +4,12 @@ import { T } from '../translation/T';
 
 export const AppliedSystems: React.FC<{}> = ({}) => {
   return (
-    <Grid widthMax={1400} layout="flex" justifyContent="flex-start">
-      <Grid widthMin={70} layout="container" margin={'4px 20px 0 0'}>
+    <Grid widthMax={'1400px'} layout="flex" justifyContent="flex-start" alignItems="flex-start">
+      <Grid widthMin={'70px'} layout="container" margin={'4px 20px 0 0'}>
         <img src="img/applied.jpg" alt="applied systems logo" height={'auto'} width={'69px'} />
       </Grid>
 
-      <Grid widthMax={700} layout="container" margin={0}>
+      <Grid widthMax={'700px'} layout="container" margin={0}>
         <TextBox color="black" mobileSize={18} desktopSize={18} fontWeight={500} tag="h3">
           APPLIED SYSTEMS INC.
         </TextBox>

@@ -5,12 +5,12 @@ export const Education: React.FC = () => {
   return (
     <div>
       {/* Master of Science */}
-      <Grid widthMax={1400} layout="flex" justifyContent="flex-start">
-        <Grid widthMax={700} layout="container" margin={'4px 20px 0 0'}>
+      <Grid widthMax={'1400px'} layout="flex" justifyContent="flex-start" alignItems="flex-start">
+        <Grid widthMax={'700px'} layout="container" margin={'4px 20px 0 0'}>
           <img src="img/pwr.png" alt="pwr logo" height={'auto'} width={'69px'} />
         </Grid>
 
-        <Grid widthMax={700} layout="container" margin={0}>
+        <Grid widthMax={'700px'} layout="container" margin={0}>
           <TextBox color="black" mobileSize={18} desktopSize={18} fontWeight={500} tag="h3">
             WROCŁAW UNIVERSITY OF SCIENCE AND TECHNOLOGY
           </TextBox>
@@ -31,12 +31,12 @@ export const Education: React.FC = () => {
         </Grid>
       </Grid>
       {/* Bachelor of Science */}
-      <Grid widthMax={1400} layout="flex" justifyContent="flex-start" margin={'20px 0 0 0'}>
-        <Grid widthMax={700} layout="container" margin={'4px 20px 0 0'}>
+      <Grid widthMax={'1400px'} layout="flex" justifyContent="flex-start" alignItems="flex-start" margin={'20px 0 0 0'}>
+        <Grid widthMax={'700px'} layout="container" margin={'4px 20px 0 0'}>
           <img src="img/pwr.png" alt="pwr logo" height={'auto'} width={'69px'} />
         </Grid>
 
-        <Grid widthMax={700} layout="container" margin={0}>
+        <Grid widthMax={'700px'} layout="container" margin={0}>
           <TextBox color="black" mobileSize={18} desktopSize={18} fontWeight={500} tag="h3">
             WROCŁAW UNIVERSITY OF SCIENCE AND TECHNOLOGY
           </TextBox>

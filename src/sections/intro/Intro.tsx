@@ -14,9 +14,9 @@ const Links: {
 export const Intro: React.FC = () => {
   return (
     <div className={styles.intro}>
-      <Grid widthMax={1400} layout="container" padding="0" margin="auto">
-        <Grid widthMax={1400} layout="flex">
-          <Grid widthMax={400} layout="container" margin={0}>
+      <Grid widthMax={'1400px'} layout="container" padding="0" margin="auto">
+        <Grid widthMax={'1400px'} layout="flex" alignItems="flex-start">
+          <Grid widthMax={'400px'} layout="container" margin={0}>
             <TextBox color="black" mobileSize={50} desktopSize={50} tag="h1">
               <b>Mariusz</b> Najwer
             </TextBox>
@@ -30,7 +30,7 @@ export const Intro: React.FC = () => {
 
           <Grid layout="container" margin={'15px 0 0 0'}>
             {Object.keys(Links).map((v, i) => (
-              <Grid key={i} widthMax={1400} layout="container" className={styles.introContactLinks}>
+              <Grid key={i} widthMax={'1400px'} layout="container" className={styles.introContactLinks}>
                 <TextBox
                   color="black"
                   colorHover="orangered"

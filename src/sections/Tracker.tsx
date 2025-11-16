@@ -14,7 +14,15 @@ export const Tracker: React.FC<{}> = ({}) => {
         <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={400} tag="h3">
           (React Native, Expo, TypeScript, JavaScript, Fastify, DynamoDB, JWT, CSS3, AWS Lambda)
         </TextBox>
-        <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 5px 0'}>
+        <TextBox
+          color="black"
+          mobileSize={14}
+          desktopSize={14}
+          fontWeight={400}
+          tag="p"
+          margin={'10px 0 5px 0'}
+          textWrap="pretty"
+        >
           {T('Tracker_Description')}
         </TextBox>
 

@@ -19,7 +19,8 @@ const t: any = {
       "Aplikacja rysująca na kanwie obrócone figury geometryczne (prostokąty oraz elipsy) na podstawie danych z API. Dla każdej figury należało narysować 'bounding box'.",
     DesignSystem_Description:
       'Pakiet npm najwer23morsels oferuje komponenty UI dla React, które można elastycznie stylizować za pomocą konfigurowalnych właściwości i niestandardowych klas CSS.',
-    Tracker_Description: `Projekt ten na bieżąco śledzi lokalizację GPS w tle, wykorzystując filtr Kalmana do wygładzania danych oraz formułę Haversine'a do obliczania odległości, z bezpiecznym przechowywaniem w DynamoDB chronionym przez uwierzytelnianie JWT.`,
+    Tracker_Description: `Aplikacja umożliwiająca monitorowanie ruchu danej osoby w czasie rzeczywistym, obejmująca także filtrowanie zakłóceń GPS.
+`,
     Leetcode_Description: `Liczba aktualnie rozwiązanych zadań: `,
   },
   en: {
@@ -33,7 +34,7 @@ const t: any = {
       "An application that draws rotated geometric figures (rectangles and ellipses) on a canvas based on data from the API. For each figure it was necessary to draw a 'bounding box'.",
     DesignSystem_Description:
       'The najwer23morsels npm package offers React UI components styled flexibly with configurable props and custom CSS classes. It leverages native CSS features like variables for customization.',
-    Tracker_Description: `This project continuously tracks GPS location in the background using a Kalman filter to smooth data and the Haversine formula to calculate distance, with secure storage in DynamoDB protected by JWT authentication.`,
+    Tracker_Description: `An application that allows you to monitor a person's movement in real time, including GPS noise filtering.`,
     Leetcode_Description: `Number of currently solved problems: `,
   },
 };

@@ -18,7 +18,7 @@ export const Education: React.FC = () => {
             Master of Science, COMPUTER SCIENCE, Above Good (4,5)
           </TextBox>
           <TextBox color="#808080" mobileSize={13} desktopSize={13} fontWeight={500} tag="h3">
-            2018.02 ‑ 2019.06, Wrocław, Poland
+            2018.02 – 2019.06, Wrocław, Poland
           </TextBox>
           <TextBox color="black" mobileSize={13} desktopSize={13} fontWeight={400} tag="h3" margin={'5px 0 0 0'}>
             <i>
@@ -44,7 +44,7 @@ export const Education: React.FC = () => {
             Bachelor of Science, CONTROL ENGINEERING AND ROBOTICS, Above Good (4,5)
           </TextBox>
           <TextBox color="#808080" mobileSize={13} desktopSize={13} fontWeight={500} tag="h3">
-            2014.10 ‑ 2018.01, Wrocław, Poland
+            2014.10 – 2018.01, Wrocław, Poland
           </TextBox>
           <TextBox color="black" mobileSize={13} desktopSize={13} fontWeight={400} tag="h3" margin={'5px 0 0 0'}>
             <i>

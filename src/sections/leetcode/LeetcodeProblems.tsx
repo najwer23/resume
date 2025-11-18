@@ -15,7 +15,7 @@ export const LeetcodeProblems: React.FC = React.memo(() => {
   let numberOfProblems: string = '1620+';
 
   if (!isLoading) {
-    numberOfProblems = String(Number(result?.totalSolved));
+    numberOfProblems = String(Number(result?.totalSolved) || numberOfProblems);
   }
 
   return numberOfProblems;

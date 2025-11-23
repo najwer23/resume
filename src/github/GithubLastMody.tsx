@@ -15,18 +15,22 @@ export const GithubLastMody: React.FC<{}> = React.memo(() => {
     enabled: true,
   });
 
+  const formattedDate = result?.commit?.commit?.committer?.date
+    ? new Date(result.commit.commit.committer.date).toLocaleString('pl-PL', {
+        day: '2-digit',
+        month: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        year: 'numeric',
+      })
+    : 'Unavailable';
+
   return (
-    <Grid widthMin={'160px'} layout="flex">
+    <Grid widthMin={'160px'} layout="flex" justifyContent="flex-end">
       {isLoading && <Loader loaderColor="black" minHeight={'50px'} />}
       {!isLoading && (
         <TextBox mobileSize={20} desktopSize={20} margin={0}>
-          {new Date(result.commit.commit.committer.date).toLocaleString('pl-PL', {
-            day: '2-digit',
-            month: '2-digit',
-            hour: '2-digit',
-            minute: '2-digit',
-            year: 'numeric',
-          })}
+          {formattedDate}
         </TextBox>
       )}
     </Grid>

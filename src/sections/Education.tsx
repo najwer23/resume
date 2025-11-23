@@ -7,7 +7,7 @@ export const Education: React.FC = () => {
     <div>
       {/* Master of Science */}
       <Grid widthMax={'1400px'} layout="flex" justifyContent="flex-start" alignItems="flex-start">
-        <Grid widthMax={'69px'} layout="container" margin={'4px 20px 0 0'}>
+        <Grid widthMin={'69px'} widthMax={'69px'} layout="container" margin={'4px 20px 0 0'}>
           <Picture src={'img/pwr.png'} alt={'PWr logo'} ar={1} loading="eager" />
         </Grid>
 

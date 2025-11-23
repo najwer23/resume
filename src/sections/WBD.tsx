@@ -6,7 +6,7 @@ import { T } from '../translation/T';
 export const WBD: React.FC<{}> = ({}) => {
   return (
     <Grid widthMax={'1400px'} layout="flex" justifyContent="flex-start" alignItems="flex-start" margin={'15px 0 0 0'}>
-      <Grid widthMax={'69px'} layout="container" margin={'4px 20px 0 0'}>
+      <Grid widthMin={'69px'} widthMax={'69px'} layout="container" margin={'4px 20px 0 0'}>
         <Picture src={'img/wbd.png'} alt={'WBD logo'} ar={1} loading="eager" />
       </Grid>
 

@@ -1,12 +1,13 @@
 import { Grid } from 'najwer23morsels/lib/grid';
+import { Picture } from 'najwer23morsels/lib/picture';
 import { TextBox } from 'najwer23morsels/lib/textbox';
 import { T } from '../translation/T';
 
 export const WBD: React.FC<{}> = ({}) => {
   return (
     <Grid widthMax={'1400px'} layout="flex" justifyContent="flex-start" alignItems="flex-start" margin={'15px 0 0 0'}>
-      <Grid widthMin={'70px'} layout="container" margin={'4px 20px 0 0'}>
-        <img src="img/wbd.png" alt="applied systems logo" height={'auto'} width={'69px'} />
+      <Grid widthMax={'69px'} layout="container" margin={'4px 20px 0 0'}>
+        <Picture src={'img/wbd.png'} alt={'WBD logo'} ar={1} loading="eager" />
       </Grid>
 
       <Grid widthMax={'700px'} layout="container" margin={0}>

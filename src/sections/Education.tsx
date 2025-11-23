@@ -1,4 +1,5 @@
 import { Grid } from 'najwer23morsels/lib/grid';
+import { Picture } from 'najwer23morsels/lib/picture';
 import { TextBox } from 'najwer23morsels/lib/textbox';
 
 export const Education: React.FC = () => {
@@ -6,8 +7,8 @@ export const Education: React.FC = () => {
     <div>
       {/* Master of Science */}
       <Grid widthMax={'1400px'} layout="flex" justifyContent="flex-start" alignItems="flex-start">
-        <Grid widthMax={'700px'} layout="container" margin={'4px 20px 0 0'}>
-          <img src="img/pwr.png" alt="pwr logo" height={'auto'} width={'69px'} />
+        <Grid widthMax={'69px'} layout="container" margin={'4px 20px 0 0'}>
+          <Picture src={'img/pwr.png'} alt={'PWr logo'} ar={1} loading="eager" />
         </Grid>
 
         <Grid widthMax={'700px'} layout="container" margin={0}>
@@ -32,8 +33,8 @@ export const Education: React.FC = () => {
       </Grid>
       {/* Bachelor of Science */}
       <Grid widthMax={'1400px'} layout="flex" justifyContent="flex-start" alignItems="flex-start" margin={'20px 0 0 0'}>
-        <Grid widthMax={'700px'} layout="container" margin={'4px 20px 0 0'}>
-          <img src="img/pwr.png" alt="pwr logo" height={'auto'} width={'69px'} />
+        <Grid widthMax={'69px'} layout="container" margin={'4px 20px 0 0'}>
+          <Picture src={'img/pwr.png'} alt={'PWr logo'} ar={1} loading="eager" />
         </Grid>
 
         <Grid widthMax={'700px'} layout="container" margin={0}>

@@ -18,7 +18,7 @@ const t: any = {
     FiguresWithBBox_Description:
       "Aplikacja rysująca na kanwie obrócone figury geometryczne (prostokąty oraz elipsy) na podstawie danych z API. Dla każdej figury należało narysować 'bounding box'.",
     DesignSystem_Description:
-      'Pakiet npm najwer23morsels oferuje komponenty UI dla React, które można elastycznie stylizować za pomocą konfigurowalnych właściwości i niestandardowych klas CSS.',
+      'Design System - kompleksowy, wielokrotnego użytku zbiór komponentów React wraz z wytycznymi projektowymi i najlepszymi praktykami, stworzony, aby efektywnie budować spójne, skalowalne i łatwe w utrzymaniu aplikacje.',
     Tracker_Description: `Aplikacja umożliwiająca monitorowanie ruchu danej osoby w czasie rzeczywistym, obejmująca także filtrowanie zakłóceń GPS.
 `,
     Leetcode_Description: `Liczba aktualnie rozwiązanych zadań: `,
@@ -33,7 +33,7 @@ const t: any = {
     FiguresWithBBox_Description:
       "An application that draws rotated geometric figures (rectangles and ellipses) on a canvas based on data from the API. For each figure it was necessary to draw a 'bounding box'.",
     DesignSystem_Description:
-      'The najwer23morsels npm package offers React UI components styled flexibly with configurable props and custom CSS classes. It leverages native CSS features like variables for customization.',
+      'Design System - A comprehensive collection of React components for building consistent, scalable applications.',
     Tracker_Description: `An application that allows you to monitor a person's movement in real time, including GPS noise filtering.`,
     Leetcode_Description: `Number of currently solved problems: `,
   },

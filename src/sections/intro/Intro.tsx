@@ -1,14 +1,15 @@
+import { CopyButton } from 'najwer23morsels/lib/copybutton';
 import { Grid } from 'najwer23morsels/lib/grid';
 import { TextBox } from 'najwer23morsels/lib/textbox';
 import styles from './Intro.module.css';
 
 const Links: {
-  [key: string]: string | React.ReactNode;
+  [key: string]: string;
 } = {
   'tel:+48571024300': `+48 571 024 300`,
   'mailto:najwer23@live.com': 'najwer23@live.com',
   'https://najwer23.github.io': 'https://najwer23.github.io',
-  'https://linkedin.com/in/najwer23': <b>https://linkedin.com/in/najwer23</b>,
+  'https://linkedin.com/in/najwer23': 'https://linkedin.com/in/najwer23',
 };
 
 export const Intro: React.FC = () => {
@@ -31,20 +32,32 @@ export const Intro: React.FC = () => {
           <Grid layout="container" margin={'15px 0 0 0'}>
             {Object.keys(Links).map((v, i) => (
               <Grid key={i} widthMax={'1400px'} layout="container" className={styles.introContactLinks}>
-                <TextBox
-                  color="black"
-                  colorHover="orangered"
-                  mobileSize={13}
-                  desktopSize={13}
-                  fontWeight={400}
-                  tag="a"
-                  key={i}
-                  href={v}
-                  rel="noreferrer"
-                  target="_blank"
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'flex-end',
+                    alignItems: 'center',
+                    gap: '5px',
+                  }}
                 >
-                  {Links[v]}
-                </TextBox>
+                  <TextBox
+                    color="black"
+                    colorHover="orangered"
+                    mobileSize={13}
+                    desktopSize={13}
+                    fontWeight={400}
+                    tag="a"
+                    key={i}
+                    href={v}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    {i == 3 ? <b>{Links[v]}</b> : Links[v]}
+                  </TextBox>
+                  <div className={styles.copyButtonWrapper}>
+                    <CopyButton textToCopy={Links[v]} />
+                  </div>
+                </div>
               </Grid>
             ))}
           </Grid>

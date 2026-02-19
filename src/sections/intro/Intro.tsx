@@ -55,7 +55,7 @@ export const Intro: React.FC = () => {
                     {i == 3 ? <b>{Links[v]}</b> : Links[v]}
                   </TextBox>
                   <div className={styles.copyButtonWrapper}>
-                    <CopyButton textToCopy={Links[v]} />
+                    <CopyButton textToCopy={Links[v]} color="white" />
                   </div>
                 </div>
               </Grid>

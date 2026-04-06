@@ -4286,13 +4286,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-ga4@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "react-ga4@npm:3.0.1"
-  checksum: 10c0/b50437101057faf3ba1dff3e5646f0f5111731f7b752a6031b7ac4088306e6afa2629397fa208370e6c0d108cb42a7925c17a924354f9556e5d278b96f3617dc
-  languageName: node
-  linkType: hard
-
 "react-router-dom@npm:^7.14.0":
   version: 7.14.0
   resolution: "react-router-dom@npm:7.14.0"
@@ -4461,7 +4454,6 @@ __metadata:
     najwer23morsels: "npm:^0.19.10"
     react: "npm:^19.2.4"
     react-dom: "npm:^19.2.4"
-    react-ga4: "npm:^3.0.1"
     react-router-dom: "npm:^7.14.0"
     rimraf: "npm:^6.1.3"
     typescript: "npm:^6.0.2"

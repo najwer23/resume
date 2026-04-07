@@ -16,7 +16,7 @@ export const Home: React.FC<{}> = () => {
       staleTime: Infinity,
       gcTime: Infinity,
       retry: 0,
-      enabled: true, // !currentUrl.includes('localhost'),
+      enabled: !currentUrl.includes('localhost'),
     },
     0,
   );

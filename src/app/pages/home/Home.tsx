@@ -1,7 +1,7 @@
-import { useImmediateThrottledQuery } from '@resume/hooks/useImmediateThrottledQuery';
-import { Navigation } from '@resume/navigation/Navigation';
+import { useImmediateThrottledQuery } from '@app/hooks/useImmediateThrottledQuery';
+import { Navigation } from '@app/navigation/Navigation';
 import { useLocation } from 'react-router-dom';
-import { queryAnalyticsHit } from '../analytics/Analytics.query';
+import { queryAnalyticsHit } from '../../analytics/Analytics.query';
 import { Page1 } from './Page1';
 import { Page2 } from './Page2';
 

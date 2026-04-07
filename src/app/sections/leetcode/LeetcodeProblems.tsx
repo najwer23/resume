@@ -1,4 +1,4 @@
-import { useImmediateThrottledQuery } from '@resume/hooks/useImmediateThrottledQuery';
+import { useImmediateThrottledQuery } from '@app/hooks/useImmediateThrottledQuery';
 import React from 'react';
 import { queryLeetcode } from './Leetcode.query';
 
@@ -12,7 +12,7 @@ export const LeetcodeProblems: React.FC = React.memo(() => {
     enabled: true,
   });
 
-  let numberOfProblems: string = '1620+';
+  let numberOfProblems: string = '1736+';
 
   if (!isLoading) {
     numberOfProblems = String(Number(result?.totalSolved) || numberOfProblems);

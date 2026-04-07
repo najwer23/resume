@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { LangProvider } from '../translation/useTranslationContext';
 import { RouterHash } from './router/RouterHash';
+import { LangProvider } from './translation/useTranslationContext';
 
 const queryClient = new QueryClient();
 

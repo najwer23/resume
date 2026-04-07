@@ -1,5 +1,5 @@
-import { configApiOrigin } from '@resume/config/configApiOrigin';
-import { configFetch, executeFetch, type ResponseBase } from '@resume/config/configFetch';
+import { configApiOrigin } from '@app/config/configApiOrigin';
+import { configFetch, executeFetch, type ResponseBase } from '@app/config/configFetch';
 
 export const queryAnalyticsHit = async (body: Record<string, string>): Promise<ResponseBase> => {
   const url = new URL(`${configApiOrigin()}/analytics/hit`);

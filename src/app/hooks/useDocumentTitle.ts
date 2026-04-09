@@ -7,11 +7,17 @@ export const useDocumentTitle = (title: string) => {
   const location = useLocation();
   const currentUrl = window.location.href.toLowerCase();
 
-  const trimTrailingSlashes = (path: string) => (path === '/' ? '/' : path.replace(/\/+$/, ''));
+  const trimTrailingSlashes = (path: string) => {
+    const normalized = path.replace(/\/{2,}/g, '/').replace(/\/+$/, '');
+    return normalized === '' ? '/' : normalized;
+  };
 
   useImmediateThrottledQuery(
     {
-      queryKey: ['useDocumentTitle', 'useDocumentTitle' + location.pathname],
+      queryKey: [
+        'useDocumentTitle',
+        'useDocumentTitle' + trimTrailingSlashes(import.meta.env.BASE_URL + location.pathname),
+      ],
       queryFn: () =>
         queryAnalyticsHit({
           appName: import.meta.env.VITE_ANALYTICS_APP_NAME,

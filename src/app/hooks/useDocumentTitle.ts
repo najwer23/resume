@@ -15,7 +15,7 @@ export const useDocumentTitle = (title: string) => {
       staleTime: 0,
       gcTime: 0,
       retry: 0,
-      enabled: currentUrl.includes('localhost'),
+      enabled: !currentUrl.includes('localhost'),
     },
     0,
   );

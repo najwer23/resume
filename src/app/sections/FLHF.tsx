@@ -5,7 +5,7 @@ import { T } from '../translation/T';
 
 export const FLHF: React.FC<{}> = ({}) => {
   return (
-    <Grid widthMax={'1400px'} layout="flex" justifyContent="flex-start" alignItems="flex-start">
+    <Grid widthMax={'1400px'} layout="flex" justifyContent="flex-start" alignItems="flex-start" margin={'15px 0 0 0'}>
       <Grid widthMin={'69px'} widthMax={'69px'} layout="container" margin={'4px 20px 0 0'}>
         <Picture src={'img/flhf.png'} alt={'FLHF logo'} ar={139 / 105} loading="eager" />
       </Grid>

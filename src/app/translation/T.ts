@@ -2,40 +2,40 @@ import { useTranslationContext } from './useTranslationContext';
 
 const t: any = {
   pl: {
-    EuropaUbezpieczenia_Description:
-      'Moim obowiązkiem było utrzymanie oraz rozwój wewnętrznego systemu do zarządzania polisami ubezpieczeniowymi. System był wykorzystywany przez agentów ubezpieczeniowych oraz pracowników biurowych. Do moich zadań należało tworzenie nowych modułów, integracja zewnętrznych systemów (płatności online, weryfikacja danych klienta, tworzenie wniosków polisowych) oraz optymalizacja wydajności aplikacji. Pracowałem zarówno nad frontendem (Angular), jak i backendem (Java, Groovy, SQL) aplikacji.',
+    AppliedSystems_Description: `Zbudowałem aplikację frontendową opartą na modelu Server Driven UI z rekurencyjnym algorytmem DFS do renderowania zagnieżdżonego grafu pytań z pliku JSON liczącego ~60 tys. linii. Współtworzyłem panel administratora, skrypty śledzące akcje użytkownika, wykresy statystyczne oraz zapewniłem zgodność z WCAG 2.1 AA w międzynarodowym zespole.`,
+    WBD_Description: `Zbudowałem TVN24.pl od podstaw z wykorzystaniem SSR oraz architektury wysp z mikrofrontendami w React i Web Components. Stworzyłem widżety giełdowe, pogodowe, sondy, narzędzia wyborcze, program TV oraz autorski algorytm SSR bez zewnętrznych bibliotek.`,
     FLHF_Description:
-      'Moim obowiązkiem było poprawienie strony internetowej, która została stworzona przez software house, oraz jednoczesne odświeżenie szaty graficznej. Głównym zadaniem było stworzenie komponentów charakterystycznych dla e-commerce, takich jak slidery, karuzele, listing produktów, wyszukiwarka oraz koszyk zakupowy. Priorytetem były widok mobilny, SEO oraz wyniki w narzędziu Lighthouse (CLS, wydajność, dostępność).',
-    WBD_Description: `Moim obowiązkiem było stworzenie nowej wersji strony TVN24.pl od podstaw z wykorzystaniem technologii SSR. Główny szkielet strony opierał się na idei wysp wykorzystywanych w Astro.js. Natomiast wyspami były aplikacje mikrofrontendowe zbudowane w React.js lub Web Components. W ramach współpracy zostały stworzone: widżety związane z notowaniami giełdowymi, prognozą pogody, sondy, quizy, widżety wyborcze, program TV oraz autorski algorytm do renderowania mikrofrontendów wykorzystujący technologię SSR bez zewnętrznych bibliotek. Stronę odwiedza miesięcznie miliony użytkowników.`,
-    AppliedSystems_Description: `Moim obowiązkiem było stworzenie aplikacji frontendowej, która pozwoli na zakup ubezpieczenia przez stronę
-            internetową. Aplikacja została zbudowana z wykorzystaniem React.js, TypeScript oraz design systemu firmy
-            Applied Systems. Głównym problemem było opracowanie algorytmu, który pozwoli warunkowo wyrenderować pytania
-            mające zagnieżdżoną strukturę, przypominającą graf (pytania były zależne od innych pytań). Został tutaj
-            użyty rekurencyjny algorytm DFS. Same pytania były pobierane z backendu w formacie JSON (60 tys. linii kodu)
-            struktura JSONa przypominała ideę Server Driven UI. Zespół składał się z 8 osób i był międzynarodowy
-            (Polska, Indie, Kanada, Anglia, USA, Australia). Dodatkowo został wdrożony panel administratora, skrypty
-            śledzące akcje użytkownika, wykresy ze statystyką oraz wsparcie dla WCAG 2.1 AA.`,
+      'Rozbudowałem sklep internetowy o slidery, karuzele, listing produktów oraz koszyk zakupowy. Skupiłem się na optymalizacji mobilnej, SEO, CLS, szybkości ładowania oraz poprawie dostępności przy użyciu audytów Lighthouse.',
+    EuropaUbezpieczenia_Description:
+      'Utrzymywałem i rozwijałem wewnętrzny system zarządzania polisami ubezpieczeniowymi dla agentów i pracowników biurowych. Tworzyłem nowe moduły, integrowałem systemy płatności i weryfikacji danych oraz pracowałem nad frontendem w Angular i backendem w Java/Groovy.',
     FiguresWithBBox_Description:
-      "Aplikacja rysująca na kanwie obrócone figury geometryczne (prostokąty oraz elipsy) na podstawie danych z API. Dla każdej figury należało narysować 'bounding box'.",
+      'Aplikacja rysująca na kanwie obrócone prostokąty i elipsy na podstawie danych z API, obliczająca precyzyjny bounding box dla każdej figury.',
     DesignSystem_Description:
-      'Kompleksowy, wielokrotnego użytku zbiór komponentów React wraz z wytycznymi projektowymi i najlepszymi praktykami, stworzony, aby efektywnie budować spójne, skalowalne i łatwe w utrzymaniu aplikacje.',
-    Tracker_Description: `Aplikacja umożliwiająca monitorowanie ruchu danej osoby w czasie rzeczywistym, obejmująca także filtrowanie zakłóceń GPS.
-`,
-    Leetcode_Description: `Liczba aktualnie rozwiązanych zadań: `,
+      'Kompleksowa biblioteka komponentów React do budowania spójnych i skalowalnych aplikacji. Opublikowana jako pakiet npm.',
+    Tracker_Description: `Aplikacja do monitorowania ruchu osoby w czasie rzeczywistym z filtrowaniem zakłóceń GPS, oparta na bezserwerowej infrastrukturze AWS.`,
+    Leetcode_Description: `Praktyka rozwiązywania problemów algorytmicznych. Liczba aktualnie rozwiązanych zadań: `,
+    UserTable_Description: `Aplikacja full-stack wyświetlająca tabelę użytkowników z filtrowaniem, sortowaniem i paginacją przez WebSockety. Zarządzanie stanem zbudowane z NgRx (Redux), następnie przepisane na serwis session storage. Zawiera testy jednostkowe dla listy użytkowników.`,
+    Blog_Description: `Osobisty blog o tematyce JavaScript, React, Node.js i TypeScript. Treści oparte na strukturze plików JSON, renderowane przy użyciu komponentów własnego design systemu.`,
+    BlogPostCreator_Description: `Narzędzie w stylu CMS do tworzenia wpisów blogowych przez interfejs drag-and-drop. Generuje strukturalny plik JSON wykorzystywany przez blog. Zbudowane z Zustand do zarządzania stanem i komponentami design systemu.`,
+    Api_Description: `Bezserwerowe REST API zbudowane na Fastify i wdrożone przez AWS Lambda. Pełni rolę centralnego backendu łączącego wiele aplikacji mikrofrontendowych: blog, kreator wpisów, portfolio, aplikację pogodową, analitykę, APOD NASA i aplikację fitness. Obsługuje uwierzytelnianie, serwis mailowy, CORS, JWT, zarządzanie sesją oraz połączenia z AWS DynamoDB i S3. Udokumentowane z OpenAPI i Swagger.`,
   },
   en: {
-    AppliedSystems_Description: `My responsibility was to create a frontend application enabling the purchase of insurance through a website. The application was developed using React.js and TypeScript, leveraging the Applied Systems design system. The primary technical challenge was implementing a recursive Depth-First Search (DFS) algorithm to conditionally render a nested, graph-like structure of questions, where each question’s visibility depended on previous answers. The question data was fetched from the backend as a large JSON payload (around 60,000 lines), structured as a Server Driven UI model. The development was part of a 8-person international team spanning Poland, India, Canada, England, the USA, and Australia. In addition to the core questionnaire, I contributed to building an admin panel, implementing user action tracking scripts, creating statistical charts, and ensuring compliance with WCAG 2.1 AA accessibility standards.`,
-    WBD_Description: `My responsibility was to develop a new version of the TVN24.pl website from the ground up using SSR technology. The architecture was inspired by the islands concept popularized by Astro.js, featuring microfrontend applications implemented with React.js and Web Components. As part of the development team, I contributed to building multiple interactive widgets, including stock quotes, weather forecasts, polls, quizzes, election tools, TV program guides, and a custom SSR-based microfrontend rendering algorithm that operates without relying on external libraries.`,
+    AppliedSystems_Description: `Built a Server Driven UI insurance purchase flow using a recursive DFS algorithm to render a nested graph of ~60k-line JSON questions. Contributed to an admin panel, user tracking, statistical charts, and WCAG 2.1 AA compliance in an 8-person international team.`,
+    WBD_Description: `Built TVN24.pl from scratch using SSR and an islands architecture with microfrontend React + Web Components. Delivered widgets for stocks, weather, polls, elections, TV guides, and a custom SSR rendering algorithm without external libs.`,
     FLHF_Description:
-      'My responsibility was to enhance a website initially developed by a software house while simultaneously refreshing its graphic design. The core focus was to develop ecommerce-specific components such as sliders, carousels, product listings, search functionality, and a shopping cart. Key priorities included optimizing for mobile view, improving SEO, descriptive markup and metadata, and enhancing performance metrics such as Cumulative Layout Shift (CLS), page speed, and accessibility, measured and optimized using Lighthouse.',
+      'Enhanced an e-commerce site with sliders, carousels, product listings, and a shopping cart. Focused on mobile optimization, SEO, CLS, page speed, and accessibility improvements via Lighthouse audits.',
     EuropaUbezpieczenia_Description:
-      'My duty was to maintain and develop an internal system for managing insurance policies. The system was used by insurance agents and office workers. My tasks included creating new modules, integrating external systems (online payments, client data verification, insurance application creation), and optimizing application performance. I worked on both the frontend (Angular) and backend (Java, Groovy, SQL) of the application.',
+      'Maintained and developed an internal insurance policy management system for agents and office workers. Built new modules, integrated payment and data verification systems, and worked across Angular frontend and Java/Groovy backend.',
     FiguresWithBBox_Description:
-      "An application that draws rotated geometric figures (rectangles and ellipses) on a canvas based on data from the API. For each figure it was necessary to draw a 'bounding box'.",
+      'Draws rotated rectangles and ellipses on canvas from API data, computing a precise bounding box for each figure.',
     DesignSystem_Description:
-      'A comprehensive collection of React components for building consistent, scalable applications.',
-    Tracker_Description: `An application that allows you to monitor a person's movement in real time, including GPS noise filtering.`,
-    Leetcode_Description: `Number of currently solved problems: `,
+      'A comprehensive React component library for building consistent, scalable applications. Published as an npm package.',
+    Tracker_Description: `Real-time person movement monitoring app with GPS noise filtering, backed by serverless AWS infrastructure.`,
+    Leetcode_Description: 'Consistent algorithmic problem solving practice. Number of currently solved problems: ',
+    UserTable_Description: `A full-stack application displaying a filterable, sortable, and paginated user table synced in real time via WebSockets. State management was initially built with NgRx (Redux), then refactored to a session storage service. Includes unit tests for the user listing component.`,
+    Blog_Description: `A personal knowledge-sharing blog covering JavaScript, React, Node.js, and TypeScript. Content is driven by a JSON file structure and rendered using custom design system components.`,
+    BlogPostCreator_Description: `A custom CMS-style tool for authoring blog posts via a drag-and-drop interface. Outputs structured JSON consumed by the blog. Built with Zustand for state management and design system components for consistency.`,
+    Api_Description: `A serverless REST API built on Fastify and deployed via AWS Lambda. Acts as a central backend hub connecting multiple microfrontend apps: blog, blog post creator, portfolio, weather app, APOD NASA, analytics, and fitness app. Features authentication, mail service, CORS handling, JWT stateless auth, session management, and connectors to AWS DynamoDB and S3. Fully documented with OpenAPI and Swagger.`,
   },
 };
 

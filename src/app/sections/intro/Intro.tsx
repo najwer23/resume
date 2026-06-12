@@ -1,6 +1,6 @@
-import { CopyButton } from 'najwer23morsels/lib/copybutton';
-import { Grid } from 'najwer23morsels/lib/grid';
-import { TextBox } from 'najwer23morsels/lib/textbox';
+import { CopyButton } from 'najwer23morsels/lib/CopyButton';
+import { Grid } from 'najwer23morsels/lib/Grid';
+import { TextBox } from 'najwer23morsels/lib/TextBox';
 import styles from './Intro.module.css';
 
 const Links: {

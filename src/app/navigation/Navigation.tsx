@@ -1,6 +1,6 @@
-import { Button } from 'najwer23morsels/lib/button';
-import { Grid } from 'najwer23morsels/lib/grid';
-import { TextBox } from 'najwer23morsels/lib/textbox';
+import { Button } from 'najwer23morsels/lib/Button';
+import { Grid } from 'najwer23morsels/lib/Grid';
+import { TextBox } from 'najwer23morsels/lib/TextBox';
 import { GithubLastMody } from '../github/GithubLastMody';
 import { useTranslationContext } from '../translation/useTranslationContext';
 import styles from './Navigation.module.css';

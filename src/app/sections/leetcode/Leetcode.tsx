@@ -1,5 +1,5 @@
-import { Grid } from 'najwer23morsels/lib/grid';
-import { TextBox } from 'najwer23morsels/lib/textbox';
+import { Grid } from 'najwer23morsels/lib/Grid';
+import { TextBox } from 'najwer23morsels/lib/TextBox';
 import type React from 'react';
 import { T } from '../../translation/T';
 import { LeetcodeProblems } from './LeetcodeProblems';

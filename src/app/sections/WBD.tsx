@@ -1,6 +1,6 @@
-import { Grid } from 'najwer23morsels/lib/grid';
-import { Picture } from 'najwer23morsels/lib/picture';
-import { TextBox } from 'najwer23morsels/lib/textbox';
+import { Grid } from 'najwer23morsels/lib/Grid';
+import { Picture } from 'najwer23morsels/lib/Picture';
+import { TextBox } from 'najwer23morsels/lib/TextBox';
 import { T } from '../translation/T';
 
 export const WBD: React.FC<{}> = ({}) => {

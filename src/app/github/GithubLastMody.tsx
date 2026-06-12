@@ -1,6 +1,6 @@
-import { Grid } from 'najwer23morsels/lib/grid';
-import { Loader } from 'najwer23morsels/lib/loader';
-import { TextBox } from 'najwer23morsels/lib/textbox';
+import { Grid } from 'najwer23morsels/lib/Grid';
+import { Loader } from 'najwer23morsels/lib/Loader';
+import { TextBox } from 'najwer23morsels/lib/TextBox';
 import React from 'react';
 import { useImmediateThrottledQuery } from '../hooks/useImmediateThrottledQuery';
 import { queryGithubLastMody } from './GithubLastMody.query';

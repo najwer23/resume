@@ -27,6 +27,7 @@ export const Tracker: React.FC<{}> = ({}) => {
         </TextBox>
 
         <TextBox
+          tag="a"
           href="https://youtube.com/shorts/XoHvVMNMyyM"
           mobileSize={14}
           desktopSize={14}

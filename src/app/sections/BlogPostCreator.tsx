@@ -27,6 +27,7 @@ export const BlogPostCreator: React.FC<{}> = ({}) => {
         </TextBox>
 
         <TextBox
+          tag="a"
           href="https://najwer23.github.io/blog-post-creator/"
           mobileSize={14}
           desktopSize={14}

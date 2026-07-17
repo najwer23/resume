@@ -1,4 +1,4 @@
-import { CopyButton } from 'najwer23morsels/lib/CopyButton';
+import { ButtonCopy } from 'najwer23morsels/lib/ButtonCopy';
 import { Grid } from 'najwer23morsels/lib/Grid';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
 import styles from './Intro.module.css';
@@ -54,8 +54,8 @@ export const Intro: React.FC = () => {
                   >
                     {i == 3 ? <b>{Links[v]}</b> : Links[v]}
                   </TextBox>
-                  <div className={styles.copyButtonWrapper}>
-                    <CopyButton textToCopy={Links[v]} color="white" />
+                  <div className={styles.buttonCopyWrapper}>
+                    <ButtonCopy textToCopy={Links[v]} color="white" />
                   </div>
                 </div>
               </Grid>

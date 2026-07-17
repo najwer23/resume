@@ -19,6 +19,7 @@ export const DesignSystem: React.FC<{}> = ({}) => {
         </TextBox>
 
         <TextBox
+          tag="a"
           href="https://najwer23.github.io/najwer23morsels"
           mobileSize={14}
           desktopSize={14}

@@ -27,6 +27,7 @@ export const Blog: React.FC<{}> = ({}) => {
         </TextBox>
 
         <TextBox
+          tag="a"
           href="https://najwer23.github.io/#/blog"
           mobileSize={14}
           desktopSize={14}

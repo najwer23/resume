@@ -27,6 +27,7 @@ export const UserTable: React.FC<{}> = ({}) => {
         </TextBox>
 
         <TextBox
+          tag="a"
           href="https://github.com/najwer23/angular/pull/1"
           mobileSize={14}
           desktopSize={14}

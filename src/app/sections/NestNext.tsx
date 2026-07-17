@@ -27,6 +27,7 @@ export const NestNext: React.FC<{}> = ({}) => {
         </TextBox>
 
         <TextBox
+          tag="a"
           href="https://github.com/najwer23/nest-next"
           mobileSize={14}
           desktopSize={14}

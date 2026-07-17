@@ -20,6 +20,7 @@ export const Leetcode: React.FC = () => {
           {T('Leetcode_Description')} <LeetcodeProblems />
         </TextBox>
         <TextBox
+          tag="a"
           href="https://leetcode.com/najwer23/"
           mobileSize={14}
           desktopSize={14}

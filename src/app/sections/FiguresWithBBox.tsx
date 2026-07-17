@@ -19,6 +19,7 @@ export const FiguresWithBBox: React.FC<{}> = ({}) => {
         </TextBox>
 
         <TextBox
+          tag="a"
           href="https://najwer23.github.io/react-redux-ts"
           mobileSize={14}
           desktopSize={14}

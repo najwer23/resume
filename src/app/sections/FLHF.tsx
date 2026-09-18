@@ -12,7 +12,7 @@ export const FLHF: React.FC<{}> = ({}) => {
 
       <Grid widthMax={'700px'} layout="container" margin={0}>
         <TextBox color="black" mobileSize={18} desktopSize={18} fontWeight={500} tag="h3">
-          FLHF S.A
+          FLHF S.A.
         </TextBox>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
           Frontend Web Developer

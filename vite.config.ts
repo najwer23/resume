@@ -62,7 +62,7 @@ export default defineConfig({
   server: { port: 3000 },
   resolve: {
     alias: {
-      '@app': path.resolve(__dirname, './src/app'),
+      '@app': path.resolve(import.meta.dirname, './src/app'),
     },
   },
 });

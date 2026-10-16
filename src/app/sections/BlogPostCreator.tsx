@@ -28,7 +28,7 @@ export const BlogPostCreator: React.FC<{}> = ({}) => {
 
         <TextBox
           tag="a"
-          href="https://najwer23.github.io/blog-post-creator/"
+          href="https://najwer23.github.io/nook/#/blog-post-creator"
           mobileSize={14}
           desktopSize={14}
           color="orangered"
@@ -36,7 +36,7 @@ export const BlogPostCreator: React.FC<{}> = ({}) => {
           rel="noreferrer"
           target="_blank"
         >
-          https://najwer23.github.io/blog-post-creator
+          https://najwer23.github.io/nook/#/blog-post-creator
         </TextBox>
       </Grid>
     </Grid>

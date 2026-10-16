@@ -12,7 +12,7 @@ export const API: React.FC<{}> = ({}) => {
           REST API - Fastify + AWS Lambda
         </TextBox>
         <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={400} tag="h3">
-          (Node.js, TypeScript, Fastify, AWS Lambda, DynamoDB, S3, OpenAPI, Swagger, JWT)
+          (Node.js, TypeScript, Fastify, AWS Lambda, DynamoDB, S3, OpenAPI, Swagger, JWT, Biome.js)
         </TextBox>
         <TextBox
           color="black"

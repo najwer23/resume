@@ -12,7 +12,7 @@ export const DesignSystem: React.FC<{}> = ({}) => {
           DESIGN SYSTEM (npm package)
         </TextBox>
         <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={400} tag="h3">
-          (React.js, TypeScript, JavaScript, CSS Modules, Storybook, Vite, Rollup.js)
+          (React.js, TypeScript, JavaScript, CSS Modules, Storybook, Vite, Rollup.js, Biome.js)
         </TextBox>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 5px 0'}>
           {T('DesignSystem_Description')}

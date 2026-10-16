@@ -12,7 +12,7 @@ export const Blog: React.FC<{}> = ({}) => {
           BLOG
         </TextBox>
         <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={400} tag="h3">
-          (React.js, TypeScript, Design System, TanStack Query)
+          (React.js, TypeScript, Design System, TanStack Query, Biome.js)
         </TextBox>
         <TextBox
           color="black"

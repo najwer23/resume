@@ -1,6 +1,21 @@
-import { executeFetch } from '@app/config/configFetch';
+import { executeFetchExternal } from '@app/config/configFetch';
 
-export const queryLeetcode = async (): Promise<any> => {
-  const url = new URL(`https://leetcode-api-faisalshohag.vercel.app/najwer23`);
-  return await executeFetch(url);
+export interface LeetcodeResponse {
+  totalSolved: number;
+  totalSubmissions: { difficulty: string; count: number; submissions: number }[];
+  easySolved: number;
+  mediumSolved: number;
+  hardSolved: number;
+  totalQuestions: number;
+  easyTotal?: number;
+  mediumTotal?: number;
+  hardTotal?: number;
+  ranking: number;
+  contributionPoint: number;
+  reputation: number;
+}
+
+export const queryLeetcode = (): Promise<LeetcodeResponse> => {
+  const endpointUrl = new URL('https://leetcode-api-faisalshohag.vercel.app/najwer23');
+  return executeFetchExternal<LeetcodeResponse>(endpointUrl);
 };

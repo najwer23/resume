@@ -1,6 +1,6 @@
-import { executeFetchExternal } from '@app/config/configFetch';
+import { fetchClientExecuteExternal } from '@app/fetchClient/fetchClientExecuteExternal';
 
-export interface GithubBranchResponse {
+export interface QueryGithubLastModyResponse {
   name: string;
   protected: boolean;
   commit: {
@@ -14,10 +14,8 @@ export interface GithubBranchResponse {
   };
 }
 
-export const queryGithubLastMody = (): Promise<GithubBranchResponse> => {
+export const queryGithubLastMody = (): Promise<QueryGithubLastModyResponse> => {
   const endpointUrl = new URL('https://api.github.com/repos/najwer23/resume/branches/gh-pages');
 
-  return executeFetchExternal<GithubBranchResponse>(endpointUrl, {
-    headers: { Accept: 'application/vnd.github+json' },
-  });
+  return fetchClientExecuteExternal<QueryGithubLastModyResponse>(endpointUrl);
 };

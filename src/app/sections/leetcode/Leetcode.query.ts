@@ -1,6 +1,6 @@
-import { executeFetchExternal } from '@app/config/configFetch';
+import { fetchClientExecuteExternal } from '@app/fetchClient/fetchClientExecuteExternal';
 
-export interface LeetcodeResponse {
+export interface QueryLeetcodeResponse {
   totalSolved: number;
   totalSubmissions: { difficulty: string; count: number; submissions: number }[];
   easySolved: number;
@@ -15,7 +15,8 @@ export interface LeetcodeResponse {
   reputation: number;
 }
 
-export const queryLeetcode = (): Promise<LeetcodeResponse> => {
+export const queryLeetcode = (): Promise<QueryLeetcodeResponse> => {
   const endpointUrl = new URL('https://leetcode-api-faisalshohag.vercel.app/najwer23');
-  return executeFetchExternal<LeetcodeResponse>(endpointUrl);
+
+  return fetchClientExecuteExternal<QueryLeetcodeResponse>(endpointUrl);
 };

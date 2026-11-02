@@ -18,8 +18,11 @@ export default defineConfig({
         navigateFallback: '/resume/index.html', // fallback for SPA routing
       },
       manifest: {
+        id: '/resume/',
         name: 'Mariusz Najwer - Résumé',
-        short_name: 'Mariusz Najwer - Résumé',
+        short_name: 'Résumé',
+        description: 'Résumé of Mariusz Najwer, software engineer from Wrocław, Poland. React, Angular and Node.js.',
+        lang: 'en',
         start_url: '/resume/',
         scope: '/resume/',
         display: 'standalone',
@@ -38,6 +41,13 @@ export default defineConfig({
             type: 'image/png',
             purpose: 'any',
           },
+          // Optional: add a dedicated maskable icon (with safe-zone padding)
+          // {
+          //   src: 'icon/512-maskable.png',
+          //   sizes: '512x512',
+          //   type: 'image/png',
+          //   purpose: 'maskable',
+          // },
         ],
       },
     }),

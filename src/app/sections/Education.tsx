@@ -19,9 +19,7 @@ export const Education: React.FC = () => {
           <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
             Master of Science, COMPUTER SCIENCE, Above Good (4,5)
           </TextBox>
-          <Typography appearance="light" variant="caption">
-            2018.02 – 2019.06, Wrocław, Poland
-          </Typography>
+          <Typography variant="caption">2018.02 – 2019.06, Wrocław, Poland</Typography>
           <TextBox color="black" mobileSize={13} desktopSize={13} fontWeight={400} tag="h3" margin={'5px 0 0 0'}>
             <i>
               <b>Research and comparative study of relational and non-relational database systems</b>
@@ -45,9 +43,7 @@ export const Education: React.FC = () => {
           <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
             Bachelor of Science, CONTROL ENGINEERING AND ROBOTICS, Above Good (4,5)
           </TextBox>
-          <Typography appearance="light" variant="caption">
-            2014.10 – 2018.01, Wrocław, Poland
-          </Typography>
+          <Typography variant="caption">2014.10 – 2018.01, Wrocław, Poland</Typography>
 
           <TextBox color="black" mobileSize={13} desktopSize={13} fontWeight={400} tag="h3" margin={'5px 0 0 0'}>
             <i>

@@ -18,9 +18,7 @@ export const EuropaUbezpieczenia: React.FC<{}> = ({}) => {
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
           Full Stack Developer
         </TextBox>
-        <Typography appearance="light" variant="caption">
-          2019.09 – 2021.10; 2 years, 2 months; Wrocław, Poland / Remote
-        </Typography>
+        <Typography variant="caption">2019.09 – 2021.10; 2 years, 2 months; Wrocław, Poland / Remote</Typography>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 0 0'}>
           {T('EuropaUbezpieczenia_Description')}
         </TextBox>

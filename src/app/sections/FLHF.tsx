@@ -18,9 +18,7 @@ export const FLHF: React.FC<{}> = ({}) => {
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
           Frontend Web Developer
         </TextBox>
-        <Typography appearance="light" variant="caption">
-          2021.11 – 2023.04; 1 year, 6 months; Wrocław, Poland / Remote
-        </Typography>
+        <Typography variant="caption">2021.11 – 2023.04; 1 year, 6 months; Wrocław, Poland / Remote</Typography>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 0 0'}>
           {T('FLHF_Description')}
         </TextBox>

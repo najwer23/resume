@@ -22,9 +22,7 @@ export const Intro: React.FC = () => {
             <TextBox color="black" mobileSize={50} desktopSize={50} tag="h1">
               <b>Mariusz</b> Najwer
             </TextBox>
-            <Typography appearance="light" variant="caption">
-              Software Engineer
-            </Typography>
+            <Typography variant="caption">Software Engineer</Typography>
             <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={500} tag="h3">
               Wrocław, Poland (open to relocation)
             </TextBox>

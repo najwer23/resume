@@ -12,9 +12,7 @@ export const Caregiving: React.FC<{}> = ({}) => {
         <TextBox color="black" mobileSize={18} desktopSize={18} fontWeight={500} tag="h3">
           CAREGIVING
         </TextBox>
-        <Typography appearance="light" variant="caption">
-          2025.11 – 2026.09; 11 months;
-        </Typography>
+        <Typography variant="caption">2025.11 – 2026.09; 11 months;</Typography>
 
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 0 0'}>
           {T('Caregiving')}

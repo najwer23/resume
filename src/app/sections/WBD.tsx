@@ -18,9 +18,7 @@ export const WBD: React.FC<{}> = ({}) => {
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
           Frontend Software Engineer
         </TextBox>
-        <Typography appearance="light" variant="caption">
-          2023.08 – 2024.08; 1 year; Warsaw, Poland / Remote
-        </Typography>
+        <Typography variant="caption">2023.08 – 2024.08; 1 year; Warsaw, Poland / Remote</Typography>
 
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 0 0'}>
           {T('WBD_Description')}

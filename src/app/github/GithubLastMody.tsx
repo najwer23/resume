@@ -26,10 +26,10 @@ export const GithubLastMody: React.FC<{}> = React.memo(() => {
     : 'Unavailable';
 
   return (
-    <Grid widthMin={'160px'} layout="flex" justifyContent="flex-end">
-      {isLoading && <Loader loaderColor="black" minHeight={'50px'} />}
+    <Grid widthMin={'140px'} layout="flex" justifyContent="flex-end">
+      {isLoading && <Loader loaderColor="black" minHeight={'30px'} />}
       {!isLoading && (
-        <TextBox mobileSize={20} desktopSize={20} margin={0}>
+        <TextBox mobileSize={16} desktopSize={16} margin={0}>
           {formattedDate}
         </TextBox>
       )}

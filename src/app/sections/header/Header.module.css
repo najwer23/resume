@@ -1,7 +1,7 @@
 @layer Header {
   .header {
     .headerLine {
-      height: 3px;
+      height: 2px;
       width: 350px;
       background-color: black;
     }

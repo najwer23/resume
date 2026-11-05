@@ -1,6 +1,7 @@
 import { Grid } from 'najwer23morsels/lib/Grid';
 import { Picture } from 'najwer23morsels/lib/Picture';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
+import { Typography } from 'najwer23morsels/lib/Typography';
 import { T } from '../translation/T';
 
 export const EuropaUbezpieczenia: React.FC<{}> = ({}) => {
@@ -17,9 +18,9 @@ export const EuropaUbezpieczenia: React.FC<{}> = ({}) => {
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
           Full Stack Developer
         </TextBox>
-        <TextBox color="#808080" mobileSize={13} desktopSize={13} fontWeight={500} tag="h3">
+        <Typography appearance="light" variant="caption">
           2019.09 – 2021.10; 2 years, 2 months; Wrocław, Poland / Remote
-        </TextBox>
+        </Typography>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 0 0'}>
           {T('EuropaUbezpieczenia_Description')}
         </TextBox>

@@ -1,6 +1,7 @@
 import { Grid } from 'najwer23morsels/lib/Grid';
 import { Picture } from 'najwer23morsels/lib/Picture';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
+import { Typography } from 'najwer23morsels/lib/Typography';
 import { T } from '../translation/T';
 
 export const AppliedSystems: React.FC<{}> = ({}) => {
@@ -17,9 +18,9 @@ export const AppliedSystems: React.FC<{}> = ({}) => {
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
           Frontend Software Engineer
         </TextBox>
-        <TextBox color="#808080" mobileSize={13} desktopSize={13} fontWeight={500} tag="h3">
+        <Typography appearance="light" variant="caption">
           2024.06 – 2025.10; 1 year, 5 months; Austin, United States / Remote
-        </TextBox>
+        </Typography>
 
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 0 0'}>
           {T('AppliedSystems_Description')}

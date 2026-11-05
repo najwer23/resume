@@ -1,6 +1,7 @@
 import { Grid } from 'najwer23morsels/lib/Grid';
 import { Picture } from 'najwer23morsels/lib/Picture';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
+import { Typography } from 'najwer23morsels/lib/Typography';
 
 export const Education: React.FC = () => {
   return (
@@ -18,9 +19,9 @@ export const Education: React.FC = () => {
           <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
             Master of Science, COMPUTER SCIENCE, Above Good (4,5)
           </TextBox>
-          <TextBox color="#808080" mobileSize={13} desktopSize={13} fontWeight={500} tag="h3">
+          <Typography appearance="light" variant="caption">
             2018.02 – 2019.06, Wrocław, Poland
-          </TextBox>
+          </Typography>
           <TextBox color="black" mobileSize={13} desktopSize={13} fontWeight={400} tag="h3" margin={'5px 0 0 0'}>
             <i>
               <b>Research and comparative study of relational and non-relational database systems</b>
@@ -44,9 +45,10 @@ export const Education: React.FC = () => {
           <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
             Bachelor of Science, CONTROL ENGINEERING AND ROBOTICS, Above Good (4,5)
           </TextBox>
-          <TextBox color="#808080" mobileSize={13} desktopSize={13} fontWeight={500} tag="h3">
+          <Typography appearance="light" variant="caption">
             2014.10 – 2018.01, Wrocław, Poland
-          </TextBox>
+          </Typography>
+
           <TextBox color="black" mobileSize={13} desktopSize={13} fontWeight={400} tag="h3" margin={'5px 0 0 0'}>
             <i>
               <b>Web application supporting online booking system</b>

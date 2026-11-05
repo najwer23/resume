@@ -1,6 +1,7 @@
 import { Grid } from 'najwer23morsels/lib/Grid';
 import { Picture } from 'najwer23morsels/lib/Picture';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
+import { Typography } from 'najwer23morsels/lib/Typography';
 import { T } from '../translation/T';
 
 export const FLHF: React.FC<{}> = ({}) => {
@@ -17,9 +18,9 @@ export const FLHF: React.FC<{}> = ({}) => {
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
           Frontend Web Developer
         </TextBox>
-        <TextBox color="#808080" mobileSize={13} desktopSize={13} fontWeight={500} tag="h3">
+        <Typography appearance="light" variant="caption">
           2021.11 – 2023.04; 1 year, 6 months; Wrocław, Poland / Remote
-        </TextBox>
+        </Typography>
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 0 0'}>
           {T('FLHF_Description')}
         </TextBox>

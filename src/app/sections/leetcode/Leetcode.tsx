@@ -1,5 +1,6 @@
 import { Grid } from 'najwer23morsels/lib/Grid';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
+import { Typography } from 'najwer23morsels/lib/Typography';
 import type React from 'react';
 import { T } from '../../translation/T';
 import { LeetcodeProblems } from './LeetcodeProblems';
@@ -19,18 +20,16 @@ export const Leetcode: React.FC = () => {
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 5px 0'}>
           {T('Leetcode_Description')} <LeetcodeProblems />
         </TextBox>
-        <TextBox
-          tag="a"
+        <Typography
+          variant="link"
           href="https://leetcode.com/najwer23/"
           mobileSize={14}
           desktopSize={14}
-          color="orangered"
-          colorHover="orangered"
           rel="noreferrer"
           target="_blank"
         >
           https://leetcode.com/najwer23
-        </TextBox>
+        </Typography>
       </Grid>
     </Grid>
   );

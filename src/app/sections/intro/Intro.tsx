@@ -1,6 +1,7 @@
-import { ButtonCopy } from 'najwer23morsels/lib/ButtonCopy';
+import { Button } from 'najwer23morsels/lib/Button';
 import { Grid } from 'najwer23morsels/lib/Grid';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
+import { Typography } from 'najwer23morsels/lib/Typography';
 import styles from './Intro.module.css';
 
 const Links: {
@@ -21,9 +22,9 @@ export const Intro: React.FC = () => {
             <TextBox color="black" mobileSize={50} desktopSize={50} tag="h1">
               <b>Mariusz</b> Najwer
             </TextBox>
-            <TextBox color="orangered" mobileSize={14} desktopSize={14} fontWeight={700} tag="h3">
+            <Typography appearance="light" variant="caption">
               Software Engineer
-            </TextBox>
+            </Typography>
             <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={500} tag="h3">
               Wrocław, Poland (open to relocation)
             </TextBox>
@@ -40,22 +41,21 @@ export const Intro: React.FC = () => {
                     gap: '5px',
                   }}
                 >
-                  <TextBox
+                  <Typography
+                    variant="link"
                     color="black"
-                    colorHover="orangered"
                     mobileSize={13}
                     desktopSize={13}
                     fontWeight={400}
-                    tag="a"
                     key={i}
                     href={v}
                     rel="noreferrer"
                     target="_blank"
                   >
                     {i == 3 ? <b>{Links[v]}</b> : Links[v]}
-                  </TextBox>
+                  </Typography>
                   <div className={styles.buttonCopyWrapper}>
-                    <ButtonCopy textToCopy={Links[v]} color="white" />
+                    <Button variant="copy" textToCopy={Links[v]} height="auto" padding="0px 3px" />
                   </div>
                 </div>
               </Grid>

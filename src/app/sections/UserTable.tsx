@@ -1,5 +1,6 @@
 import { Grid } from 'najwer23morsels/lib/Grid';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
+import { Typography } from 'najwer23morsels/lib/Typography';
 import { T } from '../translation/T';
 
 export const UserTable: React.FC<{}> = ({}) => {
@@ -26,18 +27,16 @@ export const UserTable: React.FC<{}> = ({}) => {
           {T('UserTable_Description')}
         </TextBox>
 
-        <TextBox
-          tag="a"
-          href="https://github.com/najwer23/angular/pull/1"
+        <Typography
+          variant="link"
+          href=" https://github.com/najwer23/angular/pull/1"
           mobileSize={14}
           desktopSize={14}
-          color="orangered"
-          colorHover="orangered"
           rel="noreferrer"
           target="_blank"
         >
           https://github.com/najwer23/angular/pull/1
-        </TextBox>
+        </Typography>
       </Grid>
     </Grid>
   );

@@ -1,5 +1,6 @@
 import { Grid } from 'najwer23morsels/lib/Grid';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
+import { Typography } from 'najwer23morsels/lib/Typography';
 import { T } from '../translation/T';
 
 export const Nook: React.FC<{}> = ({}) => {
@@ -26,18 +27,16 @@ export const Nook: React.FC<{}> = ({}) => {
           {T('Nook_Description')}
         </TextBox>
 
-        <TextBox
-          tag="a"
+        <Typography
+          variant="link"
           href="https://najwer23.github.io/nook"
           mobileSize={14}
           desktopSize={14}
-          color="orangered"
-          colorHover="orangered"
           rel="noreferrer"
           target="_blank"
         >
           https://najwer23.github.io/nook
-        </TextBox>
+        </Typography>
       </Grid>
     </Grid>
   );

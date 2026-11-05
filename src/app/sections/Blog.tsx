@@ -1,5 +1,6 @@
 import { Grid } from 'najwer23morsels/lib/Grid';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
+import { Typography } from 'najwer23morsels/lib/Typography';
 import { T } from '../translation/T';
 
 export const Blog: React.FC<{}> = ({}) => {
@@ -26,18 +27,16 @@ export const Blog: React.FC<{}> = ({}) => {
           {T('Blog_Description')}
         </TextBox>
 
-        <TextBox
-          tag="a"
+        <Typography
+          variant="link"
           href="https://najwer23.github.io/#/blog"
           mobileSize={14}
           desktopSize={14}
-          color="orangered"
-          colorHover="orangered"
           rel="noreferrer"
           target="_blank"
         >
           https://najwer23.github.io/#/blog
-        </TextBox>
+        </Typography>
       </Grid>
     </Grid>
   );

@@ -1,5 +1,6 @@
 import { Grid } from 'najwer23morsels/lib/Grid';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
+import { Typography } from 'najwer23morsels/lib/Typography';
 import { T } from '../translation/T';
 
 export const FiguresWithBBox: React.FC<{}> = ({}) => {
@@ -18,18 +19,16 @@ export const FiguresWithBBox: React.FC<{}> = ({}) => {
           {T('FiguresWithBBox_Description')}
         </TextBox>
 
-        <TextBox
-          tag="a"
+        <Typography
+          variant="link"
           href="https://najwer23.github.io/react-redux-ts"
           mobileSize={14}
           desktopSize={14}
-          color="orangered"
-          colorHover="orangered"
           rel="noreferrer"
           target="_blank"
         >
           https://najwer23.github.io/react-redux-ts
-        </TextBox>
+        </Typography>
       </Grid>
     </Grid>
   );

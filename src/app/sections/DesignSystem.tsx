@@ -1,5 +1,6 @@
 import { Grid } from 'najwer23morsels/lib/Grid';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
+import { Typography } from 'najwer23morsels/lib/Typography';
 import { T } from '../translation/T';
 
 export const DesignSystem: React.FC<{}> = ({}) => {
@@ -18,18 +19,16 @@ export const DesignSystem: React.FC<{}> = ({}) => {
           {T('DesignSystem_Description')}
         </TextBox>
 
-        <TextBox
-          tag="a"
+        <Typography
+          variant="link"
           href="https://najwer23.github.io/najwer23morsels"
           mobileSize={14}
           desktopSize={14}
-          color="orangered"
-          colorHover="orangered"
           rel="noreferrer"
           target="_blank"
         >
           https://najwer23.github.io/najwer23morsels
-        </TextBox>
+        </Typography>
       </Grid>
     </Grid>
   );

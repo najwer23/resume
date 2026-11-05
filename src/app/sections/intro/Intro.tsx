@@ -55,7 +55,11 @@ export const Intro: React.FC = () => {
                     {i == 3 ? <b>{Links[v]}</b> : Links[v]}
                   </Typography>
                   <div className={styles.buttonCopyWrapper}>
-                    <Button variant="copy" textToCopy={Links[v]} height="auto" padding="0px 3px" />
+                    <Button variant="copy" textToCopy={Links[v]} padding="0px 3px" height={'16px'} margin={0}>
+                      <TextBox mobileSize={10} desktopSize={10} color="inherit">
+                        Copy
+                      </TextBox>
+                    </Button>
                   </div>
                 </div>
               </Grid>

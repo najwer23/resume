@@ -1,5 +1,4 @@
 import { Grid } from 'najwer23morsels/lib/Grid';
-import { Loader } from 'najwer23morsels/lib/Loader';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
 import React from 'react';
 import { useImmediateThrottledQuery } from '../hooks/useImmediateThrottledQuery';
@@ -27,7 +26,6 @@ export const GithubLastMody: React.FC<{}> = React.memo(() => {
 
   return (
     <Grid widthMin={'140px'} layout="flex" justifyContent="flex-end">
-      {isLoading && <Loader loaderColor="black" minHeight={'30px'} />}
       {!isLoading && (
         <TextBox mobileSize={16} desktopSize={16} margin={0}>
           {formattedDate}

@@ -9,7 +9,7 @@ export const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <LangProvider>
-        <Theme themeName={'default'}>
+        <Theme name={'default'}>
           <RouterHash />
         </Theme>
       </LangProvider>

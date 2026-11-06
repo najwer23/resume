@@ -7,13 +7,4 @@
       display: none !important;
     }
   }
-
-  .navigation .n23mButtonButton {
-    --n23mTextBoxMargin: 20px;
-    --n23mTextBoxColor: red;
-    --n23mTextBoxColorHover: orange;
-    --n23mTextBoxLineHeight: 1.42857;
-    --n23mTextBoxFontWeight: 400;
-    --n23mTextBoxFontWeightHover: 800;
-  }
 }

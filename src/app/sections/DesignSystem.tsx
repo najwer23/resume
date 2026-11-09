@@ -1,9 +1,11 @@
+import { useT } from 'najwer23lang/react';
 import { Grid } from 'najwer23morsels/lib/Grid';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
 import { Typography } from 'najwer23morsels/lib/Typography';
-import { T } from '../translation/T';
 
 export const DesignSystem: React.FC<{}> = ({}) => {
+  const T = useT();
+
   return (
     <Grid widthMax={'1400px'} layout="flex" justifyContent="flex-start" margin={'15px 0 0 0'}>
       <Grid widthMin={'70px'} layout="container" margin={'4px 20px 0 0'}></Grid>

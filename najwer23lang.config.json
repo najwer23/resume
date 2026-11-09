@@ -1,0 +1,6 @@
+{
+  "src": "src",
+  "out": "src/app/translation",
+  "langs": ["pl", "en"],
+  "fn": "T"
+}

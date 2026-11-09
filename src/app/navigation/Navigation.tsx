@@ -1,12 +1,13 @@
+import { useI18n } from 'najwer23lang/react';
 import { Button } from 'najwer23morsels/lib/Button';
 import { Grid } from 'najwer23morsels/lib/Grid';
 import { TextBox } from 'najwer23morsels/lib/TextBox';
 import { GithubLastMody } from '../github/GithubLastMody';
-import { useTranslationContext } from '../translation/useTranslationContext';
+
 import styles from './Navigation.module.css';
 
 export const Navigation: React.FC<{}> = () => {
-  const { lang, setLang } = useTranslationContext();
+  const { lang, setLang } = useI18n();
 
   return (
     <div className={styles.navigation}>

@@ -3914,9 +3914,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"najwer23lang@npm:0.1.2":
-  version: 0.1.2
-  resolution: "najwer23lang@npm:0.1.2"
+"najwer23lang@npm:0.1.4":
+  version: 0.1.4
+  resolution: "najwer23lang@npm:0.1.4"
   peerDependencies:
     react: ">=17"
   peerDependenciesMeta:
@@ -3924,7 +3924,7 @@ __metadata:
       optional: true
   bin:
     najwer23lang: bin/cli.mjs
-  checksum: 10c0/50d34bc913ff8ddcc3fc7c7ae3403f6361875d6afeee6c01b27d508a055e784eeb73ea29ca26ee82688cd7dd0589a2da7a56ea850c8ea8f2bdb890de61fb84f5
+  checksum: 10c0/98b7e83b79aa79d02cadbb5ab899d8216c23dd0177f03be90241840d875b12b379e6302a2ccd574b044d2765240a05f496d191c3a2435ad866d22050ee675001
   languageName: node
   linkType: hard
 
@@ -4379,7 +4379,7 @@ __metadata:
     "@types/react-dom": "npm:^19.3.0"
     "@vitejs/plugin-react": "npm:^6.3.0"
     gh-pages: "npm:^6.3.0"
-    najwer23lang: "npm:0.1.2"
+    najwer23lang: "npm:0.1.4"
     najwer23morsels: "npm:^2.0.29"
     react: "npm:^19.3.1"
     react-dom: "npm:^19.3.1"

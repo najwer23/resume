@@ -1,8 +1,5 @@
 @layer Navigation {
   .navigation {
-    width: 21cm;
-    margin: 40px auto 0 auto;
-
     @media print {
       display: none !important;
     }

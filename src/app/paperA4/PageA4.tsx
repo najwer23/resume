@@ -47,10 +47,14 @@ export interface PageA4Props {
   scale?: 'auto' | number;
   /** Extra empty space (px) above the first line of every page after the first (default 10) */
   topSpacing?: number;
+  /** Space (px) left and right of the paper on screen, so it never touches the screen edge (default 10) */
+  sidePadding?: number;
   /** Space between sheets on screen, in px (default 16) */
   gap?: number;
   /** Style for the text area (font, size, color...) */
   contentStyle?: CSSProperties;
+  /** Shown above the first sheet on screen only (not printed). Scales together with the paper. */
+  toolbar?: ReactNode;
   /** Class for the outer wrapper */
   className?: string;
   /** Called when the number of pages changes */
@@ -213,13 +217,17 @@ export default function PageA4({
   margin = 10,
   scale = 'auto',
   topSpacing = 10,
+  sidePadding = 10,
   gap = 16,
   contentStyle,
+  toolbar,
   className = '',
   onPagesChange,
 }: PageA4Props) {
   const outer = useRef<HTMLDivElement>(null);
   const meas = useRef<HTMLDivElement>(null);
+  const tb = useRef<HTMLDivElement>(null);
+  const [tbHeight, setTbHeight] = useState<number>(0);
   const H = (297 - 2 * margin) * PX;
   const W = (210 - 2 * margin) * PX;
   const [ranges, setRanges] = useState<PageRange[]>([[0, H]]);
@@ -253,24 +261,37 @@ export default function PageA4({
     const el = outer.current;
     if (!el) return;
     const calc = () => {
-      const w = el.clientWidth;
+      const w = el.clientWidth - 2 * sidePadding;
       if (w > 0) setAuto(Math.min(1, w / A4_W));
     };
     calc();
     const ro = new ResizeObserver(calc);
     ro.observe(el);
     return () => ro.disconnect();
-  }, []);
+  }, [sidePadding]);
+
+  // height of the toolbar (it is scaled with a transform, so its layout height must be set by hand)
+  const hasToolbar = Boolean(toolbar);
+  useLayoutEffect(() => {
+    const el = tb.current;
+    if (!el) return;
+    const read = () => setTbHeight(el.offsetHeight);
+    read();
+    const ro = new ResizeObserver(read);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [hasToolbar]);
 
   useEffect(() => {
     onPagesChange?.(ranges.length);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ranges.length]);
 
   const sc = scale === 'auto' ? auto : scale;
-  const paperA4 = { gap, '--pa4-m': `${margin}mm` } as CSSProperties;
+  const rootStyle = { gap, paddingInline: sidePadding, '--pa4-m': `${margin}mm` } as CSSProperties;
 
   return (
-    <div ref={outer} className={`${styles.paperA4} ${className}`.trim()} style={paperA4}>
+    <div ref={outer} className={`${styles.root} ${className}`.trim()} style={rootStyle}>
       {/* printer page size + margin; the browser draws its header/footer inside this margin */}
       <style>{`@page{size:A4;margin:${margin}mm}`}</style>
 
@@ -280,6 +301,14 @@ export default function PageA4({
           {children}
         </div>
       </div>
+
+      {hasToolbar && (
+        <div className={styles.toolbarFrame} style={{ width: A4_W * sc, height: tbHeight * sc }}>
+          <div ref={tb} className={styles.toolbar} style={{ transform: `scale(${sc})` }}>
+            {toolbar}
+          </div>
+        </div>
+      )}
 
       {ranges.map(([s, e], i) => (
         <div key={i} className={styles.box} style={{ width: A4_W * sc, height: A4_H * sc }}>

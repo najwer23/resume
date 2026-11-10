@@ -1,5 +1,6 @@
 @layer PaperA4 {
-  .paperA4 {
+  .root {
+    box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -21,7 +22,7 @@
     background: #fff;
     color: #111;
     transform-origin: 0 0;
-    box-shadow: 0 4px 5px rgba(75, 75, 75, 0.2);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
     overflow: hidden;
   }
 
@@ -34,6 +35,19 @@
     color: #111;
     overflow-wrap: anywhere;
     box-sizing: border-box;
+  }
+
+  .toolbarFrame {
+    position: relative;
+    flex: none;
+  }
+
+  .toolbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 210mm;
+    transform-origin: 0 0;
   }
 
   .measure {
@@ -55,16 +69,19 @@
       display: none !important;
     }
 
-    .measure {
+    .measure,
+    .toolbarFrame {
       display: none !important;
     }
 
-    .paperA4 {
+    .root {
       display: block !important;
+      padding-inline: 0 !important;
     }
 
     .box {
       width: calc(210mm - 2 * var(--pa4-m)) !important;
+      /* 1px less than the printable height, so rounding never creates a blank page */
       height: calc(297mm - 2 * var(--pa4-m) - 1px) !important;
       break-after: page;
       page-break-after: always;

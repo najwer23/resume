@@ -98,7 +98,8 @@ export const computeRanges = ({ lines, atoms, marks, total }: Measured, H: numbe
         }
       }
     }
-    out.push([s, end]);
+    // whole pixels, so screen and print slice at the same spot
+    out.push([Math.floor(s), Math.round(end)]);
     if (end >= total - 0.5) break;
     s = resume;
   }

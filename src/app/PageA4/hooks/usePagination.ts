@@ -7,8 +7,9 @@ export const usePagination = (pageHeight: number, topSpacing: number) => {
   const [ranges, setRanges] = useState<PageRange[]>([[0, pageHeight]]);
 
   const measure = useCallback(() => {
-    if (!measRef.current) return;
-    const next = computeRanges(collect(measRef.current), pageHeight, topSpacing);
+    const el = measRef.current;
+    if (!el || el.offsetHeight === 0) return; // hidden (print layout) -> nothing to measure
+    const next = computeRanges(collect(el), pageHeight, topSpacing);
     setRanges((prev) => (rangesKey(prev) === rangesKey(next) ? prev : next));
   }, [pageHeight, topSpacing]);
 

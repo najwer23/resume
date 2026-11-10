@@ -11,7 +11,7 @@ interface PageA4Props {
   margin?: number;
   /** "auto" fits the screen width (good for mobile); a number is a fixed zoom (1 = real size) */
   scale?: 'auto' | number;
-  /** Extra empty space (px) above the first line of every page after the first (default 10) */
+  /** Extra empty space (px) above the first line of every page after the first, on screen only (default 10) */
   topSpacing?: number;
   /** Space (px) left and right of the paper on screen, so it never touches the screen edge (default 10) */
   sidePadding?: number;
@@ -59,7 +59,6 @@ export const PageA4: React.FC<PageA4Props> = ({
       {/* printer page size + margin; the browser draws its header/footer inside this margin */}
       <style>{`@page{size:A4;margin:${margin}mm}`}</style>
 
-      {/* hidden copy used only for measuring */}
       <div className={styles.measure} aria-hidden="true" style={{ width: W }}>
         <div ref={measRef} className={styles.content} style={{ width: W, ...contentStyle }}>
           {children}
@@ -85,7 +84,6 @@ export const PageA4: React.FC<PageA4Props> = ({
                   top: i === 0 ? `${margin}mm` : `calc(${margin}mm + ${topSpacing}px)`,
                   width: W,
                   height: Math.max(0, e - s),
-                  '--pa4-top': i === 0 ? '0px' : `${topSpacing}px`,
                 } as CSSProperties
               }
             >
@@ -96,6 +94,10 @@ export const PageA4: React.FC<PageA4Props> = ({
           </div>
         </div>
       ))}
+
+      <div className={styles.printFlow} style={contentStyle}>
+        {children}
+      </div>
     </div>
   );
 };

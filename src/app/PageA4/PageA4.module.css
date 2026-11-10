@@ -58,53 +58,65 @@
     pointer-events: none;
   }
 
+  /* only used when printing */
+  .printFlow {
+    display: none;
+  }
+
   /*
    * Printing: the @page rule (size + margin) is injected by the component.
-   * The printer margin is left to the browser, so its header/footer can use it.
-   * Each box is exactly the printable area (A4 minus the margin on every side).
+   * The screen sheets are hidden; one flowing copy of the content is printed
+   * and the browser splits it into pages itself, so no line is ever cut.
    */
   @media print {
-    /* global class: you add it yourself to buttons/menus that must not be printed */
+    /* global class: add it yourself to buttons/menus that must not be printed */
     :global(.no-print) {
       display: none !important;
     }
 
     .measure,
-    .toolbarFrame {
+    .toolbarFrame,
+    .box {
       display: none !important;
     }
 
     .root {
       display: block !important;
-      padding-inline: 0 !important;
+      width: auto !important;
+      padding: 0 !important;
+      gap: 0 !important;
     }
 
-    .box {
-      width: calc(210mm - 2 * var(--pa4-m)) !important;
-      /* 1px less than the printable height, so rounding never creates a blank page */
-      height: calc(297mm - 2 * var(--pa4-m) - 1px) !important;
-      break-after: page;
-      page-break-after: always;
-      overflow: hidden;
-    }
-
-    .box:last-of-type {
-      break-after: auto;
-      page-break-after: auto;
-    }
-
-    .sheet {
-      width: 100% !important;
-      height: 100% !important;
-      transform: none !important;
-      box-shadow: none !important;
+    .printFlow {
+      display: block;
+      color: #111;
+      overflow-wrap: anywhere;
+      box-sizing: border-box;
+      width: 100%;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
 
-    .clip {
-      left: 0 !important;
-      top: var(--pa4-top, 0px) !important;
+    /* never split these across two pages */
+    .printFlow :is(li, tr, img, svg, figure, table, blockquote, pre) {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .printFlow :is(h1, h2, h3, h4, h5, h6) {
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+
+    .printFlow p {
+      orphans: 3;
+      widows: 3;
+    }
+
+    /* manual page break, same marker as on screen */
+    .printFlow :global([data-page-break]) {
+      break-before: page;
+      page-break-before: always;
     }
   }
 }

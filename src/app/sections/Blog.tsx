@@ -8,8 +8,6 @@ export const Blog: React.FC<{}> = ({}) => {
 
   return (
     <Grid widthMax={'1400px'} layout="flex" justifyContent="flex-start" margin={'15px 0 0 0'}>
-      <Grid widthMin={'70px'} layout="container" margin={'4px 20px 0 0'}></Grid>
-
       <Grid widthMax={'700px'} layout="container" margin={0}>
         <TextBox color="black" mobileSize={18} desktopSize={18} fontWeight={500} tag="h3">
           BLOG

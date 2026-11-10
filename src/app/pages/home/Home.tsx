@@ -1,6 +1,6 @@
 import { useDocumentTitle } from '@app/hooks/useDocumentTitle';
 import { Navigation } from '@app/navigation/Navigation';
-import PageA4 from '@app/paperA4/PageA4';
+import { PageA4 } from '@app/PageA4/PageA4';
 import { API } from '@app/sections/API';
 import { AppliedSystems } from '@app/sections/AppliedSystems';
 import { Blog } from '@app/sections/Blog';

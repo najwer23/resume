@@ -1,22 +1,22 @@
-import { PaperA4 } from '@app/paperA4/PaperA4';
-import { DesignSystem } from '@app/sections/DesignSystem';
-import { EuropaUbezpieczenia } from '@app/sections/EuropaUbezpieczenia';
-import { FiguresWithBBox } from '@app/sections/FiguresWithBBox';
-import { FLHF } from '@app/sections/FLHF';
-import { Header } from '@app/sections/header/Header';
-import { Tracker } from '@app/sections/Tracker';
-import { UserTable } from '@app/sections/UserTable';
+// import { PaperA4 } from '@app/paperA4/PapeA4';
+// import { DesignSystem } from '@app/sections/DesignSystem';
+// import { EuropaUbezpieczenia } from '@app/sections/EuropaUbezpieczenia';
+// import { FiguresWithBBox } from '@app/sections/FiguresWithBBox';
+// import { FLHF } from '@app/sections/FLHF';
+// import { Header } from '@app/sections/header/Header';
+// import { Tracker } from '@app/sections/Tracker';
+// import { UserTable } from '@app/sections/UserTable';
 
-export const Page2: React.FC = () => {
-  return (
-    <PaperA4>
-      <FLHF />
-      <EuropaUbezpieczenia />
-      <Header text="Projects" />
-      <FiguresWithBBox />
-      <DesignSystem />
-      <Tracker />
-      <UserTable />
-    </PaperA4>
-  );
-};
+// export const Page2: React.FC = () => {
+//   return (
+//     <PaperA4>
+//       <FLHF />
+//       <EuropaUbezpieczenia />
+//       <Header text="Projects" />
+//       <FiguresWithBBox />
+//       <DesignSystem />
+//       <Tracker />
+//       <UserTable />
+//     </PaperA4>
+//   );
+// };

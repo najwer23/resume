@@ -10,6 +10,7 @@ const Links: {
   'tel:+48571024300': `+48 571 024 300`,
   'mailto:najwer23@live.com': 'najwer23@live.com',
   'https://najwer23.github.io': 'https://najwer23.github.io',
+  'https://www.npmjs.com/~najwer23': 'https://www.npmjs.com/~najwer23',
   'https://linkedin.com/in/najwer23': 'https://linkedin.com/in/najwer23',
 };
 
@@ -50,7 +51,7 @@ export const Intro: React.FC = () => {
                     rel="noreferrer"
                     target="_blank"
                   >
-                    {i == 3 ? <b>{Links[v]}</b> : Links[v]}
+                    {i == 4 ? <b>{Links[v]}</b> : Links[v]}
                   </Typography>
                   <div className={styles.buttonCopyWrapper}>
                     <Button variant="copy" textToCopy={Links[v]} padding="0px 3px" height={'16px'} margin={0}>

@@ -13,8 +13,10 @@ import { FLHF } from '@app/sections/FLHF';
 import { Header } from '@app/sections/header/Header';
 import { Intro } from '@app/sections/intro/Intro';
 import { Leetcode } from '@app/sections/leetcode/Leetcode';
+import { Najwer23lang } from '@app/sections/Najwer23lang';
 import { NestNext } from '@app/sections/NestNext';
 import { Nook } from '@app/sections/Nook';
+import { Summary } from '@app/sections/Summary';
 import { Tracker } from '@app/sections/Tracker';
 import { UserTable } from '@app/sections/UserTable';
 import { WBD } from '@app/sections/WBD';
@@ -27,24 +29,33 @@ export const Home: React.FC<{}> = () => {
     <Grid layout="container" margin={'0 0 50px 0'}>
       <PageA4 toolbar={<Navigation />}>
         <Intro />
+        <Header text="Summary" />
+        <Summary />
+        {/* ------ */}
         <Header text="Education" />
         <Education />
+        {/* ------ */}
         <Header text="Professional Experience" />
         <Caregiving />
         <AppliedSystems />
         <WBD />
         <FLHF />
         <EuropaUbezpieczenia />
+        {/* ------ */}
         <Header text="Projects" />
-        <FiguresWithBBox />
+
         <DesignSystem />
+        <Najwer23lang />
         <Tracker />
-        <UserTable />
-        <Leetcode />
-        <Blog />
         <Nook />
         <API />
+
+        <UserTable />
+        <Blog />
         <NestNext />
+
+        <Leetcode />
+        <FiguresWithBBox />
       </PageA4>
     </Grid>
   );

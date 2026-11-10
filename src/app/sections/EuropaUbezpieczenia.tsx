@@ -20,10 +20,37 @@ export const EuropaUbezpieczenia: React.FC<{}> = ({}) => {
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
           Full Stack Developer
         </TextBox>
-        <Typography variant="caption">2019.09 – 2021.10; 2 years, 2 months; Wrocław, Poland / Remote</Typography>
-        <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 0 0'}>
-          {T('EuropaUbezpieczenia_Description')}
-        </TextBox>
+        <Typography variant="caption">{T('2019.09 – 2021.10; 2 years, 2 months; Wrocław, Poland / Remote')}</Typography>
+        <ul style={{ margin: 0, paddingLeft: '16px' }}>
+          <li>
+            <Typography variant="body" mobileSize={14} desktopSize={14}>
+              {T(
+                'Maintained and developed an internal insurance policy management system used by insurance agents and office staff.',
+              )}
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body" mobileSize={14} desktopSize={14}>
+              {T(
+                'Designed and implemented new application modules to support insurance policy management and business workflows.',
+              )}
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body" mobileSize={14} desktopSize={14}>
+              {T(
+                'Integrated external payment gateways and data verification services to streamline insurance-related processes.',
+              )}
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body" mobileSize={14} desktopSize={14}>
+              {T(
+                'Worked across the full stack, developing frontend features in Angular and backend functionality in Java and Groovy.',
+              )}
+            </Typography>
+          </li>
+        </ul>
         <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={400} tag="h3" margin={'10px 0 0 0'}>
           (Angular, TypeScript, JavaScript, jQuery, HTML, CSS, Java (Groovy), SQL, SOAP)
         </TextBox>

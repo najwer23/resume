@@ -22,9 +22,81 @@ export const WBD: React.FC<{}> = ({}) => {
         </TextBox>
         <Typography variant="caption">2023.08 – 2024.08; 1 year; Warsaw, Poland / Remote</Typography>
 
-        <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 0 0'}>
-          {T('WBD_Description')}
-        </TextBox>
+        <ul style={{ margin: '0 0 10px 0', paddingLeft: '16px' }}>
+          <li>
+            <Typography variant="body" mobileSize={14} desktopSize={14}>
+              {T(
+                'Built TVN24.pl from scratch, using server-side rendering (SSR) and an islands architecture combining React microfrontends and Web Components.',
+              )}
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body" mobileSize={14} desktopSize={14}>
+              {T(
+                'Designed and implemented a custom SSR rendering algorithm from scratch, without relying on external rendering libraries.',
+              )}
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body" mobileSize={14} desktopSize={14}>
+              {T(
+                'Developed interactive widgets for stocks, weather, polls, elections, TV guides, and other editorial content.',
+              )}
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body" mobileSize={14} desktopSize={14}>
+              {T(
+                'Integrated independently developed components into a unified frontend architecture, enabling modular development and reuse.',
+              )}
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body" mobileSize={14} desktopSize={14}>
+              {T(
+                'Focused on performance, SEO, and user experience through server-side rendering and optimized client-side hydration.',
+              )}
+            </Typography>
+          </li>
+        </ul>
+
+        <div>
+          <Typography
+            variant="link"
+            href="https://tvn24.pl/"
+            mobileSize={14}
+            desktopSize={14}
+            rel="noreferrer"
+            target="_blank"
+          >
+            https://tvn24.pl
+          </Typography>
+        </div>
+        <div>
+          <Typography
+            variant="link"
+            href="https://tvn.pl/program-tv"
+            mobileSize={14}
+            desktopSize={14}
+            rel="noreferrer"
+            target="_blank"
+          >
+            https://tvn.pl/program-tv
+          </Typography>
+        </div>
+
+        <div>
+          <Typography
+            variant="link"
+            href="https://tvn24.pl/biznes/notowania/waluty/eurusd"
+            mobileSize={14}
+            desktopSize={14}
+            rel="noreferrer"
+            target="_blank"
+          >
+            https://tvn24.pl/biznes/notowania/waluty/eurusd
+          </Typography>
+        </div>
 
         <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={400} tag="h3" margin={'10px 0 0 0'}>
           (React.js, Next.js, TypeScript, JavaScript, HTML, CSS modules, Storybook, Node.js, Fastify, Google Analitycs)

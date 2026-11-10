@@ -20,10 +20,35 @@ export const FLHF: React.FC<{}> = ({}) => {
         <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="h3">
           Frontend Web Developer
         </TextBox>
-        <Typography variant="caption">2021.11 – 2023.04; 1 year, 6 months; Wrocław, Poland / Remote</Typography>
-        <TextBox color="black" mobileSize={14} desktopSize={14} fontWeight={400} tag="p" margin={'10px 0 0 0'}>
-          {T('FLHF_Description')}
-        </TextBox>
+        <Typography variant="caption">{T('2021.11 – 2023.04; 1 year, 6 months; Wrocław, Poland / Remote')}</Typography>
+        <ul style={{ margin: 0, paddingLeft: '16px' }}>
+          <li>
+            <Typography variant="body" mobileSize={14} desktopSize={14}>
+              {T(
+                'Enhanced an e-commerce platform by developing interactive sliders, carousels, and product listing components.',
+              )}
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body" mobileSize={14} desktopSize={14}>
+              {T('Implemented and improved shopping cart functionality to support a smoother purchasing experience.')}
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body" mobileSize={14} desktopSize={14}>
+              {T(
+                'Optimized the application for mobile devices, improving responsiveness and usability across screen sizes.',
+              )}
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body" mobileSize={14} desktopSize={14}>
+              {T(
+                'Improved SEO, page speed, Cumulative Layout Shift (CLS), and accessibility through Lighthouse audits and performance optimizations.',
+              )}
+            </Typography>
+          </li>
+        </ul>
         <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={400} tag="h3" margin={'10px 0 0 0'}>
           (React.js, PWA, TypeScript, JavaScript, HTML, CSS, Magento2, GraphQL)
         </TextBox>

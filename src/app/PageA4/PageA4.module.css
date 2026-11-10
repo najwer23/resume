@@ -98,7 +98,7 @@
     }
 
     /* never split these across two pages */
-    .printFlow :is(li, tr, img, svg, figure, table, blockquote, pre) {
+    .printFlow :is(tr, img, svg, figure, table, blockquote, pre) {
       break-inside: avoid;
       page-break-inside: avoid;
     }
@@ -108,9 +108,11 @@
       page-break-after: avoid;
     }
 
-    .printFlow p {
-      orphans: 3;
-      widows: 3;
+    .printFlow :is(li, p) {
+      break-inside: auto;
+      page-break-inside: auto;
+      orphans: 1;
+      widows: 1;
     }
 
     /* manual page break, same marker as on screen */

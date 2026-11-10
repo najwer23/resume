@@ -1,5 +1,5 @@
 @layer PaperA4 {
-  .root {
+  .paperA4 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -21,8 +21,9 @@
     background: #fff;
     color: #111;
     transform-origin: 0 0;
-    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 5px rgba(75, 75, 75, 0.2);
     overflow: hidden;
+    margin: 1cm auto;
   }
 
   .clip {
@@ -31,10 +32,6 @@
   }
 
   .content {
-    font:
-      12pt / 1.45 Georgia,
-      "Times New Roman",
-      serif;
     color: #111;
     overflow-wrap: anywhere;
     box-sizing: border-box;
@@ -48,23 +45,12 @@
     pointer-events: none;
   }
 
-  .num {
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font:
-      8pt system-ui,
-      sans-serif;
-    color: #888;
-  }
-
+  /*
+   * Printing: the @page rule (size + margin) is injected by the component.
+   * The printer margin is left to the browser, so its header/footer can use it.
+   * Each box is exactly the printable area (A4 minus the margin on every side).
+   */
   @media print {
-    @page {
-      size: A4;
-      margin: 0;
-    }
-
     /* global class: you add it yourself to buttons/menus that must not be printed */
     :global(.no-print) {
       display: none !important;
@@ -74,13 +60,13 @@
       display: none !important;
     }
 
-    .root {
+    .paperA4 {
       display: block !important;
     }
 
     .box {
-      width: 210mm !important;
-      height: 297mm !important;
+      width: calc(210mm - 2 * var(--pa4-m)) !important;
+      height: calc(297mm - 2 * var(--pa4-m) - 1px) !important;
       break-after: page;
       page-break-after: always;
       overflow: hidden;
@@ -92,10 +78,17 @@
     }
 
     .sheet {
+      width: 100% !important;
+      height: 100% !important;
       transform: none !important;
       box-shadow: none !important;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
+    }
+
+    .clip {
+      left: 0 !important;
+      top: var(--pa4-top, 0px) !important;
     }
   }
 }

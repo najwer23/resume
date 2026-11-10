@@ -73,7 +73,14 @@ export const Najwer23lang: React.FC<{}> = ({}) => {
           </Typography>
         </div>
         <div>
-          <Typography variant="link" href="" mobileSize={14} desktopSize={14} rel="noreferrer" target="_blank">
+          <Typography
+            variant="link"
+            href="https://www.npmjs.com/search?q=najwer23lang"
+            mobileSize={14}
+            desktopSize={14}
+            rel="noreferrer"
+            target="_blank"
+          >
             https://www.npmjs.com/search?q=najwer23lang
           </Typography>
         </div>

@@ -27,49 +27,46 @@ export const AppliedSystems: React.FC<{}> = ({}) => {
           <li>
             <Typography variant="body" mobileSize={14} desktopSize={14}>
               {T(
-                'Built a server-driven UI for the insurance purchase flow from scratch: a recursive DFS renderer that turns a deeply nested question graph from backend JSON into a working form.',
+                'Built a server-driven UI for the insurance purchase flow from scratch: a recursive DFS renderer that turns an unusually large, deeply nested question graph from backend JSON into a working form.',
               )}
             </Typography>
           </li>
           <li>
             <Typography variant="body" mobileSize={14} desktopSize={14}>
-              {T('Delivered it first in Angular, then rewrote it in React to adopt the company’s new design system.')}
-            </Typography>
-          </li>
-          <li>
-            <Typography variant="body" mobileSize={14} desktopSize={14}>
-              {T('Kept the form smooth and responsive at that depth by optimizing rendering performance.')}
+              {T('Shipped it in Angular, then rewrote it in React to adopt the company’s new design system.')}
             </Typography>
           </li>
           <li>
             <Typography variant="body" mobileSize={14} desktopSize={14}>
               {T(
-                'Took ownership of the end-to-end Playwright tests originally written by QA, maintaining and extending them as the flow changed.',
+                'Reduced loading from 14s to 3s by profiling with React DevTools and fixing the slowest re-render paths (memoization, state splitting, caching the DFS).',
               )}
             </Typography>
           </li>
           <li>
             <Typography variant="body" mobileSize={14} desktopSize={14}>
-              {T('Raised code quality with code reviews, using AI-assisted review to catch issues earlier.')}
+              {T(
+                'Fixed broken question logic and contributed to the admin panel, user tracking and statistical charts in an 8-person international team.',
+              )}
             </Typography>
           </li>
           <li>
             <Typography variant="body" mobileSize={14} desktopSize={14}>
               {T(
-                'Contributed to the admin panel, user tracking, statistical charts, and WCAG 2.1 AA compliance in an 8-person international team.',
+                'Pushed for accessible CSS tokens (WCAG 2.1 AA) and consistent form structure on every page, and proposed UX improvements to managers and stakeholders.',
+              )}
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body" mobileSize={14} desktopSize={14}>
+              {T(
+                'Raised code quality with linters, CI/CD checks and code reviews (including AI-assisted), and took over the end-to-end Playwright tests from QA.',
               )}
             </Typography>
           </li>
           <li>
             <Typography variant="body" mobileSize={14} desktopSize={14}>
               {T('Onboarded new developers to the question graph and documented solutions the team reused.')}
-            </Typography>
-          </li>
-          <li>
-            <Typography variant="body" mobileSize={14} desktopSize={14}>
-              {T(
-                'Participated in discussions with managers and stakeholders, contributing technical insights and helping shape key decisions about the insurance purchase flow and its user experience.',
-              )}
             </Typography>
           </li>
         </ul>

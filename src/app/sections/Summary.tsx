@@ -11,7 +11,7 @@ export const Summary: React.FC<{}> = ({}) => {
       <Grid widthMax={'700px'} layout="container" margin={0}>
         <Typography variant="body" mobileSize={14} desktopSize={14} margin={0}>
           {T(
-            'Frontend-leaning Full-Stack Software Engineer specializing in React, Angular, TypeScript, and Node.js. Experienced in designing complex server-driven interfaces, custom rendering architectures, reusable design systems, and serverless backend solutions on AWS. Strong focus on performance, algorithmic problem-solving, Core Web Vitals, accessibility, and maintainable software architecture.',
+            'Frontend-leaning full-stack engineer (React, Angular, TypeScript, Node.js) who builds the hard parts of a product: a server-driven UI that renders an insurance purchase flow from backend data, a news portal built from scratch with a custom SSR algorithm (widget load time cut from 14 seconds to near-instant), and serverless backends on AWS Lambda and DynamoDB. Focused on performance (Core Web Vitals), accessibility (WCAG), and maintainable architecture.',
           )}
         </Typography>
       </Grid>

@@ -33,14 +33,14 @@ export const WBD: React.FC<{}> = ({}) => {
           <li>
             <Typography variant="body" mobileSize={14} desktopSize={14}>
               {T(
-                'Designed and implemented a custom SSR rendering algorithm from scratch, without relying on external rendering libraries.',
+                'Developed interactive widgets for stocks, weather, polls, TV guides, and elections, delivered on immovable deadlines. The election-night widgets ran with zero downtime and zero errors under peak traffic.',
               )}
             </Typography>
           </li>
           <li>
             <Typography variant="body" mobileSize={14} desktopSize={14}>
               {T(
-                'Developed interactive widgets for stocks, weather, polls, elections, TV guides, and other editorial content.',
+                'Designed a custom SSR rendering algorithm from scratch, without external rendering libraries, cutting widget load time from 14 seconds to near-instant, with request caching and CloudFront on top.',
               )}
             </Typography>
           </li>
@@ -48,13 +48,6 @@ export const WBD: React.FC<{}> = ({}) => {
             <Typography variant="body" mobileSize={14} desktopSize={14}>
               {T(
                 'Integrated independently developed components into a unified frontend architecture, enabling modular development and reuse.',
-              )}
-            </Typography>
-          </li>
-          <li>
-            <Typography variant="body" mobileSize={14} desktopSize={14}>
-              {T(
-                'Focused on performance, SEO, and user experience through server-side rendering and optimized client-side hydration.',
               )}
             </Typography>
           </li>

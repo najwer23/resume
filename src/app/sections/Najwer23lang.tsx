@@ -10,7 +10,7 @@ export const Najwer23lang: React.FC<{}> = ({}) => {
     <Grid widthMax={'1400px'} layout="flex" justifyContent="flex-start" margin={'15px 0 0 0'}>
       <Grid widthMax={'700px'} layout="container" margin={0}>
         <TextBox color="black" mobileSize={18} desktopSize={18} fontWeight={500} tag="h3">
-          Najwer23lang (npm package)
+          Internationalization (i18n) library (npm package)
         </TextBox>
         <TextBox color="black" mobileSize={12} desktopSize={12} fontWeight={400} tag="h3">
           (React.js, TypeScript, JavaScript, Node.js, Biome.js)

@@ -1,0 +1,110 @@
+@layer PaperA4 {
+  .root {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .box {
+    position: relative;
+    flex: none;
+  }
+
+  .sheet {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 210mm;
+    height: 297mm;
+    background: #fff;
+    color: #111;
+    transform-origin: 0 0;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+
+  .clip {
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .content {
+    color: #111;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+  }
+
+  .toolbarFrame {
+    position: relative;
+    flex: none;
+  }
+
+  .toolbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 210mm;
+    transform-origin: 0 0;
+  }
+
+  .measure {
+    position: absolute;
+    left: -99999px;
+    top: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  /*
+   * Printing: the @page rule (size + margin) is injected by the component.
+   * The printer margin is left to the browser, so its header/footer can use it.
+   * Each box is exactly the printable area (A4 minus the margin on every side).
+   */
+  @media print {
+    /* global class: you add it yourself to buttons/menus that must not be printed */
+    :global(.no-print) {
+      display: none !important;
+    }
+
+    .measure,
+    .toolbarFrame {
+      display: none !important;
+    }
+
+    .root {
+      display: block !important;
+      padding-inline: 0 !important;
+    }
+
+    .box {
+      width: calc(210mm - 2 * var(--pa4-m)) !important;
+      /* 1px less than the printable height, so rounding never creates a blank page */
+      height: calc(297mm - 2 * var(--pa4-m) - 1px) !important;
+      break-after: page;
+      page-break-after: always;
+      overflow: hidden;
+    }
+
+    .box:last-of-type {
+      break-after: auto;
+      page-break-after: auto;
+    }
+
+    .sheet {
+      width: 100% !important;
+      height: 100% !important;
+      transform: none !important;
+      box-shadow: none !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .clip {
+      left: 0 !important;
+      top: var(--pa4-top, 0px) !important;
+    }
+  }
+}

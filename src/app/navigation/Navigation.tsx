@@ -11,7 +11,7 @@ export const Navigation: React.FC<{}> = () => {
 
   return (
     <div className={styles.navigation}>
-      <Grid widthMax={'1400px'} layout="flex">
+      <Grid widthMax={'1400px'} layout="flex" margin={'40px 0 20px'}>
         <Grid layout="flex" justifyContent="flex-start" margin={0} gap={{ col: '8px', row: '0' }}>
           <Button variant="secondary" type="button" onClick={() => window.print()}>
             <TextBox desktopSize={16} margin={0} mobileSize={16} color="white">

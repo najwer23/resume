@@ -43,7 +43,7 @@ export const clusterLines = (lines: Band[]): Band[] => {
   return out;
 };
 
-export const computeRanges = ({ lines, atoms, marks, total }: Measured, H: number, topSpacing: number): PageRange[] => {
+export const computeRanges = ({ lines, atoms, marks, total }: Measured, H: number): PageRange[] => {
   const rows = clusterLines(lines);
   const tops = [...rows.map((r) => r.top), ...atoms.map((a) => a.top)].sort((a, b) => a - b);
   const inside = (y: number) => atoms.some((a) => y > a.top + 1 && y < a.bottom - 1);
@@ -76,7 +76,7 @@ export const computeRanges = ({ lines, atoms, marks, total }: Measured, H: numbe
   let s = 0;
   for (let guard = 0; guard < 1000; guard++) {
     // pages after the first start lower, because of topSpacing
-    const cap = out.length === 0 ? H : H - topSpacing;
+    const cap = H;
     const limit = s + cap;
     const mark = forced.find((m) => m > s + 1 && m <= limit + 0.5);
     let end: number;

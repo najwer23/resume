@@ -17,7 +17,7 @@ export const PageA4: React.FC<PageA4Props> = ({ children, margin = 10, sidePaddi
   const hasToolbar = Boolean(toolbar);
   const { ref: toolbarRef, height: toolbarHeight } = useElementHeight(hasToolbar);
 
-  const H = (297 - 2 * margin) * PX; // printable height of one page
+  const H = (297 - 2 * margin) * PX - 3; // printable height of one page
   const W = (210 - 2 * margin) * PX; // printable width of one page
 
   const { measRef, ranges } = usePagination(H);

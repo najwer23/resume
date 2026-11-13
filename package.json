@@ -13,7 +13,7 @@
     "lang": "yarn najwer23lang"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.6.6",
+    "@biomejs/biome": "2.6.7",
     "@fortawesome/fontawesome-svg-core": "^7.3.1",
     "@fortawesome/free-brands-svg-icons": "^7.3.1",
     "@fortawesome/free-regular-svg-icons": "^7.3.1",
@@ -35,7 +35,7 @@
     "react-router-dom": "^7.18.5",
     "rimraf": "^6.1.4",
     "typescript": "^6.0.3",
-    "vite": "^8.3.7",
+    "vite": "^8.3.8",
     "vite-plugin-pwa": "^2.0.0"
   }
 }

@@ -7,6 +7,3 @@ export const A4_H = 297 * PX;
 
 /** Elements that are never cut between two pages */
 export const ATOMIC = 'img,svg,canvas,video,picture,figure,tr,[data-no-split]';
-
-/** Px kept above the first line of a page so accents and ascenders are never clipped */
-export const PAD = 10;

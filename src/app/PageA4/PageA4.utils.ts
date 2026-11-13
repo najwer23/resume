@@ -1,4 +1,4 @@
-import { ATOMIC, PAD } from './PageA4.const';
+import { ATOMIC } from './PageA4.const';
 import type { Band, Cut, Measured, PageRange } from './PageA4.types';
 
 export const collect = (root: HTMLElement): Measured => {
@@ -51,7 +51,7 @@ export const computeRanges = ({ lines, atoms, marks, total }: Measured, H: numbe
   /** Where a page that continues after y should start. */
   const resumeAfter = (y: number): number => {
     const t = tops.find((v) => v >= y - 0.5);
-    return t === undefined ? y : Math.max(y, t - PAD);
+    return t === undefined ? y : Math.max(y, t);
   };
 
   const cands: Cut[] = [];
@@ -62,7 +62,7 @@ export const computeRanges = ({ lines, atoms, marks, total }: Measured, H: numbe
     // end the page right under the line, so a following line is never left out by accident;
     // if two lines overlap, cut in the middle of the overlap
     const cut = Math.min(a.bottom + 1, (a.bottom + b.top) / 2);
-    cands.push({ cut, resume: Math.max(cut, b.top - PAD) });
+    cands.push({ cut, resume: Math.max(cut, b.top) });
   }
   // around images, table rows, <NoSplit> blocks...
   for (const a of atoms) {

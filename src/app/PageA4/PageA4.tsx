@@ -28,7 +28,12 @@ export const PageA4: React.FC<PageA4Props> = ({ children, margin = 10, sidePaddi
 
   return (
     <div ref={outerRef} className={`${styles.root}`} style={rootStyle}>
-      <style>{`@page{size:A4;margin:${margin}mm}`}</style>
+      <style>{`
+          @page {
+            size: A4;
+            margin: ${margin}mm ${margin}mm ${margin + 3}mm ${margin}mm;
+          }
+      `}</style>
 
       <div className={styles.measure} aria-hidden="true" style={{ width: W }}>
         <div ref={measRef} className={styles.content} style={{ width: W }}>

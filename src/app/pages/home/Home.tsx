@@ -31,17 +31,14 @@ export const Home: React.FC<{}> = () => {
         <Intro />
         <Header text="Summary" />
         <Summary />
-        {/* ------ */}
         <Header text="Education" />
         <Education />
-        {/* ------ */}
         <Header text="Professional Experience" />
         <Caregiving />
         <AppliedSystems />
         <WBD />
         <FLHF />
         <EuropaUbezpieczenia />
-        {/* ------ */}
         <Header text="Projects" />
 
         <DesignSystem />

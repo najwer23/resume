@@ -26,7 +26,7 @@ export const Home: React.FC<{}> = () => {
   useDocumentTitle('Mariusz Najwer - Résumé EN');
 
   return (
-    <Grid layout="container" margin={'0 0 50px 0'}>
+    <Grid layout="container" margin={'0 0 50px 0'} widthMax={'100%'}>
       <PageA4 toolbar={<Navigation />}>
         <Intro />
         <Header text="Summary" />
